@@ -5,7 +5,7 @@ $CONFIG['rootpath']		= '/PortalSite';
 $CONFIG['charset']		= 'utf-8'; 
 $CONFIG['Title']             = 'PortalSite';
 
-$CONFIG['smarty']['rootpath']		= 'http://www.shingain.com'; 
+$CONFIG['smarty']['rootpath']		= '/PortalSite'; 
 $CONFIG['smarty']['rootpaths']		= '/PortalSite'; 
 $CONFIG['solution_configuration']='debug';
 $CONFIG['server']		= 'windows';   //windows or linux

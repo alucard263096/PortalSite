@@ -1,0 +1,12 @@
+﻿@charset "utf-8";
+.cp_wp, #left3{width:810px;}
+#left3{ float:left; }
+.tb li{ margin:0 13px -1px 0;}
+.tb .a{ position:relative; }
+.tb2 .a{ position:relative; }
+.tb3 .a{ position:relative; }
+.tb4 .a{ position:relative; }
+.tb5 .a{ position:relative; }
+.fdtb .a{ position:relative; }
+.btSave{padding-bottom:16px;}
+.drugdetail{padding:0;}

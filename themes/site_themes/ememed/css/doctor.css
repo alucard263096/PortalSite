@@ -1,0 +1,461 @@
+﻿@charset "utf-8";
+#doctor_wp, .wp_inner{width:996px;}
+.bgdoctor{background:url(../images/web/bgWeb.jpg) #00354b no-repeat -135px top; padding-top:40px;}
+#serviceitem {overflow: hidden; }
+#serviceitem .links{width:1010px;}
+#serviceitem a{display:black; float:left; margin-right:2px;}
+.dheader_index{position:relative; height:100px;}
+
+.bgweb{ background:url(../images/web/bgWeb.jpg) #00354b no-repeat left top;}
+.bgphoto{ background:url(../images/web/bgPhoto.jpg) no-repeat left top; width:93px; height:131px; margin-right:15px;}
+.bgphoto img{ width:78px; height:106px; margin:7px 0px 0px 7px;}
+.bgServiceItem{ float:left; display:block; text-align:center; background:url(../images/web/bgServiceItem.jpg) no-repeat left top; width:94px; height:36px; line-height:32px; color:#467281; margin-left:8px;}
+.bgDoctorProfile{ background:url(../images/web/bgDoctorProfile.jpg) #e0f2f0 repeat-y left;}
+.bgDoctorProfile_m{ background:url(../images/web/doctorProfile_m.jpg) repeat-y left; padding:0px 20px 30px 20px; font-size:14px;}
+.iconProfile1{ background:url(../images/web/iconProfile-06.jpg) no-repeat 15px 5px;}
+.iconProfile2{ background:url(../images/web/iconProfile-07.jpg) no-repeat 15px 5px;}
+.iconProfile3{ background:url(../images/web/iconProfile-08.jpg) no-repeat 15px 5px;}
+.doctorMainInfo div{ padding-left:60px; border-bottom:solid 1px #bddcd8; line-height:30px; padding-bottom:10px; margin-bottom:15px;}
+.bgAllFlow{ background:url(../images/web/bgAllFlow.jpg) #FFF no-repeat left bottom;}
+.iconTxt{ background:url(../images/web/iconTxt.gif) no-repeat left center; padding-left:40px;}
+.bgFlow{ background:url(../images/web/setupFlowv.gif) no-repeat right top; height:32px;}
+.setupFlowForm ul{ clear:both; padding-top:8px;/* height:35px;*/}
+.bgTips{ background:url(../images/web/tips_m.jpg) repeat-y left; width:191px;}
+.bgTips2{ background:url(../images/web/tips_t.jpg) no-repeat left top; font-size:12px; line-height:18px; padding:20px 10px 5px 40px;}
+.successInfo{ border:solid 1px #6dcff6; background-color:#f4fdff; padding-top:30px;}
+.successInfo .txtok{ font-size:22px; font-weight:bold; color:#5ecef6;}
+.bgDoctorBlog{ background:url(../images/web/bgBlog.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft1{ background:url(../images/web/bgServiceItemLeft1.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft2{ background:url(../images/web/bgServiceItemLeft2.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft3{ background:url(../images/web/bgServiceItemLeft3.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft4{ background:url(../images/web/bgServiceItemLeft4.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft5{ background:url(../images/web/bgServiceItemLeft5.jpg) #e0f2f0 repeat-y left;}
+.bgServiceItemLeft6{ background:url(../images/web/bgServiceItemLeft6.jpg) #e0f2f0 repeat-y left;}
+
+.bgBlogItem td{ background:url(../images/web/bgBlogTitle.jpg) repeat-x top; height:36px; color:#FFF; padding-left:20px;}
+.blogInfo1 td,.blogInfo2 td{ font-size:14px; border-bottom:solid 1px #bddcd8; line-height:35px; padding-left:20px;}
+.blogInfo2 td{ background-color:#cbe6e9;}
+.bgdoctorservicetime3 .row1,.bgdoctorservicetime3 .row2{ border-bottom:solid 1px #bddcd8; line-height:35px; padding-left:20px;}
+.bgdoctorservicetime3 .row2{ background-color:#cbe6e9;}
+.chargeTab{ font-size:12px; background-color:#FFF; line-height:30px;}
+.chargeTab td{ padding-left:10px;}
+.chargeTab .title td{ background-color:#c4eef1; color:#2b8bab; font-weight:bold; font-size:16px; padding-top:5px; padding-bottom:5px;}
+.chargeTab .bgc1{ background-color:#cbe4ea;}
+.chargeTab .bgc2{ background-color:#bce5e2;}
+.chargeTab .bgc3{ background-color:#e0f7f8;}
+.chargeTab .bgc4{ background-color:#cdebe7;}
+.iconConsultList{ background:url(../images/web/iconConsultList.jpg) repeat-y;}
+.iconConsultList a{ color:#00354b;}
+.iconConsultList li{ background:url(../images/web/lineConsult.jpg) repeat-x bottom; padding-left:15px;}
+.bgDrug2{ background:url(../images/web/bgDrug.jpg) no-repeat left top; width:382px; height:135px;}
+
+.pinput2{ border:none; background-color:#FFF; height:27px; width:400px; margin-right:5px;}
+.searchinput{ padding:2px; margin:25px 0px 0px 40px;}
+.memberAppointmentTab{ background-color:#eceff2;}
+.memberAppointmentTab td{ text-align:center; padding:3px; background-color:#FFF;}
+.bgAppointmentItemname td{ background:url(../images/bgAppointmentItemName.jpg) #08bbdc repeat-x bottom; color:#FFF;}
+.bgServiceItem2{ background:url(../images/web/bgServiceItem2.jpg) #c1dde7 repeat-x top; height:62px; font-size:14px; line-height:62px; text-align:center;}
+.bgServiceItem2 a{ color:#3d6978;}
+.bgServiceItem2 a:hover{ color:#00b904;}
+.bgServiceItem2 .hline{ margin:0px 20px;}
+
+.serviceSetItem div{ float:left; width:19%; text-align:center; line-height:40px; color:#FFF; padding-top:5px; margin-right:0.8%;}
+.serviceSetItem .serviceItem1{ background-color:#1c89aa;}
+.serviceSetItem .serviceItem1 .bgcDefault{ color:#1c89aa;}
+.serviceSetItem .serviceItem2{ background-color:#c22baa;}
+.serviceSetItem .serviceItem2 .bgcDefault{ color:#c22baa;}
+.serviceSetItem .serviceItem3{ background-color:#f22f4e;}
+.serviceSetItem .serviceItem3 .bgcDefault{ color:#f22f4e;}
+.serviceSetItem .serviceItem4{ background-color:#4cbfc6;}
+.serviceSetItem .serviceItem4 .bgcDefault{ color:#4cbfc6;}
+.serviceSetItem .serviceItem5{ background-color:#0f7da0;}
+.serviceSetItem .serviceItem5 .bgcDefault{ color:#0f7da0;}
+.serviceSetItem a{ display:block; padding-bottom:5px;}
+.bgcDefault{ background-color:#f2f2f2;}
+.bgcDefault a{ color:#bgcDefault;}
+.serviceIcon td{ background-color:#bff2ff; font-size:14px; line-height:25px; color:#3bc8fd; width:16.66%; padding:15px 0px;}
+.serviceIcon td img{ float:left; margin-left:15px; margin-right:5px;}
+.mycategory .Fleft{ color:#4ea378; border:solid 1px #e8e8e8; background-color:#f2f9ff; line-height:25px; margin:0px 5px 5px 0px; text-align:center; width:13%;}
+.categoryItem{ display:none;}
+.categoryItem .Fleft{ border:solid 1px #FFF; color:#4ea378; line-height:25px; margin:0px 5px 5px 0px; text-align:center; width:13%;}
+.categoryItem .selCategory{ border:solid 1px #878787; background-color:#f2f9ff;}
+.bgCategoryItem{ background:url(../images/doctor/bgCategoryItem.jpg) #eaeaeb repeat-x bottom; height:30px; display:block; cursor:pointer;}
+.categoryItemIcon{ background:url(../images/doctor/categoryIcon.jpg) no-repeat 10px center; padding-left:25px; line-height:30px;}
+.bgEvaluate{ background:url(../images/doctor/bgGood.jpg) repeat-x bottom;}
+.doctorEvaluateTitle td{ background:url(../images/doctor/bgEvalueItem.jpg) #62ceaa repeat-x bottom; font-size:16px; font-weight:bold; color:#FFF;}
+.doctorEvaluateRow1 td{ background-color:#e5f6f0;}
+.doctorEvaluateRow2 td{ background-color:#ceede2;}
+.doctorEvaluateRow3 td{ background-color:#b9e5d5;}
+.doctorEvaluateRow4 td{ background-color:#65d0a8; color:#FFF;}
+.doctorMyworkItem li{ float:left; width:85px; margin-right:12px; height:70px; text-align:center; line-height:18px; display:table-cell; vertical-align:middle;}
+.doctorMyworkItem li a{ display:block; color:#FFF; font-weight:bold; font-size:14px; margin-top:15px;}
+.bgdmyworkItem1{ background-color:#f46c18;}
+.bgdmyworkItem2{ background-color:#e6489d;}
+.bgdmyworkItem3{ background-color:#704ea1;}
+.bgdmyworkItem4{ background-color:#195ba6;}
+.bgdmyworkItem5{ background-color:#1c95d1;}
+.bgdmyworkItem6{ background-color:#0cabff;}
+.bgdmyworkItem7{ background-color:#60e087;}
+.bgdmyworkItem8{ background-color:#83c34b;}
+.bgInfoAlert{ position:absolute; background:url(../images/doctor/bgNum.png) no-repeat left top; width:25px; height:28px; line-height:25px; overflow:hidden; color:#FFF; font-size:16px; font-weight:bold; margin:-12px 0px 0px 65px; }
+
+.border_d_b{ border-bottom:dashed 1px #CCC;}
+.dbgcolor1{ background-color:#5674b9;}
+.dbgcolor2{ background-color:#f2fbfe;}
+.dbgcolor3{ background-color:#d8f1fd;}
+.dbgcolor4{ background-color:#ffd194;}
+.dbgcolor5{ background-color:#ffef94;}
+.dbgcolor6{ background-color:#cff5a4;}
+.dbgcolor7{ background-color:#fcfcfc;}
+.BG_ebfef7{ background-color:#ebfef7;}
+.BG_e2f1f8{ background-color:#e2f1f8;}
+.BG_27969a{ background-color:#27969a;}
+.BG_edfaff{ background-color:#edfaff;}
+.BG_93c7df{ background-color:#93c7df;}
+.dLH18{ line-height:18px;}
+.block{ display:block;}
+.dwidth100{ width:100px;}
+.dwidth40{ width:40px;}
+.dcolor1{ color:#9a6352;}
+.dcolor2{ color:#ed1c24;}
+.dcolor3{ color:#5a5a5a;}
+
+.tb{border-bottom:solid 1px #d9dce0;height:34px;}
+.tb li{ float:left; margin:0 15px -1px 0; padding-right:4px; line-height:35px; }
+.tb li a{ display:block;text-align:center; text-decoration:none; padding:0px 10px; color:#878787;}
+.tb .a{ background:url(../images/bgStack1.jpg) no-repeat right -35px; border-bottom-color:#fff; }
+.tb .a a{ background:url(../images/bgStack1.jpg) no-repeat left top; color:#e55d1d; }
+
+.tb2{border-bottom:solid 1px #d9dce0;height:35px;}
+.tb2 li{ background:url(../images/bgStack2.jpg) repeat-x left bottom; float:left; margin:0 5px 0px 0; line-height:35px; border-top:solid 1px #d0d1d5; border-left:solid 1px #d0d1d5; border-right:solid 1px #d0d1d5;}
+.tb2 li a{ display:block;text-align:center; text-decoration:none; padding:0px 10px; color:#FFF;}
+.tb2 .a{ border-top:solid 1px #d0d1d5; border-left:solid 1px #d0d1d5; border-right:solid 1px #d0d1d5; border-bottom-color:#fff; }
+.tb2 .a a{ background-color:#FFF; color:#e6489d; }
+
+.tb3{height:47px; padding-top:30px; padding-left:20px;}
+.tb3 li{ background:url(../images/web/bgRegStack.jpg) no-repeat left bottom; float:left; margin:0 5px 0px 0; line-height:47px; width:138px; height:47px;}
+.tb3 li a{ display:block;text-align:center; text-decoration:none; padding:0px 10px; color:#FFF;}
+.tb3 .a{ background:url(../images/web/bgRegStackv.jpg) no-repeat left bottom; }
+.tb3 .a a{ color:#0a5e81; }
+
+.tb4{border-bottom:solid 1px #d9dce0;height:34px;}
+.tb4 li{ float:left; line-height:35px; margin:0 0 -1px 0; }
+.tb4 li a{ display:block;text-align:center; text-decoration:none; padding:0px 10px 0px 0px; color:#878787; width:120px;}
+.tb4 .a{ background:url(../images/web/bgServiceTimeStack.jpg) no-repeat right -35px; border-bottom-color:#fff; }
+.tb4 .a a{ background:url(../images/web/bgServiceTimeStack.jpg) no-repeat left top; color:#e55d1d; }
+
+.tb5{border-bottom:solid 2px #e55d1d;height:34px;}
+.tb5 li{ float:left; line-height:35px; margin-right:2px; }
+.tb5 li a{ display:block;text-align:center; text-decoration:none; border:solid 1px #dde0e1; color:#878787; line-height:30px; height:30px; width:110px;}
+.tb5 .a{ }
+.tb5 .a a{ height:35px; background-color:#e55d1d; color:#FFF; border:none; line-height:35px; }
+
+/* 共用样式 */
+.h21{margin:0;padding:0;font-size:18px;font-family:"微软雅黑";color:#2b8bab;font-weight:bold;}
+.byInput1,
+.byInput2{height:28px;line-height:28px;border:1px solid #bdc1c2;padding:0 4px;
+	font-size:14px;font-family:"微软雅黑";color:#454545;
+	background:url(../images/bgInput1.jpg) repeat-x #fff;
+}
+.byInput1{width:430px;}
+.byInput2{width:250px;}
+
+.byInput3{width:200px;height:28px;line-height:28px;padding:0 4px;border:1px solid #a5aeb4;
+	background:url(../images/bgInput3.jpg) no-repeat;
+}
+
+.byTextarea1{line-height:20px;border:1px solid #bdc1c2;padding:4px;
+	font-size:14px;font-family:"微软雅黑";color:#454545;
+	background:url(../images/bgInput2.jpg) left bottom repeat-x #fff;
+}
+.byTextarea1{width:430px;height:80px;}
+
+dl,dt,dd,p,form{margin:0;padding:0;}
+i,em{font-style:normal;}
+
+/* 表单提示 */
+.formErrTip{position:relative;}
+.formErrTip ul{width:132px;height:215px;position:absolute;padding:18px 23px 0 37px;
+	right:-200px;top:-32px;background:url(../images/btBtTip.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btBtTip.png');
+}
+.formErrTip li{font-size:12px;line-height:19px;}
+.formErrTip li img{margin-right:3px;vertical-align:middle;}
+
+/* 分诊转诊 */
+.referral{padding-left:110px;background:url(../images/referral_1.jpg) no-repeat;}
+.referral .h21{margin:0 0 10px 80px;}
+.formReferral th{font-size:16px;padding-right:5px;
+	color:#878787;font-weight:normal;text-align:right;
+}
+.formReferral td label{margin-right:10px;}
+.formReferral td em{color:#e55d1d;font-size:18px;padding-left:10px;}
+
+.payRerral{width:710px;margin-left:80px;}
+.tlRerral{height:39px;padding-top:1px;border-top:4px solid #5eb9d7;
+	background:url(../images/referral_2.jpg) left bottom no-repeat #fdfefe;
+}
+.tlRerral li{height:39px;border-bottom:1px solid #fdfefe;}
+.tlRerral li p{float:left;line-height:39px;padding:0 20px;color:#60676a;font-weight:bold;
+	display:inline;margin-right:1px;
+}
+
+.listRerral{border-top:1px solid #fdfefe;}
+.listRerral li{height:40px;border-bottom:1px solid #fdfefe;}
+.listRerral li p{float:left;line-height:40px;padding:0 20px;color:#60676a;
+	display:inline;border-right:1px solid #fdfefe;background:#e6f4f7;
+}
+.payRerral .p1{width:123px;}
+.payRerral .p2{width:92px;}
+.payRerral .p3{width:104px;}
+.payRerral .p4{width:113px;}
+.payRerral .p5{width:73px;}
+.payRerral .line dt{height:12px;border-bottom:1px solid #fdfefe;background:#e6f4f7;}
+.payRerral .line dd{border-bottom:1px solid #5eb9d7;}
+.payRerral .btnTb{text-align:center;margin-top:30px;}
+
+/* 流程图 */
+.layerMyFlow{height:67px;margin:30px 0;text-align:center;}
+.tbFlow{height:67px;margin:30px auto;}
+.layerAll{/*margin-left:50px;*/width:750px;margin-left:5px;}
+/* 栏目标题 */
+.layerTitle{margin-bottom:10px;font-size:18px;padding-top:8px;height:19px;line-height:19px;}
+.layerTitle em{padding:0 14px;}
+.layerTitle b{color:#19b7c5;}
+.layerAll .n1{
+	background:url(../images/bgNum1.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/bgNum1.png');
+}
+.layerAll .n2{
+	background:url(../images/bgNum2.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/bgNum2.png');
+}
+.layerAll .n3{
+	background:url(../images/bgNum3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/bgNum3.png');
+}
+.layerAll .n4{
+	background:url(../images/bgNum4.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/bgNum4.png');
+}
+
+/* 名医加号 */
+.doctorsplus{/*padding-left:110px;background:url(../images/doctorsplus_1.jpg) no-repeat;*/}
+.plusFlow_1{width:646px;
+	background:url(../images/btAllFlow3_1.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3_1.png');
+}
+.plusFlow_2{width:646px;
+	background:url(../images/btAllFlow3_2.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3_2.png');
+}
+.plusFlow_3{width:646px;
+	background:url(../images/btAllFlow3_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3_3.png');
+}
+.doctorsplus .btnTb{margin-top:30px;text-align:center;}
+.doctorsplus .btnTb input{margin:0 10px;}
+
+/* 第一步骤 */
+.timeDoctorsplus{border-top:4px solid #5eb9d7;padding-top:2px;}
+.timeDoctorsplus .tle{height:39px;line-height:39px;padding-left:15px;color:#7d7d7d;
+	background:url(../images/bgLine1.jpg) repeat-x;
+}
+.timeDoctorsplus ul{border-bottom:1px solid #5eb9d7;padding-bottom:1px;}
+.timeDoctorsplus li{padding:10px 15px;color:#504b4b;}
+.timeDoctorsplus .bg{background:#e6f4f7;}
+.timeDoctorsplus .tip{font-size:14px;color:#e4690e;padding-left:15px;line-height:35px;}
+
+/* 第二步骤 */
+.infoDoctorsplus{margin-top:20px;}
+.infoDoctorsplus table{background:#ccc5c5;}
+.infoDoctorsplus th{color:#393e3e;font-weight:normal;text-align:right;padding-right:20px;
+	background:#f2fcff;
+}
+.infoDoctorsplus td{padding:0 20px;color:#393e3e;background:#fff;}
+.infoDoctorsplus dl{line-height:30px;}
+.infoDoctorsplus dt{float:left;}
+.infoDoctorsplus dd{float:right;}
+.checkAid{padding:20px 0 20px 167px;}
+/* 第三步骤 */
+.waitDoctorsplus{margin-top:20px;width:583px;border:1px solid #dfdfdf;padding:30px 0 30px 145px;
+	background:url(../images/doctorsplus_2.jpg) 85px 30px no-repeat #fffbf0;
+}
+.waitDoctorsplus dt{line-height:44px;color:#ff7200;font-size:18px;padding-bottom:5px;}
+.waitDoctorsplus dd{line-height:25px;color:#6c6c6c;font-size:14px;}
+.waitDoctorsplus dd a,
+.waitDoctorsplus dd a:link,
+.waitDoctorsplus dd a:hover{color:#1476d1;margin-right:15px;text-decoration:underline;}
+.succDoctorsplus{width:730px;padding:50px 0 80px 0;}
+.succDoctorsplus p{margin:0 auto;width:220px;height:34px;line-height:34px;padding-left:50px;color:#5ecef6;
+	font-size:26px;background:url(../images/bluegou.png) no-repeat;
+}
+
+/* 转院预约 */
+.turnhospital{/*padding-left:110px;background:url(../images/turnhospital_1.jpg) no-repeat;*/}
+.turnhospital .tl{height:27px;margin-bottom:10px;}
+.turnhospital .tl_1{background:url(../images/turnhospital_title.png) no-repeat;}
+.turnFlow_1{width:646px;
+	background:url(../images/btAllFlow3b_1.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3b_1.png');
+}
+.turnFlow_2{width:646px;
+	background:url(../images/btAllFlow3b_2.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3b_2.png');
+}
+.turnFlow_3{width:646px;
+	background:url(../images/btAllFlow3b_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow3b_3.png');
+}
+/* 第一步骤 */
+.infoTurn{width:750px;}
+.infoTurn .layerTitle{margin-left:40px;}
+.infoTurn th{color:#878787;font-weight:normal;text-align:right;padding-right:10px;}
+.infoTurn label{margin-right:20px;}
+.infoTurn .byBtn2{margin-right:10px;}
+/* 第二步骤 */
+.payTurn{width:680px;margin-left:40px;}
+.tlTurn{height:35px;padding-top:1px;border-top:4px solid #5eb9d7;
+	background:url(../images/turnhospital_2.jpg) left bottom no-repeat #fdfefe;
+}
+.tlTurn li{height:35px;border-bottom:1px solid #fdfefe;}
+.tlTurn li p{float:left;line-height:35px;padding:0 10px;color:#60676a;font-weight:bold;
+	display:inline;margin-right:1px;font-size:14px;text-align:center;
+}
+
+.listTurn{border-top:1px solid #fdfefe;}
+.listTurn li{height:35px;border-bottom:1px solid #fdfefe;}
+.listTurn li p{float:left;line-height:35px;padding:0 10px;color:#60676a;font-size:14px;text-align:center;
+	display:inline;border-right:1px solid #fdfefe;background:#e6f4f7;
+}
+.payTurn .p1{width:103px;}
+.payTurn .p2{width:152px;}
+.payTurn .p3{width:124px;}
+.payTurn .p4{width:103px;}
+.payTurn .p5{width:93px;}
+.payTurn .line dt{height:12px;border-bottom:1px solid #fdfefe;background:#e6f4f7;}
+.payTurn .line dd{border-bottom:1px solid #5eb9d7;}
+.payTurn .btnTb{text-align:center;margin-top:30px;}
+.payTurn .btnTb .byBtn1{margin:0 10px;}
+/* 第三步骤 */
+.succTurn{width:680px;margin-left:40px;}
+.succTurn dl{border:1px solid #6dcff6;padding:25px 0 50px 160px;
+	background:url(../images/web/smile.jpg) 100px 25px no-repeat #f4fdff;
+}
+.succTurn dt{color:#5ecef6;font-size:22px;padding-bottom:10px;}
+.succTurn dd{width:360px;line-height:20px;font-size:14px;}
+.succTurn .btnTb{text-align:center;margin-top:30px;}
+.succTurn .btnTb input{margin:0 10px;}
+
+/* 签约流程 */
+.signing{/*padding-left:110px;background:url(../images/signing_1.jpg) no-repeat;*/}
+.signFlow_1{width:682px;
+	background:url(../images/btAllFlow4_1.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow4_1.png');
+}
+.signFlow_2{width:682px;
+	background:url(../images/btAllFlow4_2.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow4_2.png');
+}
+.signFlow_3{width:682px;
+	background:url(../images/btAllFlow4_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow4_3.png');
+}
+.signFlow_4{width:682px;
+	background:url(../images/btAllFlow4_4.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/btAllFlow4_4.png');
+}
+.signing .btnTb{text-align:center;}
+.signing .btnTb2{margin:15px 0;}
+/* 第一步骤 */
+.timeSigning{width:765px;}
+.timeSigning .tl{height:35px;padding-top:5px;}
+.tlSigning{height:39px;paddint-top:6px;overflow:hidden;border-bottom:1px solid #fff;
+	background:url(../images/signing_2.jpg) no-repeat;
+}
+.tlSigning li{height:39px;border-bottom:1px solid #fdfefe;}
+.tlSigning li p{float:left;line-height:39px;padding:0 10px;color:#2b8bab;font-weight:bold;
+	display:inline;margin-right:1px;font-size:16px;text-align:center;
+}
+.listSigning table{background:#fff;}
+.listSigning .tdbg1{background:#e4f7f8;}
+.listSigning .tdbg2{background:#e6e6f8;}
+.listSigning th{height:39px;border-bottom:1px solid #fdfefe;line-height:39px;padding:0 10px;color:#2b8bab;font-weight:bold;margin-right:1px;font-size:16px;text-align:center;background:url(../images/signing_3.jpg) repeat-x;}
+.listSigning td{height:30px;font-size:12px;padding:0 10px;}
+.listSigning .tdtl{font-size:14px;color:#535353;}
+.timeSigning .p1{width:54px;}
+.timeSigning .p2{width:73px;}
+.timeSigning .p3{width:111px;}
+.timeSigning .p4{width:259px;}
+.timeSigning .p5{width:73px;}
+.timeSigning .p6{width:69px;}
+.wenxin {margin-bottom:70px; font-size:14px; width:660px;}
+.wenxin b{color:#19B7C5;width:75px;float:left; height:50px;}
+.wenxin span{width:585px;float:left;}
+
+/* 第二步骤 */
+.orderSigning{margin-left:40px;}
+.orderSigning .tl{padding-left:10px;font-size:16px;color:#ff7200;}
+.orderSigning table{background:#ccc5c5;}
+.orderSigning th{padding-right:15px;color:#393e3e;font-size:14px;text-align:right;
+	font-weight:normal;background:#f2fcff;
+}
+.orderSigning td{padding-left:15px;color:#393e3e;background:#fff;}
+.orderSigning .list{padding-bottom:20px;font-size:14px;}
+.chkAgree{padding-bottom:50px;}
+/* 第三步骤 */
+.paySigning{width:680px;margin-left:40px;}
+.paymoney{border:1px solid #bfdad7;padding:20px 20px 40px 20px;font-size:18px;color:#ff7200;
+	margin-bottom:30px;background:#e6fffc;
+}
+.paymoney b{font-size:36px;color:#67b22a;font-family:Arial;}
+.usermoney{font-size:18px;}
+.usermoney b{color:#19b7c5;font-size:24px;font-family:Arial;}
+.nomoney{height:48px;line-height:48px;padding-top:6px;padding-left:46px;
+	font-size:14px;background:url(../images/signing_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/signing_3.png');
+}
+.paytypes{padding-top:30px;border-top:1px dashed #2b8bab;}
+.paytypes .tl{height:35px;font-size:18px;color:#ff7200;}
+.paytypes td{font-size:14px;}
+/* 第四步骤 */
+.succSigning{width:680px;margin-left:40px;}
+.succSigning dl{border:1px solid #6dcff6;padding:25px 0 50px 150px;
+	background:url(../images/web/smile2.jpg) 50px 25px no-repeat #fffbf0;
+}
+.succSigning dt{color:#ff7200;font-size:18px;padding-bottom:10px;}
+.succSigning dd{line-height:20px;font-size:14px;color:#6c6c6c;}
+.succSigning dd a,
+.succSigning dd a:link,
+.succSigning dd a:hover{color:#1476d1;margin-right:15px;text-decoration:underline;}
+.succSigning .btnTb{margin-top:30px;}
+.succSigning .btnTb input{margin:0 10px;}
+/* 免费体验签约流程 */
+.signfreeexp .signFlow_1{width:682px;
+	background:url(../images/signFlow3_1.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/signFlow3_1.png');
+}
+.signfreeexp .signFlow_2{width:682px;
+	background:url(../images/signFlow3_2.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/signFlow3_2.png');
+}
+.signfreeexp .signFlow_3{width:682px;
+	background:url(../images/signFlow3_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/signFlow3_3.png');
+}
+.signfreeexp .signFlow_4{width:682px;
+	background:url(../images/signFlow3_3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/signFlow3_3.png');
+}
+.signfreeexp .layerAll .n4, .signfreeexp .layerAll .n3{
+	background:url(../images/bgNum3.png) no-repeat;_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='crop', src='/static/images/bgNum3.png');
+}
+
+.bgAvatar3{ background:url(../images/bgAvatar.jpg) no-repeat left top; width:69px; height:69px; text-align:center;}
+.bgAvatar3 img{ width:55px; height:55px; margin-top:7px;}
+
+.bgsignintent{background:url(../images/web/bgFreeexperience.jpg) repeat-y left;}
+.baseinfo ul,.evaluate ul{ clear:both; padding-top:3px;}
+.baseinfo .TR{ width:165px;}
+.baseinfo .PL20{ width:420px;}
