@@ -1,0 +1,3 @@
+06/07/2014 13:37:17 [error]: sql error :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'’–∆∏–≈œ¢','employee.php',1,1,1,13,'A'); 
+06/07/2014 14:11:23 [error]: sql error :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id= and b.status=0 and c.status=0 and a.status=0 order by c.seq

@@ -1,0 +1,813 @@
+06/07/2014 11:42:30 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 11:42:51 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 11:42:51 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 11:42:51 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=6 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 11:42:51 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=3 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 11:42:51 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=10 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 11:43:05 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 11:43:05 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=6 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=3 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 11:43:05 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=10 order by b.seq  
+06/07/2014 13:37:17 [debug]: sql :delete  from tb_function  
+06/07/2014 13:37:17 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A'); 
+06/07/2014 13:37:17 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,1,9,1,'A'); 
+06/07/2014 13:37:17 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,1,9,12,'A'); 
+06/07/2014 13:37:47 [debug]: sql :delete  from tb_function  
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A'); 
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,1,9,1,'A'); 
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,1,9,12,'A'); 
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,1,1,13,'A'); 
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,1,1,14,'A'); 
+06/07/2014 13:37:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',1,1,2,2,'A'); 
+06/07/2014 13:39:25 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:39:44 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:39:44 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 13:39:44 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 13:39:44 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 13:39:44 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 13:39:44 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 13:46:06 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:46:06 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 13:46:06 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 13:46:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 13:46:47 [debug]: sql :delete  from tb_function  
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'aaaƒ⁄»›π‹¿Ì','#',1,1,1,1,'A'); 
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'bbbbπÿ”⁄Œ“√«','about_us.php',1,9,1,1,'A'); 
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'cccc¡™œµŒ“√«','contact_us.php',1,9,1,12,'A'); 
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'dddd’–∆∏–≈œ¢','employee.php',1,9,1,13,'A'); 
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'eee∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A'); 
+06/07/2014 13:46:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'ffff≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A'); 
+06/07/2014 13:47:12 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:47:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 13:47:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 13:47:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 13:47:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 13:47:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 13:49:52 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:50:27 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:51:26 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:52:58 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:53:08 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:53:08 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 13:53:08 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 13:53:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 13:53:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 13:53:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 13:53:25 [debug]: sql :delete  from tb_function  
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'aaaƒ⁄»›π‹¿Ì','#',1,1,1,1,'A'); 
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'bbbbπÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A'); 
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'cccc¡™œµŒ“√«','contact_us.php',1,9,1,12,'A'); 
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'dddd’–∆∏–≈œ¢','employee.php',1,9,1,13,'A'); 
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'eee∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A'); 
+06/07/2014 13:53:25 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'ffff≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A'); 
+06/07/2014 13:53:39 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:53:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 13:53:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 13:53:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 13:53:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 13:53:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 13:55:57 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 13:55:57 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:05:27 [debug]: sql :delete  from tb_function  
+06/07/2014 14:05:27 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'aaaƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 14:05:50 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 14:05:50 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:08:08 [debug]: sql :delete  from tb_function  
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A') 
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,9,1,12,'A') 
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,9,1,13,'A') 
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A') 
+06/07/2014 14:08:08 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A') 
+06/07/2014 14:12:16 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:12:16 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:12:16 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:12:16 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:12:16 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:13:18 [debug]: sql :delete  from tb_function  
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A') 
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,9,1,12,'A') 
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,9,1,13,'A') 
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A') 
+06/07/2014 14:13:18 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A') 
+06/07/2014 14:13:20 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:13:20 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:13:20 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:13:20 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:13:20 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:16:45 [debug]: sql :delete  from tb_function  
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A') 
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,9,1,12,'A') 
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,9,1,13,'A') 
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A') 
+06/07/2014 14:16:45 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A') 
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Á≥ªÁªü' where function_id=1
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Áî®Êà∑ÁÆ°ÁêÜ' where function_id=1
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Áî®Êà∑' where function_id=2
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Â§öÂ™í‰ΩìÁÆ°ÁêÜ' where function_id=3
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Â™í‰ΩìÁÆ°ÁêÜ' where function_id=4
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Êí≠ÊîæÂàóË°®ÁÆ°ÁêÜ' where function_id=5
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='‰∏ªË¶ÅÊìç‰Ωú' where function_id=6
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='ÂπøÂëä‰∏ªÁÆ°ÁêÜ' where function_id=7
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Á´ôÁÇπÁÆ°ÁêÜ' where function_id=8
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Êü•ËØ¢ÂíåÊä•Ë°®' where function_id=9
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Á´ôÁÇπÊó•Âøó' where function_id=10
+06/07/2014 14:27:30 [debug]: sql :update tb_function set function_name='Ê∏†ÈÅìÁÆ°ÁêÜ' where function_id=11
+06/07/2014 14:28:18 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:28:18 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:28:18 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:28:18 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:28:18 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:30:53 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:30:53 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:30:53 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:30:53 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:30:53 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='ÂÜÖÂÆπÁÆ°ÁêÜ' where function_id=1
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='ÂÖ≥‰∫éÊàë‰ª¨' where function_id=2
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='ËÅîÁ≥ªÊàë‰ª¨' where function_id=3
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='ÊãõËÅò‰ø°ÊÅØ' where function_id=4
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='Âêà‰Ωú‰ºô‰º¥' where function_id=5
+06/07/2014 14:35:54 [debug]: sql :update tb_function set function_name='‰∫ßÂìÅÁÆ°ÁêÜ' where function_id=6
+06/07/2014 14:36:08 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 14:36:08 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:36:08 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:36:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:36:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:36:08 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 14:39:34 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:34 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:34 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:34 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:34 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 14:39:35 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:35 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:35 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:35 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:35 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:35 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%A%' and status <>'D' order by user_name 
+06/07/2014 14:39:46 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:46 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:46 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:46 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:39:46 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:39:46 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%A%' and status <>'D' order by user_name 
+06/07/2014 14:40:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:40:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:40:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:40:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:40:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:40:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%A%' and status <>'D' order by user_name 
+06/07/2014 14:41:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:41:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:41:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:41:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:41:47 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:41:47 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%A%' and status <>'D' order by user_name 
+06/07/2014 14:42:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:42:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:42:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:42:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 14:42:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 14:42:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 14:42:27 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 14:42:27 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 14:42:27 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 14:42:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 14:42:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 14:42:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 14:42:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 14:42:27 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:11:34 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 20:11:34 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:11:34 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:11:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:11:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:11:34 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:11:54 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:11:54 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:11:54 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:11:54 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:11:54 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:11:54 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:12:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:12:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:12:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:12:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:12:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:12:23 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:12:23 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:12:23 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:12:23 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:12:23 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:12:23 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:12:23 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:12:23 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:12:39 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:12:39 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:12:39 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:12:39 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:12:39 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:12:39 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:12:39 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:12:39 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:28:37 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:28:37 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:28:37 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:28:37 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:28:37 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:28:37 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:28:37 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:28:37 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:28:42 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:28:42 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:28:42 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:28:42 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:28:42 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:28:42 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:28:42 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:28:42 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:29:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:29:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:29:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:29:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:29:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:29:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:29:13 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:29:13 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:29:13 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:29:13 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:29:13 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:29:13 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:29:13 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:29:13 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:29:25 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:29:25 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:29:25 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:29:25 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:29:25 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:29:25 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:29:25 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:29:25 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:29:55 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:29:55 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:29:55 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:29:55 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:29:55 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:29:55 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:29:55 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:29:55 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:31:06 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:31:06 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:31:06 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:31:06 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:31:06 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:31:06 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:31:06 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:31:06 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:31:08 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:31:08 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:31:08 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:31:08 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:31:08 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:31:08 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:31:08 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:31:08 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:32:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:32:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:32:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:32:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:32:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:32:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:32:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:32:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:32:40 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:32:40 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:32:40 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:32:40 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:32:40 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:32:40 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:32:40 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:32:40 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:34:11 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:34:11 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:34:11 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:34:11 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:34:11 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:34:11 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:34:11 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:34:11 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:35:46 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:35:46 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:35:46 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:35:46 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:35:46 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:35:46 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:35:46 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:35:46 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:39:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:39:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:39:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:39:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:39:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:39:26 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:39:26 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:39:26 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:42:59 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:42:59 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:42:59 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:42:59 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:42:59 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:42:59 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:00 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:43:00 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:43:00 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:43:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:43:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:43:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:43:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:43:00 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:43:13 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 20:43:13 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:13 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:13 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:43:13 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:43:13 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:43:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:23 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:43:23 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 20:43:24 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:24 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:24 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:24 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:43:24 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 20:43:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 20:43:27 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:43:27 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:43:27 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:43:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:43:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:43:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:43:27 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:43:27 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:44:52 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 20:44:52 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 20:44:52 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:44:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 20:44:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 20:44:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 20:44:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 20:44:52 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 20:55:47 [debug]: sql :delete  from tb_function  
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,9,1,12,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,9,1,13,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',6,1,2,2,'A') 
+06/07/2014 20:55:47 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (7,'”√ªßπ‹¿Ì','user.php',7,1,2,2,'A') 
+06/07/2014 20:56:14 [debug]: sql :update tb_function set function_name='ÂÜÖÂÆπÁÆ°ÁêÜ' where function_id=1
+06/07/2014 20:56:14 [debug]: sql :update tb_function set function_name='ÂÖ≥‰∫éÊàë‰ª¨' where function_id=2
+06/07/2014 20:56:14 [debug]: sql :update tb_function set function_name='ËÅîÁ≥ªÊàë‰ª¨' where function_id=3
+06/07/2014 20:56:15 [debug]: sql :update tb_function set function_name='ÊãõËÅò‰ø°ÊÅØ' where function_id=4
+06/07/2014 20:56:15 [debug]: sql :update tb_function set function_name='Âêà‰Ωú‰ºô‰º¥' where function_id=5
+06/07/2014 20:56:15 [debug]: sql :update tb_function set function_name='‰∫ßÂìÅÁÆ°ÁêÜ' where function_id=6
+06/07/2014 20:56:15 [debug]: sql :update tb_function set function_name='Áî®Êà∑' where function_id=7
+06/07/2014 20:58:32 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 20:58:32 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 20:58:32 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:58:32 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 20:58:32 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 20:58:32 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 20:58:32 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 20:58:32 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:01:03 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:03 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:03 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:03 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:03 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 21:01:03 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:03 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=7 order by b.seq  
+06/07/2014 21:01:07 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:01:07 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:01:07 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:01:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:01:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:01:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:01:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:01:07 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:01:07 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:01:15 [debug]: sql :update tb_user set user_name='System Administrator',email='info@i4deas.com',remarks='',status='A',updated_user=1,updated_date=now() where user_id=1
+06/07/2014 21:01:15 [debug]: sql :delete from tb_user_function where user_id=1
+06/07/2014 21:01:15 [debug]: sql :delete from tb_user_access_right where user_id=1
+06/07/2014 21:01:15 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,2,'A',1,now())
+06/07/2014 21:01:15 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,3,'A',1,now())
+06/07/2014 21:01:15 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,4,'A',1,now())
+06/07/2014 21:01:15 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,5,'A',1,now())
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:01:15 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:15 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=57 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=57 and   a.function_id=2 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:15 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:15 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:15 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=4 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=5 order by b.seq  
+06/07/2014 21:01:15 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=56 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:15 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=56 and   a.function_id=7 order by b.seq  
+06/07/2014 21:01:38 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 21:01:38 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:01:38 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:01:38 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:01:38 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:01:38 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:01:38 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 21:03:30 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:03:30 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:03:30 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:03:30 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:03:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:03:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:03:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:03:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:03:39 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 21:03:39 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:03:44 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:03:44 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:03:45 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:03:45 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:03:45 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:03:45 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:03:45 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:03:45 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=6 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:03:45 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:06:37 [debug]: sql :delete  from tb_function  
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (1,'ƒ⁄»›π‹¿Ì','#',1,1,1,1,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (2,'πÿ”⁄Œ“√«','about_us.php',1,9,1,11,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (3,'¡™œµŒ“√«','contact_us.php',1,9,1,12,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (4,'’–∆∏–≈œ¢','employee.php',1,9,1,13,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (5,'∫œ◊˜ªÔ∞È','partner.php',1,9,1,14,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (6,'≤˙∆∑π‹¿Ì','product_list.php',1,9,1,15,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (7,'»’≥£π‹¿Ì','#',7,1,2,2,'A') 
+06/07/2014 21:06:37 [debug]: sql :insert into  tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,status) 
+              values (8,'”√ªßπ‹¿Ì','user.php',7,1,7,71,'A') 
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='ÂÜÖÂÆπÁÆ°ÁêÜ' where function_id=1
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='ÂÖ≥‰∫éÊàë‰ª¨' where function_id=2
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='ËÅîÁ≥ªÊàë‰ª¨' where function_id=3
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='ÊãõËÅò‰ø°ÊÅØ' where function_id=4
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='Âêà‰Ωú‰ºô‰º¥' where function_id=5
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='‰∫ßÂìÅÁÆ°ÁêÜ' where function_id=6
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='Êó•Â∏∏ÁÆ°ÁêÜ' where function_id=7
+06/07/2014 21:06:39 [debug]: sql :update tb_function set function_name='Áî®Êà∑ÁÆ°ÁêÜ' where function_id=8
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 21:06:58 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:06:58 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:06:58 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:06:58 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=7 order by b.seq  
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 21:09:02 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:09:02 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:09:02 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:09:02 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 21:15:48 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:15:48 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:15:48 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:15:48 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:15:48 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:15:52 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:15:52 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:15:52 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:15:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:15:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:15:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:15:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:15:52 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=6 order by c.seq 
+06/07/2014 21:15:52 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:15:52 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=8 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:19:00 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:19:00 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:19:00 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=6 order by c.seq 
+06/07/2014 21:19:00 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:19:00 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=8 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:21:43 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:21:43 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=6 order by c.seq 
+06/07/2014 21:21:43 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:21:43 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=8 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:22:20 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:22:20 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=6 order by c.seq 
+06/07/2014 21:22:20 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:22:20 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=8 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select * from tb_user where user_id=1 
+06/07/2014 21:23:07 [debug]: sql :select distinct * from tb_function where function_type=1 and status='A'
+06/07/2014 21:23:07 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=1 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=2 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=3 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=4 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=5 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=6 order by c.seq 
+06/07/2014 21:23:07 [debug]: sql :select distinct a.*,b.user_id right_u from tb_function a left join tb_user_function b on a.function_id=b.function_id and b.user_id=1 and b.status='A' where a.parent_id=7 and a.status='A'and a.function_type>1 order by a.seq
+06/07/2014 21:23:07 [debug]: sql :select distinct c.*,d.user_id right_u from tb_function a inner join tb_function_right b on a.function_id=b.function_id inner join tb_access_right c on b.right_id=c.right_id left join tb_user_access_right d on a.function_id=d.function_id and c.right_id=d.right_id and d.user_id=1 where a.function_id=8 order by c.seq 
+06/07/2014 21:23:12 [debug]: sql :update tb_user set user_name='System Administrator',email='info@i4deas.com',remarks='',status='A',updated_user=1,updated_date=now() where user_id=1
+06/07/2014 21:23:12 [debug]: sql :delete from tb_user_function where user_id=1
+06/07/2014 21:23:12 [debug]: sql :delete from tb_user_access_right where user_id=1
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,2,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,2,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,2,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,3,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,3,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,3,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,4,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,4,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,4,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,5,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,5,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,5,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,6,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,6,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,6,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_function (user_id,function_id,`status`,created_user,created_date) values (1,8,'A',1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,8,2,1,now())
+06/07/2014 21:23:12 [debug]: sql :insert into tb_user_access_right (user_id,function_id,right_id,created_user,created_date) values (1,8,3,1,now())
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:23:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:23:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:23:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:23:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=6 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:23:12 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 21:23:12 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user where login_id='admin' 
+06/07/2014 21:23:24 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:23:24 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=6 order by b.seq  
+06/07/2014 21:23:24 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:23:24 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user where 1=1 and user_name like '%%' and email like '%%' and status like '%%' and status <>'D' order by user_name 
+06/07/2014 21:47:21 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=57 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:47:21 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=58 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:47:21 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=1 and b.status=0 and c.status=0 and a.status=0 order by c.seq
+06/07/2014 21:47:21 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=1 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=2 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=3 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=4 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=5 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=6 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select distinct  b.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id where a.user_id=1 and b.parent_id=7 and b.status=0 and a.status=0 order by b.seq 
+06/07/2014 21:47:21 [debug]: sql :select * from tb_user_access_right a inner join tb_access_right b on a.right_id=b.right_id where a.user_id=1 and   a.function_id=8 order by b.seq  
+06/07/2014 21:47:21 [debug]: sql :select distinct c.* from tb_user_function a	inner join tb_function b on a.function_id=b.function_id inner join tb_function c on b.parent_id=c.function_id where a.user_id=56 and b.status=0 and c.status=0 and a.status=0 order by c.seq
