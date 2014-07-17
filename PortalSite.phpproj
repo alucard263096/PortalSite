@@ -1525,6 +1525,7 @@
     <Content Include="css\pro_dropdown_2\three_1a.gif" />
     <Content Include="css\template.css" />
     <Content Include="excel\f.xlsx" />
+    <Content Include="index.html" />
     <Content Include="js\jquery-1.4.4.min.js" />
     <Content Include="libs\PEAR\PEAR\Command\Auth.xml" />
     <Content Include="libs\PEAR\PEAR\Command\Build.xml" />

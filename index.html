@@ -2,31 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
-<link rel="alternate" media="handheld" href="#" />
+<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/68ffafcbd5ba0c3249f2a2abd08b1a0e/allmobilize.min.js"></script><meta http-equiv="Cache-Control" content="no-transform" /><link rel="alternate" media="handheld" href="#" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta property="qc:admins" content="214437645065555546654" />
 <meta name="keywords" content="私人医生,家庭医生,在线医生,医生在线咨询,全科医生,预约挂号,网上挂号" />
 <meta name="description" content="薏米医生，是您及家人日常健康的“守门人”，为您提供移动问诊、健康资讯、贴心就医安排等个性化服务。让天下没有难找的医生，让市场重新为医生定价 服务热线：400-900-3333" />
 <title>薏米网首页</title>
-<link href="<{$rootpath}>/themes/site_themes/ememed/css/common.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/ememed/css/index.css" />
-<link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/ememed/css/validate.css" />
-<link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/ememed/css/doctor.css" />
+<link href="http://www.ememed.net/static/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://www.ememed.net/static/css/index.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ememed.net/static/css/validate.css" />
+<link rel="stylesheet" type="text/css" href="http://www.ememed.net/static/css/doctor.css" />
 <!--[if IE 6]>
-<link href="<{$rootpath}>/themes/site_themes/ememed/css/ie6.css" rel="stylesheet" type="text/css" />
+<link href="http://www.ememed.net/static/css/ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="http://www.ememed.net/static/js/jquery-1.6.min.js"></script>
 <!--[if IE 6]>
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/DD_belatedPNG_0.0.8a-min.js"></script>
 <script>
     DD_belatedPNG.fix('.fixpng, img');
 </script>
 <![endif]-->
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/jquery.validationEngine-zh_CN.js"></script>
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/jquery.validationEngine.js"></script>
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/jquery.passwordStrength.js"></script>
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/thickbox-compressed.js"></script>
-<script language="javascript" src="<{$rootpath}>/themes/site_themes/ememed/js/public.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/jquery.validationEngine-zh_CN.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/jquery.validationEngine.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/jquery.passwordStrength.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/thickbox-compressed.js"></script>
+<script language="javascript" src="http://www.ememed.net/static/js/public.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function(){
     jQuery('#password1').passwordStrength({targetDiv : '#userPasswordStrength'});
@@ -41,10 +41,10 @@ function showForm(objstr,s){
 		if(s){
 			s--;
 			$("#loginform :radio").eq(s).attr('checked','checked');
-			$("#loginHeader").attr('src','<{$rootpath}>/themes/site_themes/ememed/images/web/loginHeader.jpg');
+			$("#loginHeader").attr('src','http://www.ememed.net/static/images/web/loginHeader.jpg');
 		}else{
 			$("#loginform :radio").eq(0).attr('checked','checked');
-			$("#loginHeader").attr('src','<{$rootpath}>/themes/site_themes/ememed/images/web/loginHeader2.jpg');
+			$("#loginHeader").attr('src','http://www.ememed.net/static/images/web/loginHeader2.jpg');
 		}
 	}
 	
@@ -131,13 +131,13 @@ function showLoading(){
 <iframe id="i_frame" name="i_frame" style="display:none;"></iframe>
 <!----登录背景----->
 <div class="bggray absolute"></div>
-<div class="loading absolute nodisplay"><img src="<{$rootpath}>/themes/site_themes/ememed/images/loading1.jpg" /></div>
+<div class="loading absolute nodisplay"><img src="http://www.ememed.net/static/images/loading1.jpg" /></div>
 <!----公共容器----->
 <div id="pinfo" class="absolute" style="z-index:8;"></div>
 <!----登录背景end----->
 <!----登录表单----->
 <div class="loginForm absolute nodisplay" style="z-index:8;">
-	<div><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/loginHeader.jpg" id="loginHeader" border="0" usemap="#Map" />
+	<div><img src="http://www.ememed.net/static/images/web/loginHeader.jpg" id="loginHeader" border="0" usemap="#Map" />
       <map name="Map" id="Map">
         <area shape="rect" coords="486,22,507,43" href="javascript:closeForm('loginForm');" />
       </map>
@@ -154,7 +154,7 @@ function showLoading(){
                 <li class="MT10 size14"><input id="password" name="password" type="password" class="validate[required] pinput" style="width:300px;" tabindex="3" /> 
                 <a href="http://www.ememed.net/member/lostpasswd.html?width=847&height=330&modal=true" class="thickbox" tabindex="6">忘记密码？</a></li>
                 <li class="MT10 size14"><input type="hidden" id="huodong130420content_login" name="huodong130420content_login" value="" />
-									<input name="" id="loginbutton" type="image" src="<{$rootpath}>/themes/site_themes/ememed/images/web/btLogin.jpg" tabindex="4" />
+									<input name="" id="loginbutton" type="image" src="http://www.ememed.net/static/images/web/btLogin.jpg" tabindex="4" />
 				 </li>
             </ul>
         </form>
@@ -170,7 +170,7 @@ function showLoading(){
             <li><a href="javascript:;" onclick="showRegForm(1)">医生注册</a></li>
         </ul>
     	<ul class="Fright">
-        	<li><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/imgRegHeader.jpg" align="top" /><a href="javascript:;" onclick="closeForm('regForm')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/cha2.jpg" align="top" style="margin:22px 21px 0px 32px; border:none;" /></a></li>
+        	<li><img src="http://www.ememed.net/static/images/web/imgRegHeader.jpg" align="top" /><a href="javascript:;" onclick="closeForm('regForm')"><img src="http://www.ememed.net/static/images/web/cha2.jpg" align="top" style="margin:22px 21px 0px 32px; border:none;" /></a></li>
         </ul>
     </div>
     <div class="BG_e0f2f0">
@@ -226,7 +226,7 @@ function showLoading(){
             </ul>
             <ul class="clear">
             	<li class="Fleft TR"><input type="hidden" id="huodong130420content_reg" name="huodong130420content_reg" value="" />&nbsp;</li>
-				              <li class="Fleft"><a href="#" onclick="javascript:reg_loginbtn();" ><img name="userlogin_button" id="userlogin_button" src="<{$rootpath}>/themes/site_themes/ememed/images/web/btLogin1.jpg" style="border:none;position:relative;top:15px;top:12px\9;display:none;" /></a> <input name="userreg_submit" id="userreg_submit" type="image" src="<{$rootpath}>/themes/site_themes/ememed/images/web/btReg.jpg" align="absmiddle" class="MR10" style="width:101px;height:37px;border:none;" onclick="submit();return false;" /><span class="color7">*</span>为必填项</li>
+				              <li class="Fleft"><a href="#" onclick="javascript:reg_loginbtn();" ><img name="userlogin_button" id="userlogin_button" src="http://www.ememed.net/static/images/web/btLogin1.jpg" style="border:none;position:relative;top:15px;top:12px\9;display:none;" /></a> <input name="userreg_submit" id="userreg_submit" type="image" src="http://www.ememed.net/static/images/web/btReg.jpg" align="absmiddle" class="MR10" style="width:101px;height:37px;border:none;" onclick="submit();return false;" /><span class="color7">*</span>为必填项</li>
 			              </ul>
             <ul class="clear"></ul>
         </form>
@@ -366,7 +366,7 @@ function showLoading(){
         <div class="PT20 regFormItem nodisplay">
         <form id="doctorregister_form" name="doctorregister_form" action="http://www.ememed.net/member/doctorregister.html" method="post" enctype="multipart/form-data" target="i_frame">
 		<div style="margin:auto;background-color:#FFD778;width:740px;padding:10px 30px;display:none;">
-		<img src="<{$rootpath}>/themes/site_themes/ememed/images/web/lastest_ad.jpg" /><br />
+		<img src="http://www.ememed.net/static/images/web/lastest_ad.jpg" /><br />
 		<span style="color:#ff0000;font-size:18px;">医生注册即送话费大礼！</span><br />
 		<span style="color:#3B3B3B;">活动期间，医生注册并审核通过成为“薏米医生”的，即可获得话费赠送。<br />
 		话费按职称赠送：主任医师：150元；副主任医师：100元；主治医师：50元，主治级以下：30元。</span>
@@ -496,7 +496,7 @@ function showLoading(){
             </ul>
             <ul class="clear">
             	<li class="Fleft TR">&nbsp;</li>
-				              <li class="Fleft"><input type="image" src="<{$rootpath}>/themes/site_themes/ememed/images/web/btreg.png" align="absmiddle" class="MR10" /><span class="color7">*</span>为必填项</li>
+				              <li class="Fleft"><input type="image" src="http://www.ememed.net/static/images/web/btreg.png" align="absmiddle" class="MR10" /><span class="color7">*</span>为必填项</li>
 			              </ul>
             <ul class="clear"></ul>
         </form>
@@ -638,7 +638,6 @@ function showLoading(){
 </div>
 <!----注册表单end-----><script language="javascript">
 $(document).ready(function(){
-showForm('hotnews');
 <!--首页无限制推送-->
 	
 if(screen.availWidth < 1050)
@@ -694,7 +693,7 @@ function logout(){
 	    <a class="closenews" href="javascript:closeForm('hotnews')"></a>
 </div>
 
-<div id="smallIndex" style="width:800px;height:600px;background:url('<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/bgLogo.jpg') no-repeat scroll left top #01354B;display:none;">
+<div id="smallIndex" style="width:800px;height:600px;background:url('http://www.ememed.net/static/images/web/800x600/bgLogo.jpg') no-repeat scroll left top #01354B;display:none;">
 	<div style="padding:35px 36px 0px 200px;" >
 	
     	<div class="TR color1" >
@@ -702,24 +701,24 @@ function logout(){
 		
 		<div style="height:0px;">
 		<div id="cities" style="position:relative;top:40px;left:-150px;display:none;"><span style="cursor:pointer;" onclick="set_current_city(289)">广州市</span> <span style="cursor:pointer;" onclick="set_current_city(291)">深圳市</span> <span style="cursor:pointer;" onclick="set_current_city(175)">杭州市</span> </div></div>
-		<!--<span id="current_city1">深圳市</span> [<a href="javascript:show_cities('cities1');">切换城市</a>] -->
+		<!--<span id="current_city1">广州市</span> [<a href="javascript:show_cities('cities1');">切换城市</a>] -->
 				<a href="javascript:;" onclick="showForm('loginForm')" class="color1" style="background-color:#00A04A
-;padding:6px 12px;margin-right:10px;">登录</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(1);" class="color1" style="background-color:#DE3347;padding:6px 12px;margin-right:10px;">医生注册</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(0);" class="color1" style="background-color:#00ACE3;padding:6px 12px;margin-right:10px;">会员注册</a><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/photo.jpg" align="absmiddle" class='ML10' />
+;padding:6px 12px;margin-right:10px;">登录</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(1);" class="color1" style="background-color:#DE3347;padding:6px 12px;margin-right:10px;">医生注册</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(0);" class="color1" style="background-color:#00ACE3;padding:6px 12px;margin-right:10px;">会员注册</a><img src="http://www.ememed.net/static/images/web/photo.jpg" align="absmiddle" class='ML10' />
 				</div>
 		<div style="margin-top:10px;">热线电话：4009003333</div>
 		
 		</div>
         <div id="smallIndex" style="padding-top:50px; height:232px;">
-        	<div class="absolute"><a href="http://www.ememed.net/find_doctor.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu1.jpg" /></a></div>
-            <div class="absolute" style="margin:0px 0px 0px 157px;"><a href="javascript:;" onclick="showpinfo('index_memberspace')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu2.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:0px 0px 0px 350px;"><a href="javascript:;" onclick="showpinfo('index_doctorspot')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu3.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:80px 0px 0px 0px;"><a href="javascript:;" onclick="showpinfo('index_barleyservice')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu4.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:80px 0px 0px 157px;"><a href="javascript:;" onclick="showpinfo('index_mydoctor')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu5.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:80px 0px 0px 350px;"><a href="javascript:;" onclick="showpinfo('index_doctorwork')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu6.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:160px 0px 0px 0px;"><a href="http://www.ememed.net/news/index.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu7.jpg" /></a></div>
-            <div class="absolute" style="margin:160px 0px 0px 77px;"><a href="javascript:;" onclick="showpinfo('index_barleyassistant')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu8.jpg" /></a></div>
-            <div class="absolute" style="margin:160px 0px 0px 157px;"><a href="http://www.ememed.net/huodong/index.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu_activities.jpg" border="0" /></a></div>
-            <!--<div class="absolute" style="margin:160px 0px 0px 350px;"><a href="http://www.ememed.net/huodong/register_invite.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/800x600/menu10.jpg" border="0" /></a></div>-->
+        	<div class="absolute"><a href="http://www.ememed.net/find_doctor.html"><img src="http://www.ememed.net/static/images/web/800x600/menu1.jpg" /></a></div>
+            <div class="absolute" style="margin:0px 0px 0px 157px;"><a href="javascript:;" onclick="showpinfo('index_memberspace')"><img src="http://www.ememed.net/static/images/web/800x600/menu2.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:0px 0px 0px 350px;"><a href="javascript:;" onclick="showpinfo('index_doctorspot')"><img src="http://www.ememed.net/static/images/web/800x600/menu3.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:80px 0px 0px 0px;"><a href="javascript:;" onclick="showpinfo('index_barleyservice')"><img src="http://www.ememed.net/static/images/web/800x600/menu4.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:80px 0px 0px 157px;"><a href="javascript:;" onclick="showpinfo('index_mydoctor')"><img src="http://www.ememed.net/static/images/web/800x600/menu5.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:80px 0px 0px 350px;"><a href="javascript:;" onclick="showpinfo('index_doctorwork')"><img src="http://www.ememed.net/static/images/web/800x600/menu6.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:160px 0px 0px 0px;"><a href="http://www.ememed.net/news/index.html"><img src="http://www.ememed.net/static/images/web/800x600/menu7.jpg" /></a></div>
+            <div class="absolute" style="margin:160px 0px 0px 77px;"><a href="javascript:;" onclick="showpinfo('index_barleyassistant')"><img src="http://www.ememed.net/static/images/web/800x600/menu8.jpg" /></a></div>
+            <div class="absolute" style="margin:160px 0px 0px 157px;"><a href="http://www.ememed.net/huodong/index.html"><img src="http://www.ememed.net/static/images/web/800x600/menu_activities.jpg" border="0" /></a></div>
+            <!--<div class="absolute" style="margin:160px 0px 0px 350px;"><a href="http://www.ememed.net/huodong/register_invite.html"><img src="http://www.ememed.net/static/images/web/800x600/menu10.jpg" border="0" /></a></div>-->
         </div>
         <div class="TR" style="padding-top:60px;">
         	<ul>
@@ -731,7 +730,7 @@ function logout(){
         </div>
     </div>
 	<span style="position:absolute;top:170px;left:50px;">
-	<a href="/profile/mobileclient.html" target="_blank"><img src="<{$rootpath}>/themes/site_themes/ememed/images/homedownload.jpg" /></a>
+	<a href="/profile/mobileclient.html" target="_blank"><img src="http://www.ememed.net/static/images/homedownload.jpg" /></a>
 	</span>	
 </div>
 
@@ -743,25 +742,25 @@ function logout(){
 		<div><!--/member/logout.html-->
 		<div style="height:0px;">
 		<div id="cities" style="position:relative;top:40px;left:-150px;display:none;"><span style="cursor:pointer;" onclick="set_current_city(289)">广州市</span> <span style="cursor:pointer;" onclick="set_current_city(291)">深圳市</span> <span style="cursor:pointer;" onclick="set_current_city(175)">杭州市</span> </div></div>
-		<!--<span id="current_city">深圳市</span> [<a href="javascript:show_cities('cities');">切换城市</a>] -->
+		<!--<span id="current_city">广州市</span> [<a href="javascript:show_cities('cities');">切换城市</a>] -->
 				<a href="javascript:;" onclick="showForm('loginForm')" class="color1" style="background-color:#00A04A
-;padding:6px 12px;margin-right:5px;font-size:14px;">登录</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(1);" class="color1" style="background-color:#DE3347;padding:6px 12px;margin-right:5px;font-size:14px;">医生注册</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(0);" class="color1" style="background-color:#00ACE3;padding:6px 12px;margin-right:5px;font-size:14px;">会员注册</a><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/photo.jpg" align="absmiddle" class='ML10' />
+;padding:6px 12px;margin-right:5px;font-size:14px;">登录</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(1);" class="color1" style="background-color:#DE3347;padding:6px 12px;margin-right:5px;font-size:14px;">医生注册</a><a href="javascript:;" onclick="showForm('regForm');showRegForm(0);" class="color1" style="background-color:#00ACE3;padding:6px 12px;margin-right:5px;font-size:14px;">会员注册</a><img src="http://www.ememed.net/static/images/web/photo.jpg" align="absmiddle" class='ML10' />
 			
 		</div>
 		<div style="margin-top:10px;">热线电话：4009003333</div>
 		
 		</div>
         <div style="padding-top:80px; height:376px;">
-        	<div class="absolute"><a href="http://www.ememed.net/find_doctor.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu1.jpg" /></a></div>
-            <div class="absolute" style="margin:0px 0px 0px 256px;"><a href="javascript:;" onclick="showpinfo('index_memberspace')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu2.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:0px 0px 0px 553px;"><a href="javascript:;" onclick="showpinfo('index_doctorspot')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu3.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:128px 0px 0px 0px;"><a href="javascript:;" onclick="showpinfo('index_barleyservice')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu4.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:128px 0px 0px 256px;"><a href="javascript:;" onclick="showpinfo('index_mydoctor')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu5.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:128px 0px 0px 553px;"><a href="javascript:;" onclick="showpinfo('index_doctorwork')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu6.jpg" border="0" /></a></div>
-            <div class="absolute" style="margin:256px 0px 0px 0px;"><a href="http://www.ememed.net/news/index.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu7.jpg" /></a></div>
-            <div class="absolute" style="margin:256px 0px 0px 128px;"><a href="javascript:;" onclick="showpinfo('index_barleyassistant')"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu8.jpg" /></a></div>
-            <div class="absolute" style="margin:256px 0px 0px 256px;"><a href="http://www.ememed.net/huodong/index.html"><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu_activities.jpg" border="0" /></a></div>
-            <!--<div class="absolute" style="margin:256px 0px 0px 553px;"><a href="http://www.ememed.net/huodong/register_invite.html"  ><img src="<{$rootpath}>/themes/site_themes/ememed/images/web/menu10.jpg" border="0" /></a></div>-->
+        	<div class="absolute"><a href="http://www.ememed.net/find_doctor.html"><img src="http://www.ememed.net/static/images/web/menu1.jpg" /></a></div>
+            <div class="absolute" style="margin:0px 0px 0px 256px;"><a href="javascript:;" onclick="showpinfo('index_memberspace')"><img src="http://www.ememed.net/static/images/web/menu2.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:0px 0px 0px 553px;"><a href="javascript:;" onclick="showpinfo('index_doctorspot')"><img src="http://www.ememed.net/static/images/web/menu3.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:128px 0px 0px 0px;"><a href="javascript:;" onclick="showpinfo('index_barleyservice')"><img src="http://www.ememed.net/static/images/web/menu4.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:128px 0px 0px 256px;"><a href="javascript:;" onclick="showpinfo('index_mydoctor')"><img src="http://www.ememed.net/static/images/web/menu5.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:128px 0px 0px 553px;"><a href="javascript:;" onclick="showpinfo('index_doctorwork')"><img src="http://www.ememed.net/static/images/web/menu6.jpg" border="0" /></a></div>
+            <div class="absolute" style="margin:256px 0px 0px 0px;"><a href="http://www.ememed.net/news/index.html"><img src="http://www.ememed.net/static/images/web/menu7.jpg" /></a></div>
+            <div class="absolute" style="margin:256px 0px 0px 128px;"><a href="javascript:;" onclick="showpinfo('index_barleyassistant')"><img src="http://www.ememed.net/static/images/web/menu8.jpg" /></a></div>
+            <div class="absolute" style="margin:256px 0px 0px 256px;"><a href="http://www.ememed.net/huodong/index.html"><img src="http://www.ememed.net/static/images/web/menu_activities.jpg" border="0" /></a></div>
+            <!--<div class="absolute" style="margin:256px 0px 0px 553px;"><a href="http://www.ememed.net/huodong/register_invite.html"  ><img src="http://www.ememed.net/static/images/web/menu10.jpg" border="0" /></a></div>-->
         </div>
         <div class="TR" style="padding-top:20px;">
         	<ul>
@@ -773,7 +772,7 @@ function logout(){
         </div>
     </div>
 	<span style="position:absolute;top:215px;left:145px;">
-	<a href="/profile/mobileclient.html" target="_blank"><img src="<{$rootpath}>/themes/site_themes/ememed/images/homedownload.jpg" /></a>
+	<a href="/profile/mobileclient.html" target="_blank"><img src="http://www.ememed.net/static/images/homedownload.jpg" /></a>
 	</span>
 </div>
 <script type="text/javascript">
