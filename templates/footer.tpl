@@ -1,23 +1,22 @@
-<{include file="$smarty_root/menu.tpl" }>
-
-  <!-- #wrapper -->
-  </div>
+﻿<!-- #wrapper -->
+</div>
   <!--#inner-->
-  </div>
+</div>
   <!--#outer-->
-  </div>
+</div>
 
   <div id="footer">
-    <p>
-      &copy; Copyright &copy; 2014, <{$Title}>
-    </p>
-    <!--#footer-->
+    <div class="set1000" style="text-align:center">
+        <p>
+            Copyright ©  <{$year}>  北京雷德睦华医疗器材有限公司 版权所有
+        </p>
+    </div>
   </div>
 
-  <script type="text/javascript" src="<{$rootpath}>/themes/site_themes/yaletown/js/jquery-1.4.2.min.js">
-  </script>
-  <script type="text/javascript" src="<{$rootpath}>/themes/site_themes/yaletown/js/js.config.js">
-  </script>
+<script type="text/javascript" src="<{$rootpath}>/themes/site_themes/yaletown/js/jquery-1.4.2.min.js">
+</script>
+<script type="text/javascript" src="<{$rootpath}>/themes/site_themes/yaletown/js/js.config.js">
+</script>
 
-  </body>
+</body>
   </html>

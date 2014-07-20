@@ -44,3 +44,5 @@
             <{include file="$smarty_root/leftside.tpl" }>
 
 <{include file="$smarty_root/footer.tpl" }>
+
+

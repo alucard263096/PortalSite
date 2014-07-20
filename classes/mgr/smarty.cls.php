@@ -26,4 +26,5 @@ $smarty->right_delimiter="}>";
  $smarty->assign('lang',$lang);
  $smarty->assign('charset',$CONFIG['charset']);
  $smarty->assign('Title',$CONFIG['Title']);
+ $smarty->assign('Url',$CONFIG['URL']);
 ?>
