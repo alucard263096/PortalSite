@@ -788,6 +788,8 @@
     <Folder Include="images\" />
     <Folder Include="include\" />
     <Folder Include="js\" />
+    <Folder Include="js\google-code-prettify\" />
+    <Folder Include="js\holder\" />
     <Folder Include="lang\" />
     <Folder Include="lang\en-us\" />
     <Folder Include="lang\zh-sc\" />
@@ -959,6 +961,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".project" />
+    <Content Include="carousel.html" />
     <Content Include="ckeditor\.htaccess" />
     <Content Include="ckeditor\adapters\jquery.js" />
     <Content Include="ckeditor\CHANGES.html" />
@@ -1506,9 +1509,14 @@
     <Content Include="ckeditor\_source\skins\v2\toolbar.css" />
     <Content Include="ckeditor\_source\themes\default\theme.js" />
     <Content Include="css\activex.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\calendar.css" />
     <Content Include="css\ddlmenustyle.css" />
     <Content Include="css\demos.css" />
+    <Content Include="css\docs.css" />
     <Content Include="css\fullcalendar.css" />
     <Content Include="css\jquploaderstyle.css" />
     <Content Include="css\pro_dropdown_2\arrow.gif" />
@@ -1524,8 +1532,30 @@
     <Content Include="css\pro_dropdown_2\three_1a.gif" />
     <Content Include="css\template.css" />
     <Content Include="excel\f.xlsx" />
+    <Content Include="js\application.js" />
+    <Content Include="js\bootstrap-affix.js" />
+    <Content Include="js\bootstrap-alert.js" />
+    <Content Include="js\bootstrap-button.js" />
+    <Content Include="js\bootstrap-carousel.js" />
+    <Content Include="js\bootstrap-collapse.js" />
+    <Content Include="js\bootstrap-dropdown.js" />
+    <Content Include="js\bootstrap-modal.js" />
+    <Content Include="js\bootstrap-popover.js" />
+    <Content Include="js\bootstrap-scrollspy.js" />
+    <Content Include="js\bootstrap-tab.js" />
+    <Content Include="js\bootstrap-tooltip.js" />
+    <Content Include="js\bootstrap-transition.js" />
+    <Content Include="js\bootstrap-typeahead.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\google-code-prettify\prettify.css" />
+    <Content Include="js\google-code-prettify\prettify.js" />
+    <Content Include="js\holder\holder.js" />
+    <Content Include="js\html5shiv.js" />
     <Content Include="js\jquery.corners.min.js" />
     <Content Include="js\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\README.md" />
     <Content Include="libs\PEAR\PEAR\Command\Auth.xml" />
     <Content Include="libs\PEAR\PEAR\Command\Build.xml" />
     <Content Include="libs\PEAR\PEAR\Installer\Role\Cfg.xml" />
@@ -2267,9 +2297,6 @@
     <Content Include="themes\green\CVS\Root" />
     <Content Include="themes\green\desc.png" />
     <Content Include="themes\green\style.css" />
-    <Content Include="themes\site_themes\Landmover\css\animate.css" />
-    <Content Include="themes\site_themes\Landmover\css\bootstrap-responsive.css" />
-    <Content Include="themes\site_themes\Landmover\css\bootstrap.css" />
     <Content Include="themes\site_themes\Landmover\css\global - Copy.css" />
     <Content Include="themes\site_themes\Landmover\css\global.css" />
     <Content Include="themes\site_themes\Landmover\css\reset.css" />
@@ -2320,13 +2347,9 @@
     <Content Include="themes\site_themes\Landmover\images\indexbanner.jpg" />
     <Content Include="themes\site_themes\Landmover\images\menuselected.png" />
     <Content Include="themes\site_themes\Landmover\images\yuanjiao.png" />
+    <Content Include="themes\site_themes\Landmover\js\bootstrap-carousel.js" />
     <Content Include="themes\site_themes\Landmover\js\bootstrap.min.js" />
-    <Content Include="themes\site_themes\Landmover\js\jquery-1.4.2.min - Copy.js" />
-    <Content Include="themes\site_themes\Landmover\js\jquery-1.4.2.min.js" />
-    <Content Include="themes\site_themes\Landmover\js\jquery.onecarousel.min - Copy.js" />
-    <Content Include="themes\site_themes\Landmover\js\jquery.onecarousel.min.js" />
-    <Content Include="themes\site_themes\Landmover\js\js.config - Copy.js" />
-    <Content Include="themes\site_themes\Landmover\js\js.config.js" />
+    <Content Include="themes\site_themes\Landmover\js\newsscroll.js" />
     <Content Include="themes\site_themes\Landmover\logo\banner1.png" />
     <Content Include="themes\site_themes\Landmover\logo\banner2.png" />
     <Content Include="themes\site_themes\Landmover\logo\logo1.png" />
@@ -2338,6 +2361,7 @@
     <Content Include="themes\site_themes\Landmover\logo\印章标志-简称上下组合1.ai" />
     <Content Include="themes\site_themes\Landmover\logo\印章标志-简称上下组合2.ai" />
     <Content Include="themes\site_themes\Landmover\logo\未标题-5.ai" />
+    <Content Include="themes\site_themes\Landmover\TextFile1.txt" />
     <Content Include="themes\site_themes\yaletown\gfx\brick_top_right.png" />
     <Content Include="themes\site_themes\yaletown\gfx\btn_allpfnews.gif" />
     <Content Include="themes\site_themes\yaletown\gfx\btn_cat_allinvestments.jpg" />

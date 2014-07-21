@@ -19,7 +19,7 @@
                     <div class="set1000 nav">
                         <ul>
                             <li><a id="addFavorite" href="#">收藏我们</a></li>
-                            <li>|</li>
+                            <li>&nbsp;|&nbsp;</li>
                             <li><a id="setHome" href="#">设为首页</a></li>
                         </ul>
                     </div>
