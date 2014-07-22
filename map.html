@@ -1,24 +1,1098 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3GpApnIzrOQnwXVn99MmeeUE"></script>
-<title>�ٶȵ�ͼ��Hello, World</title>
-<style type="text/css">
-body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;}
-</style>
-</head>
-<body>
-<div id="allmap"></div>
-</body>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+						<meta name="robots" content="index,follow" />
+						<meta name="baidu-site-verification" content="ASdSGVrwiS" />
+						<script type="text/javascript">var _bdhm_top = 0; var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); var _bdhm_tim = new Image(1, 1); _bdhm_tim.id = "bdhmPerimg"; _bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=aff7fbe8fcb98b060541077cc76465f2&rnd=" + Math.round(Math.random() * 2147483647); _bdhm_tim.onload = function () { _bdhm_top = 1; }</script>
+	<meta name="Abstract" content="金蝶官网|财务软件|ERP软件|OA办公系统|ERP|金蝶kis|金蝶k3-金蝶国际软件集团有限公司" />
+	<meta name="Keywords" content="金蝶,官网,财务软件,ERP,软件,OA办公系统,OA,系统,kis,k3" />
+	<meta name="Description" content="金蝶是领先的企业管理软件及云管理服务商,包括金蝶ERP软件、金蝶中间件、金蝶在线会计及金蝶财务软件等。关注金蝶微信kingdee_268免费送进销存管理软件！ 4008830830。" />
+			<title>金蝶官网|财务软件|ERP软件|OA办公系统|ERP|金蝶kis|金蝶k3-金蝶国际软件集团有限公司</title>
+		<link rel="stylesheet" type="text/css" href="themes/site_themes/LandMover/common/css/jquery.fancybox-1.3.4.css?3066666465" media="screen" />
+		<link rel="stylesheet" type="text/css" href="themes/site_themes/LandMover/apps/cms/default/css/html/base.css?203547428" media="screen" />
+<link rel="stylesheet" type="text/css" href="themes/site_themes/LandMover/apps/cms/default/css/html/2013v1/global.css?1305652573" media="screen" />
+<link rel="stylesheet" type="text/css" href="themes/site_themes/LandMover/apps/cms/default/css/html/2013v1/header1.1.css?166265974" media="screen" />
+<link rel="stylesheet" type="text/css" href="themes/site_themes/LandMover/apps/cms/default/css/html/alone/index.css?1042609638" media="screen" />
+		<script type="text/javascript" src="themes/site_themes/LandMover/common/js/jquery-1.6.1.min.js?3502627435" ></script>
+<script type="text/javascript" src="themes/site_themes/LandMover/common/js/jquery.easing-1.3.pack.js?2355431842" ></script>
+    	
+    	
+		
+	</head>
+	<body class="cms">
+		<!--内容-->
+		<div class="J-wraper wraper pos_r">
+<!-- 背景 高度容器 -->
+	<div class="header pos_r clearfix"><!-- 主导航 logo -->
+		<div class="site-nav">
+			<div class="page clearfix">
+				<ul class="fl left">
+					<li class="language"><a target="_blank" href="http://en.kingdee.com">EN</a></li>
+					<li class="welcome">
+					欢迎 [
+						<a href="/oauth/kingdee-one.action?after=%2Findex.action">登录</a>／<a href="http://id.kingdee.com/account/sign-up.action?after=http://www.kingdee.com%2Findex.action">注册</a>
+					]
+					</li>
+					<li class="top-weibo">关注金蝶微信，送进销存软件&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://8.kingdee.com" target="_blank">企业理财</a></li>
+				</ul>
+				<ul class="fr">
+									<li class="online-sale orange J_down_menu_box"><b>在线咨询</b><div class="c2 J_down_menu none"><script src="http://online.kingdee.com/live800/chatClient/staticButton.js?companyID=8905&configID=22&codeType=custom" language="javascript"><a onClick="try{parent.closeMini();}catch(e){;}globalStaticIcon.getOnGenerateClick()" href="javascript:void(0)" id="live800iconlink" ><img style="vertical-align:-2px;" border="0" src="http://online.kingdee.com/live800/SurferServer?cmd=111&companyID=8905&enterurl=http%3A%2F%2Fwww%2Ekingdee%2Ecom%2F&k=1&configID=22&online=http%3A%2F%2Fwww.kingdee.com%2Fcommon%2Fkdui%2Fimages%2Fv2012.5%2Fonline.gif&offline=http%3A%2F%2Fwww.kingdee.com%2Fcommon%2Fkdui%2Fimages%2Fv2012.5%2Foffline.gif" id="live800icon" name="live800icon"></a></script></div></li>
+					<li class="phone-number mr10"><span class="fl">或致电</span>
+					<img class="fl" src="themes/site_themes/LandMover/apps/cms/default/images/2013v1/phone_number.jpg" /></li>
+					<li class="J_searchBox search-box pos_r">
+						<input id="sKey" class="pos_a" type="text" value="搜索"/>
+						<a id="sBtn" class="search-button pos_a" href="javascript:;"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 最顶层 #site-nav -->
+		
+		<!-- 主导航 -->
+		<div class="main-nav ftheiti">
+			<div class="page pos_r clearfix">
+				<div class="fl mt20">
+					<a class=" fl" href="/"><img src="themes/site_themes/LandMover/apps/cms/default/images/2013v1/logo_03.png"/></a>
+				</div>
+				<div class="winxin-box fl J_down_menu_box"><div class="c2 J_down_menu none"></div></div>
+				<ul class="menu fr mt30">
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/products/index.html">产品</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/solutions/industry/index.html">方案</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/experience/index.html">体验</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li >
+						<a href="http://kingdee.tmall.com/" target="target: _blank;">商城</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/consult/index.html">咨询</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/services/index.html">服务</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/partner/index.html">伙伴</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+					<li class="J-mian-nav">
+						<a href="http://www.kingdee.com/company/index.html">关于金蝶</a>
+						<span class="J-nav-arrow nav-arrow"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 隐藏的按钮 -->
+		<div class="J-nav-button-hide hide"></div>
+		<!-- 主导航 -->
+	</div>	
+	<!-- 二级子菜单 -->
+	<div class="J-subnav subnav pos_r">
+		<div class="J-subnav-wrap subnav-wrap clearfix page pos_r">
+				<div class="subnav-li">
+							<dl style="width:260px;height:195px;">
+								<dt><a href="http://www.kingdee.com/products/index.html" target="">ERP产品</a></dt>
+									<dd><a href="http://www.kingdee.com/products/eas/index.html" target="">金蝶EAS</a></dd>
+									<dd><a href="http://www.kingdee.com/products/oa/index.html" target="">金蝶协同</a></dd>
+									<dd><a href="http://www.kingdee.com/products/k3cloud/index.html" target="">金蝶K/3 Cloud</a></dd>
+									<dd><a href="http://www.kingdee.com/products/plm/index.html" target="">金蝶PLM</a></dd>
+									<dd><a href="http://www.kingdee.com/products/k3wise/index.html" target="">金蝶K/3 WISE</a></dd>
+									<dd><a href="http://www.kingdee.com/products/kbi/index.html" target="">金蝶KBI</a></dd>
+									<dd><a href="http://kis.kingdee.com" target="_blank">金蝶KIS</a></dd>
+									<dd><a href="http://www.kingdee.com/products/bos/index.html" target="">金蝶BOS</a></dd>
+									<dd><a href="http://www.kingdee.com/products/s-hr/index.html" target="">金蝶s-HR</a></dd>
+							</dl>
+							<dl style="width:266px;">
+								<dt><a href="http://www.kingdee.com/mobile-app/index.html" target="">移动应用</a></dt>
+									<dd><a href="http://www.kingdee.com/mobile-app/eas.html" target="">EAS应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/k3cloud.html" target="">K/3 Cloud应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/k3wise.html" target="">K/3 WISE应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/realty.html" target="">房地产应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/oa.html" target="">协同应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/kbi.html" target="">KBI应用</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/hr.html" target="">HR应用</a></dd>
+							</dl>
+							<dl style="width:130px;">
+								<dt><a href="" target="">企业互联网</a></dt>
+									<dd><a href="http://kdweibo.com" target="target:_blank;">云之家</a></dd>
+									<dd><a href="http://www.youshang.com" target="target:_blank;">金蝶在线会计</a></dd>
+									<dd><a href="http://www.kuaidi100.com/" target="target:_blank;">快递100</a></dd>
+									<dd><a href="http://zhj.kisdee.com/" target="target:_blank;">智慧记</a></dd>
+							</dl>
+							<dl style="width:130px;">
+								<dt><a href="" target="">相关产品</a></dt>
+									<dd><a href="http://www.apusic.com" target="_blank">金蝶中间件</a></dd>
+									<dd><a href="http://yiliao.kingdee.com" target="_blank">金蝶医疗</a></dd>
+									<dd><a href="http://www.830836.com/" target="_blank">金蝶配套</a></dd>
+							</dl>
+							<div class="nav-image" style="">
+								<a class="img" href="http://www.kingdee.com/products/k3cloud/index.html" target=""><img width="180px" height="119px" src="/rte-image/0a1/d86/969/d66/609-1383860669434.jpg" /></a>
+								<div class="desc">金蝶K/3 Cloud</div>
+							</div>
+				</div>
+				<div class="subnav-li">
+							<dl style="width:260px; height:148px;">
+								<dt><a href="http://www.kingdee.com/solutions/industry/index.html" target="">行业解决方案</a></dt>
+									<dd><a href="http://www.kingdee.com/solutions/industry/real-estate/index.html" target="">房地产行业</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/retail/index.html" target="">零售与连锁</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/microfinance/index.html" target="">微金融</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/catering/index.html" target="">餐饮及娱乐行业</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/medicine/index.html" target="">医药与食品行业</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/car4s/index.html" target="">汽车4S</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/industry/shoes/index.html" target="">鞋服行业</a></dd>
+							</dl>
+							<dl style="width:260px; height:148px;">
+								<dt><a href="http://www.kingdee.com/solutions/field/index.html" target="">领域解决方案</a></dt>
+									<dd><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="">财务管理</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/field/scm/index.html" target="">供应链管理</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="">生产制造</a></dd>
+									<dd><a href="http://www.kingdee.com/products/s-hr/index.html" target="">人力资源管理</a></dd>
+									<dd><a href="http://www.kingdee.com/products/oa/index.html" target="">协同管理</a></dd>
+									<dd><a href="http://www.kingdee.com/products/plm/index.html" target="">产品生命周期管理</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/field/risk-management/index.html" target="">风险管理与内部控制</a></dd>
+									<dd><a href="http://www.kingdee.com/products/kbi/index.html" target="">商业智能</a></dd>
+									<dd><a href="http://www.kingdee.com/solutions/field/system/index.html" target="">系统集成</a></dd>
+							</dl>
+							<dl style="width:120px; height:148px;">
+								<dt><a href="http://www.kingdee.com/experience/" target="">角色体验</a></dt>
+									<dd><a href="http://www.kingdee.com/experience/" target="target:_blank;">CEO</a></dd>
+									<dd><a href="http://www.kingdee.com/experience/" target="target:_blank;">CFO</a></dd>
+									<dd><a href="http://www.kingdee.com/experience/" target="target: _blank;">CIO</a></dd>
+									<dd><a href="http://www.kingdee.com/experience/" target="target: _blank;">营销总裁</a></dd>
+							</dl>
+							<div class="nav-image" style="">
+								<a class="img" href="http://www.kingdee.com/case/index.html" target=""><img width="180px" height="119px" src="/rte-image/886/58c/d3b/0a9/624-1384271844631.jpg" /></a>
+								<div class="desc">客户成功故事</div>
+							</div>
+				</div>
+				<div class="subnav-li">
+							<dl style="">
+								<dt><a href="http://www.kingdee.com/experience/index.html" target="">体验</a></dt>
+									<dd><a href="http://www.kingdee.com/experience/" target=" _blank">在线体验平台</a></dd>
+									<dd><a href="http://open.kingdee.com/K3cloud/Democenter/Index.aspx" target=" _blank">金蝶K/3 Cloud</a></dd>
+									<dd><a href="http://kdhr.kingdee.com:6688/taste/" target="target:"_blank";">金蝶s-HR</a></dd>
+									<dd><a href="http://202.105.138.170:9527/kbi/index.jsp" target="_blank">金蝶KBI</a></dd>
+									<dd><a href="http://www.kingdee.com/mobile-app/index.html" target="_blank">云管理产品</a></dd>
+									<dd><a href="http://cms.kingdee.com/news/eas-experience/" target="_blank ;">金蝶EAS</a></dd>
+							</dl>
+				</div>
+				<div class="subnav-li">
+							<dl style="width:115px;height:126px">
+								<dt><a href="http://www.kingdee.com/consult/index.html" target="">咨询</a></dt>
+									<dd><a href="http://www.kingdee.com/consult/index.html" target="">概述</a></dd>
+									<dd><a href="http://www.kingdee.com/consult/value.html" target="">商业价值研究</a></dd>
+									<dd><a href="http://www.kingdee.com/consult/case.html" target="">客户案例</a></dd>
+							</dl>
+				</div>
+				<div class="subnav-li">
+							<dl style="width:120px;height:148px">
+								<dt><a href="http://www.kingdee.com/operations/index.html" target="">运维</a></dt>
+									<dd><a href="http://www.kingdee.com/operations/index.html" target="">业务介绍</a></dd>
+									<dd><a href="http://www.kingdee.com/operations/flow.html" target="">服务流程</a></dd>
+									<dd><a href="http://www.kingdee.com/operations/system.html" target="">服务体系</a></dd>
+									<dd><a href="http://www.kingdee.com/operations/life.html" target="">服务生命周期</a></dd>
+									<dd><a href="http://www.kingdee.com/operations/program.html" target="">服务方案</a></dd>
+									<dd><a href="http://www.kingdee.com/operations/case.html" target="">服务案例</a></dd>
+							</dl>
+							<div class="nav-image" style="">
+								<a class="img" href="http://service.kingdee.com/attachment/links/ycpzNew/index.html" target=" _blank"><img width="180px" height="119px" src="/rte-image/6d2/2df/512/414/620-1384203244184.jpg" /></a>
+								<div class="desc">金蝶标准支持服务</div>
+							</div>
+							<div class="nav-image" style="">
+								<a class="img" href="http://www.4008836836.com/attachment/links/20130918ksm/index.html" target="_blank"><img width="180px" height="119px" src="/rte-image/b6f/693/fc6/b0d/880-1397683055592.jpg" /></a>
+								<div class="desc">金蝶服务管理平台</div>
+							</div>
+				</div>
+				<div class="subnav-li">
+							<dl style="">
+								<dt><a href="http://www.kingdee.com/partner/index.html" target="">合作伙伴</a></dt>
+									<dd><a href="http://www.kingdee.com/partner/index.html" target="">概述</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/market.html" target="">营销伙伴</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/service.html" target="">服务伙伴</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/support.html" target="">伙伴支持</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/model.html" target="">合作模式</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/grow.html" target="">成长之路</a></dd>
+									<dd><a href="http://www.kingdee.com/partner/join.html" target="">加盟申请</a></dd>
+							</dl>
+							<div class="nav-image" style="">
+								<a class="img" href="http://www.kingdee.com/partner/join.html" target=""><img width="180px" height="119px" src="/rte-image/9eb/dc9/cf4/bf9/625-1384278943284.jpg" /></a>
+								<div class="desc">合作伙伴招募</div>
+							</div>
+				</div>
+				<div class="subnav-li">
+							<dl style="width:260px;">
+								<dt><a href="http://www.kingdee.com/company/index.html" target="">公司信息</a></dt>
+									<dd><a href="http://www.kingdee.com/company/index.html" target="">集团介绍</a></dd>
+									<dd><a href="http://www.kingdee.com/company/chairperson.html" target="">主席致辞</a></dd>
+									<dd><a href="http://www.kingdee.com/company/management.html" target="">董事及管理层</a></dd>
+									<dd><a href="http://www.kingdee.com/company/road.html" target="">金蝶之路</a></dd>
+									<dd><a href="http://www.kingdee.com/company/honor.html" target="">金蝶荣誉</a></dd>
+									<dd><a href="http://www.kingdee.com/company/contact.html" target="">联系我们</a></dd>
+							</dl>
+							<dl style="">
+								<dt><a href="http://www.kingdee.com/ir/index.html" target="">投资者关系</a></dt>
+									<dd><a href="http://www.kingdee.com/ir/index.html" target="">概览</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/highlights.html" target="">财务摘要</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/announcements.html" target="">公告及通函</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/reports.html" target="">财务报告</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/calendar.html" target="">投资者日历</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/analysts.html" target="">分析师资料</a></dd>
+									<dd><a href="http://www.kingdee.com/ir/alerts.html" target="">电邮通知</a></dd>
+							</dl>
+							<dl style="width:130px;">
+								<dt><a href="http://www.kingdee.com/pearl/index.html" target="">金蝶明珠会</a></dt>
+									<dd><a href="http://www.kingdee.com/pearl/index.html" target="">介绍</a></dd>
+									<dd><a href="http://www.kingdee.com/pearl/organisation.html" target="">组织架构</a></dd>
+									<dd><a href="http://www.kingdee.com/pearl/activity.html" target="">活动</a></dd>
+									<dd><a href="http://www.kingdee.com/pearl/touch.html" target="">会刊TOUCH</a></dd>
+									<dd><a href="http://kdweibo.com/space/c/user/login-customize/kingdee.com/金蝶明珠会 " target="_blank">明珠会社区</a></dd>
+							</dl>
+							<dl style="width:130px;">
+								<dt><a href="http://www.kingdee.com/xinwen/index.html" target="">新闻媒体</a></dt>
+									<dd><a href="http://www.kingdee.com/xinwen/index.html" target="">新闻中心</a></dd>
+									<dd><a href="http://www.kingdee.com/video/index.html" target="">金蝶视频</a></dd>
+							</dl>
+							<div class="nav-image" style="">
+								<a class="img" href="http://www.kingdee.com/article/772/313/bab/109/893-1382648246447.pdf" target=""><img width="180px" height="119px" src="/rte-image/f33/6c3/f40/c7f/608-1383860293414.jpg" /></a>
+								<div class="desc">TOUCH 第33期</div>
+							</div>
+				</div>
+		</div>
+	</div>
+<!-- #高度容器 -->
+        <!-- 轮播海报-->
+       <div class="posters page">
+         <span class="J_contro_dot pos_a contro-dot"></span>
+         <ul class="J_posters">
+         <li><img src="themes/site_themes/LandMover/apps/cms/default/images/2014/banner0721.jpg" /></li>
+         <li>
+         <a href="http://www.kingdee.com/xinwen/6220.html" target="_blank"><img src="themes/site_themes/LandMover/apps/cms/default/images/2014/banner0718.jpg" /></a>
+         </li>
+         <li>
+         <a href="http://www.kingdee.com/xinwen/6215.html" target="_blank"><img src="themes/site_themes/LandMover/apps/cms/default/images/2014/BANNER0716.jpg" /></a>
+         </li>
+
+<!--         <li>
+         <div class="notes pos_a ftyahei"><span class="ftbold">346张报表<br />满足招商局三大需求</span> <br /><a href="http://www.kingdee.com/xinwen/6195.html" target="_blank">详情了解 ></a></div>
+         <img src="themes/site_themes/LandMover/apps/cms/default/images/2014/banner-0704.jpg" />
+         </li>-->
+         </ul>
+       </div>
+        <!-- 轮播海报End-->
+    
+    
+        <!-- 滚动菜单 -->
+       <div class="J-scroll-menu scroll-menu">
+          <div class="page">
+            <ul>
+            <li>公司动态</li>
+            <li>移动应用</li>
+            <li>管理软件</li>
+            <li>提交需求</li>
+            <li>成功案例</li>
+            <li>版本和功能</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 滚动菜单End -->
+        
+        <!-- 公司动态-->
+        <div class="active-news" id="t0">
+        <div class="page clearfix">
+            <div class="active">
+              <h4 class="ftyahei">官方微信</h4>
+              <div class="weixin">关注金蝶官方微信，<br/>送进销存管理软件！</div>
+              
+					<ul>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6193.html" target="_blank" title="金蝶官方微信，我来了，你们在哪儿？">金蝶官方微信，我来了，你们在哪儿？</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6220.html" target="_blank" title="36氪开放日@金蝶 不送门票 臣妾做不到啊">36氪开放日@金蝶 不送门票 臣妾做不到啊</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6217.html" target="_blank" title="【报名】中国大陆首场王道论坛">【报名】中国大陆首场王道论坛</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6215.html" target="_blank" title="金蝶KIS携手腾讯企业QQ，布局互联网时代小企业管理软件">金蝶KIS携手腾讯企业QQ，布局互联网时代小</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6214.html" target="_blank" title="秒杀现金流量表！">秒杀现金流量表！</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6213.html" target="_blank" title="【最炫刷墙体】金蝶下乡标语怎么玩儿？">【最炫刷墙体】金蝶下乡标语怎么玩儿？</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6212.html" target="_blank" title="【金蝶医疗】当“望闻问切“遇上移动互联网">【金蝶医疗】当“望闻问切“遇上移动互联网</a></li>
+						<li>&middot;<a href="http://www.kingdee.com/xinwen/6209.html" target="_blank" title="曾经，有一个移动报表在我面前......">曾经，有一个移动报表在我面前......</a></li>
+					</ul>
+            </div>
+            <div class="active weibo">
+            <h4 class="ftyahei">官方微博</h4>
+            <div class="con mt10"><iframe width="100%" height="290" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=290&fansRow=2&ptype=0&speed=0&skin=2&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1021347155&verifier=a7ae7eba&colors=d6f3f7,f5f5f5,666666,0082cb,f5f5f5&dpc=1"></iframe></div>
+            </div>
+            <div class="active weibo">
+            <h4 class="ftyahei">CEO微博</h4>
+            <div class="con mt10"><iframe width="100%" height="290" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=290&fansRow=2&ptype=0&speed=0&skin=2&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1812591014&verifier=73dc4ca5&colors=d6f3f7,f5f5f5,666666,0082cb,f5f5f5&dpc=1"></iframe></div>
+            </div>
+        </div>
+        
+        </div>
+        <!-- 公司动态End -->
+        
+<!-- 移动应用-->
+<div class="mobileapp mt10" id="t1">
+<div class="page">
+<div class="mod-title t-center ftyahei ft14"><h3>移动互联网，改变您的工作方式</h3></div>
+<ul class="clearfix">
+<li class="item-0"><a href="http://kis.kingdee.com/mobile/" target="_blank" title=“移动ERP：金蝶KIS 老板报表”><span class="icon"></span><span class="tt ft14 t-center">金蝶KIS 商贸老板报表</span></a></li>
+<li class="item-1"><a href="http://kis.kingdee.com/mobile/" target="_blank" title=“移动ERP：金蝶KIS 销售助手”><span class="icon"></span><span class="tt ft14 t-center">金蝶KIS 商贸销售助手</span></a></li>
+<li class="item-2"><a href="http://kis.kingdee.com/mobile/" target="_blank" title=“移动ERP：金蝶KIS 移动客户”><span class="icon"></span><span class="tt ft14 t-center">金蝶KIS 专业移动客户</span></a></li>
+<li class="item-3 mr0"><a href="http://kis.kingdee.com/mobile/" target="_blank" title=“移动ERP：金蝶KIS 经营助手”><span class="icon"></span><span class="tt ft14 t-center">金蝶KIS 旗舰经营助手</span></a></li>
+<li class="item-4"><a href="http://www.kingdee.com/mobile-app/eas.html" target="_blank" title=“移动ERP：金蝶EAS 企业通讯录”><span class="icon"></span><span class="tt ft14 t-center">金蝶EAS 企业通讯录</span></a></li>
+<li class="item-5"><a href="http://www.kingdee.com/mobile-app/k3wise.html" target="_blank" title=“移动ERP：金蝶K3 移动CRM”><span class="icon"></span><span class="tt ft14 t-center">金蝶K/3 WISE 移动CRM</span></a></li>
+<li class="item-6"><a href="http://8.kingdee.com/" target="_blank" title=“金蝶企业理财”><span class="icon"></span><span class="tt ft14 t-center">金蝶企业理财</span></a></li>
+<li class="item-7 mr0"><a href="http://www.kingdee.com/mobile-app/k3cloud.html" target="_blank" title=“移动ERP：金蝶K3 移动销售”><span class="icon"></span><span class="tt ft14 t-center">金蝶K/3 Cloud 移动销售</span></a></li>
+</ul>
+</div>
+</div>
+<!-- 移动应用End -->
+
+
+<!-- 管理软件-->
+<div class="erpsoft mt10" id="t2">
+<div class="page">
+<div class="mod-title t-center ftyahei ft14"><h3 class="mb20">金蝶，企业管理专家</h3>金蝶连续十年蝉联中小企业市场占有率第一</div>
+<ul class="clearfix ftyahei">
+<li class="item-0"><a href="http://kis.kingdee.com/kissubject2014/index.html" target="_blank"><span class="icon t-center">小微型企业业务</span><span class="tt ft14">金蝶KIS<br/>老客户升级体验会</span></a></li>
+<li class="item-1"><a href="http://www.kingdee.com/products/k3wise/index.html" target="_blank"><span class="icon t-center">中小型企业业务</span><span class="tt ft14">金蝶K/3 WISE<br/>八大卓越运营模式</span></a></li>
+<li class="item-2"><a href="http://www.kingdee.com/products/k3cloud/index.html" target="_blank"><span class="icon t-center">大中型企业业务</span><span class="tt ft14">金蝶K/3 Cloud<br/>八大核心应用</span></a></li>
+<li class="item-3 mr0"><a href="http://www.kingdee.com/products/eas/index.html" target="_blank"><span class="icon t-center">大型企业及集团业务</span><span class="tt ft14">金蝶EAS推出<br/>利润中心解决方案</span></a></li>
+</ul>
+
+
+<div class="softlist clearfix">
+<div class="list">
+<h4 class="ftyahei">所属行业</h4>
+<dl>
+<dt><a href="http://www.kingdee.com/solutions/industry/real-estate/index.html" target="_blank">房地产行业</a></dt>
+<dt><a href="http://www.kingdee.com/solutions/industry/car4s/index.html" target="_blank">汽车4S店</a></dt>
+<dt><a href="http://www.kingdee.com/solutions/industry/medicine/index.html" target="_blank">医药与食品行业</a></dt>
+<dt><a href="http://www.kingdee.com/solutions/industry/shoes/index.html" target="_blank">鞋服行业</a></dt>
+<dt><a href="http://www.kingdee.com/solutions/industry/retail/index.html" target="_blank">零售与连锁行业</a></dt>
+<dt><a href="http://www.kingdee.com/solutions/industry/microfinance/index.html" target="_blank">微金融行业</a></dt>
+</dl>
+</div>
+
+<div class="list lingyu">
+<h4 class="ftyahei">管理领域</h4>
+<dl>
+<dt><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">财务管理</a></dt>
+<dd><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">成本管理</a> \ <a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">预算管理</a> \ <a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">资金管理</a></dd>
+<dd>账务处理 \ 自动报表 \ 固定资产</dd>
+</dl>
+<dl>
+<dt><a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">供应链管理</a></dt>
+<dd><a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">供应商协同</a> \ <a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">经销商协同</a> \ <a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">电子商务</a></dd>
+<dd>进销存管理 \ 网店管理 \ 往来及资金管理</dd>
+</dl>
+<dl class="mr0">
+<dt><a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">生产制造管理</a></dt>
+<dd><a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">APS</a> \ <a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">精益生产</a> \ <a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">制造管理</a></dd>
+</dl>
+<dl>
+<dt><a href="http://www.kingdee.com/products/s-hr/index.html" target="_blank">人力资源管理</a></dt>
+<dd><a href="http://www.kingdee.com/products/s-hr/solution.html" target="_blank">组织管理</a> \ <a href="http://www.kingdee.com/products/s-hr/solution.html" target="_blank">招聘管理</a> \ <a href="http://www.kingdee.com/products/s-hr/solution.html" target="_blank">移动HR</a></dd>
+</dl>
+<dl>
+<dt><a href="http://www.kingdee.com/products/oa/index.html" target="_blank">协同管理</a></dt>
+<dd><a href="http://www.kingdee.com/products/oa/solution.html" target="_blank">信息门户</a> \ <a href="http://www.kingdee.com/products/oa/solution.html" target="_blank">沟通协作</a> \ <a href="http://www.kingdee.com/products/oa/solution.html" target="_blank">知识管理</a></dd>
+</dl>
+<dl class="mr0">
+<dt>代账业务</dt>
+<dd>账务处理 \ 客户、合同、收费管理 \ 报税及工作量管理</dd>
+</dl>
+<dl>
+<dt><a href="http://www.kingdee.com/products/plm/index.html" target="_blank">产品生命周期管理</a></dt>
+<dd>物料标准化管理 \ CAD集成 \ ERP集成</dd>
+</dl>
+<dl>
+<dt><a href="http://www.kingdee.com/products/kbi/index.html" target="_blank">商业智能</a></dt>
+<dd>集团财务 \ 人力资源 \ 移动应用</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<!-- 管理软件End -->
+
+
+<!-- 提交需求-->
+<div class="active-news aboutme" id="t3">
+<div class="page clearfix">
+    <div class="active">
+      <h4 class="ftyahei mb20">关注金蝶</h4>
+				<ul>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6180.html" target="_blank" title="金蝶推企业理财，年化收益预期5% ">金蝶推企业理财，年化收益预期5% </a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6130.html" target="_blank" title="金蝶连续十年蝉联中小企业市场占有率第一">金蝶连续十年蝉联中小企业市场占有率第一</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6113.html" target="_blank" title="金蝶发布云之家移动工作平台，倡导新的工作方式">金蝶发布云之家移动工作平台，倡导新的工作</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6211.html" target="_blank" title="金蝶KIS携手腾讯企业QQ，布局互联网时代小企业管理软件">金蝶KIS携手腾讯企业QQ，布局互联网时代小</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6061.html" target="_blank" title="2014中国管理模式杰出奖启动，聚焦互联网转型">2014中国管理模式杰出奖启动，聚焦互联网转</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/6053.html" target="_blank" title="云之家中国行启幕，金蝶掀起工作方式革命">云之家中国行启幕，金蝶掀起工作方式革命</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/5956.html" target="_blank" title="金蝶国际发逾10亿可换股债券　重点发展企业移动互联网业务">金蝶国际发逾10亿可换股债券　重点发展企业</a></li>
+					<li>&middot;<a href="http://www.kingdee.com/xinwen/5949.html" target="_blank" title="徐少春：移动互联网的下一个浪潮在企业市场">徐少春：移动互联网的下一个浪潮在企业市场</a></li>
+				</ul>
+     
+    </div>
+    <div class="active weibo mobile">
+    <h4 class="ftyahei mb20">联系我们</h4>
+    <p class=" ft14 ftyahei mb10">销售热线：<span class="tel">4008-830-830</span></p>
+    <p  class="ft14 ftyahei mb5">服务热线：<span class="tel">4008-836-836</span></p>
+	<p  class="ft14 ftyahei mb5">企业理财咨询热线：<span class="tel">4008-830-822</span></p>
+    <div class="join clearfix"><span>伙伴加盟：</span><a href="/article/channel!about.action?item.id=240" target="_blank">在线申请</a></div>
+    <p class="pr20">地址：<br />深圳市高新技术产业园南区科技南十二路2号金蝶软件园</p>
+    </div>
+    <div class="active weibo">
+    <h4 class="ftyahei mb20">告诉我们您的需求</h4>
+    <form id="index-from" method="post">
+	    <div class="table">
+	     <div class="clearfix mb5"><span class="l fl">姓名：</span><span class="r fl"><input id="i-customer" name="customer" type="text" class="input_text" style="width:150px" /> <input name="gender" type="radio" value="男" checked />先生 <input name="gender" type="radio" value="女" />女士</span></div>
+	     <div class="clearfix mb5"><span class="l fl">电话：</span><span class="r fl"><input id="i-mobile" name="mobile" type="text" class="input_text"  /></span></div>
+	     <div class="clearfix mb5"><span class="l fl">邮箱：</span><span class="r fl"><input id="i-company" name="company" type="text" class="input_text"  /></span></div>
+	     <div class="clearfix mb20"><span class="l fl">需求：</span><span class="r fl"><textarea id="i-purpose" name="purpose" class="input_text" style="height:80px"></textarea></span></div>
+	     <div class="clearfix"><span class="l fl" style="width:200px">感谢您对我们工作的支持与信赖！</span><span class="r fr submit"><input type="button" onclick="submitform2()" value="提交需求"/></span></div>
+	    </div>
+    </form>
+    <script>
+
+        var form_submit = 0;
+        function submitform2() {
+
+            if (form_submit) {
+
+                alert('您已经提交，请不要重复提交');
+                return false;
+
+            }
+            var name = $("#i-customer").val();
+            var handy = $("#i-mobile").val();
+            var email = $("#i-company").val();
+            var desc = $("#i-purpose").val();
+
+            var nameReg = new RegExp(/^[A-z|\u4e00-\u9fa5]{1,12}$/);
+            var handyReg = new RegExp(/^(?:1\d\d|15[89])-?\d{5}(\d{3}|\*{3})$/);
+            var compNameReg = new RegExp(/.+/);
+            var emailReg = new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/);
+            var ok = true;
+
+            if (!nameReg.test(name)) {
+
+                alert("请填写正确的姓名");
+                ok = ok && false;
+                return false;
+
+            }
+
+            if (!handyReg.test(handy)) {
+
+                alert("请填写正确的电话");
+                ok = ok && false;
+                return false;
+
+            }
+
+            if (!emailReg.test(email)) {
+
+                alert("请填写正确的邮箱");
+                ok = ok && false;
+                return false;
+
+            }
+
+            if (!ok) {
+
+
+                return false;
+
+            } else {
+                // start
+                var json = {};
+                // 组成json数据提交,数据的name必须与当前页面的name一直
+                $($('#index-from').serializeArray()).each(function () {
+
+                    json[this.name] = $.trim(this.value);
+
+                });
+                $.post("/customer/customer!save.action", {
+
+                    "fromPage": "首页",
+                    "type": "purpose",
+                    "content": $.toJSON(json)
+
+                }, function (s) {
+
+                    if (s == "success") {
+
+                        alert("提交成功.");
+                        form_submit = 1;
+
+                    } else {
+
+                        alert("提交失败.");
+
+                    }
+
+                });
+
+            }
+
+        }
+    </script>
+    </div>
+</div>
+
+</div>
+<!-- 提交需求End -->
+
+
+<!-- 成功案例-->
+<div class="anli J_tab" id="t4">
+<div class="banner" style="background-image:url(themes/site_themes/LandMover/apps/cms/default/images/2013v1/banner1.jpg);">
+<div class="page">
+ <ul class="tab ft13 ftyahei"><li class="cur">金蝶KIS</li><li>金蝶K/3</li><li>金蝶EAS</li></ul>
+</div>
+</div>
+<div class="page clearfix tabcon">
+<dl>
+<dt class="ftyahei">金蝶KIS旗舰版<br />成功客户</dt>
+<dd>阿芙精油</dd>
+<dd>欧莎世家</dd>
+<dd>徐州方圆饲料科技有限公司</dd>
+<dd>陕西长岭特种设备有限公司</dd>
+<dd>深圳市万网博通科技有限公司</dd>
+<dd>佛山市顺德区星能实业有限公司</dd>
+<dd>佛山市顺德区三胜家电制造...</dd>
+</dl>
+<dl>
+<dt class="ftyahei">金蝶KIS专业版<br />成功客户</dt>
+<dd>戴闻医疗</dd>
+<dd>弘涛石英制品有限公司</dd>
+<dd>湖北凡超汽车实业有限公司</dd>
+<dd>鸿甲五金材料有限公司</dd>
+<dd>深圳市力川鸿福进出口有限公司</dd>
+<dd>佳源食品</dd>
+<dd>科凡家居</dd>
+<dd>力雄机电有限公司</dd>
+<dd>圣净橱柜加工厂</dd>
+<dd>友成金属制品厂</dd>
+</dl>
+<dl class="mr0">
+<dt class="ftyahei">金蝶KIS商贸版<br />成功客户</dt>
+<dd>瑞隆商贸有限公司 </dd>
+<dd>盛景商贸有限公司</dd>
+<dd>中圆超市配货中心 </dd>
+<dd>力川鸿福进出口有限公司 </dd>
+<dd>中续航科技有限公司 </dd>
+<dd>海恩商贸有限责任公司 </dd>
+<dd>华彩网络科技发展有限公司 </dd>
+<dd>乔源商贸有限公司 </dd>
+<dd>超尔电器有限公司 </dd>
+<dd>百通轮胎有限公司</dd>
+</dl>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<dl>
+<dt class="ftyahei">机械行业<br />成功客户</dt>
+<dd>思源电气股份有限公司 </dd>
+<dd>厦工三明重型机器有限公司 </dd>
+<dd>重庆川仪自动化股份有限公司 </dd>
+<dd>佛山市宝索机械制造有限公司 </dd>
+<dd>潍坊生建集团 </dd>
+<dd>深圳市长盈精密技术股份有限公司</dd>
+<dd>北京赛德高科铁道电气科技...</dd>
+<dd>常州宝捷电机制造有限公司 </dd>
+<dd>常州凯尔泵业制造有限公司 </dd>
+<dd>南车成都机车车辆有限公司 </dd>
+<dd>利勃海尔集团 </dd>
+<dd>东莞市永强机电设备有限公司 </dd>
+<dd>南方汇通股份有限公司 </dd>
+<dd>湖州巨人机电有限公司 </dd>
+<dd>南车洛阳机车有限公司 </dd>
+<dd>恒通电气集团有限公司 </dd>
+<dd>卡斯卡特(厦门)叉车属具有限公司</dd>
+<dd>深圳市大族激光科技股份有限公司 </dd>
+<dd>... </dd>
+</dl>
+<dl>
+<dt class="ftyahei">电子行业<br />成功客户</dt>
+<dd>广东易事特电源股份有限公司 </dd>
+<dd>领亚电子科技股份有限公司 </dd>
+<dd>深圳市联创科技集团有限公司 </dd>
+<dd>北京南电科技发展有限公司 </dd>
+<dd>瑞斯康达科技发展股份有限公司 </dd>
+<dd>佛山市简氏依立电器有限公司 </dd>
+<dd>昆山嘉华电子有限公司 </dd>
+<dd>广西柳电电气股份有限公司</dd>
+<dd>绵阳市维博电子有限责任公司</dd> 
+<dd>南京因泰莱电器股份有限公司</dd>
+<dd>宁波兴瑞电子有限公司</dd> 
+<dd>柏拉蒂电子(深圳)有限公司 </dd>
+<dd>宇部电子(无锡)有限公司</dd> 
+<dd>浙江大华技术股份有限公司</dd> 
+<dd>郑州威科姆科技股份有限公司</dd>
+<dd>西安富士达科技股份有限公司 </dd>
+<dd>信利半导体有限公司 </dd>
+<dd>湘能华磊光电股份有限公司 </dd>
+</dl>
+<dl>
+<dt class="ftyahei">汽配行业<br />成功客户</dt>
+<dd>深圳市航盛电子股份有限公司 </dd>
+<dd>江门气派摩托车有限公司 </dd>
+<dd>南京威孚金宁有限公司</dd>
+<dd>安徽马钢和菱实业有限公司 </dd>
+<dd>博格思众常州空调系统有限公司 </dd>
+<dd>宁波诗兰姆汽车零部件有限公司</dd>
+<dd>康斯博格汽车部件(上海)有限公司 </dd>
+<dd>天津一汽丰田发动机有限公司 </dd>
+<dd>重庆凌达实业有限公司 </dd>
+<dd>南方英特空调有限公司 </dd>
+<dd>天纳克陵川(重庆)排气系统... </dd>
+</dl>
+<dl>
+<dt class="ftyahei">医药、食品行业<br />成功客户</dt>
+<dd>艾康生物有限公司</dd>
+<dd>北京博奥生物有限公司</dd>
+<dd>昆明制药集团股份有限公司 </dd>
+<dd>杭州民生药业集团有限公司</dd>
+<dd>美诺医疗集团 </dd>
+<dd>西南药业股份有限公司 </dd>
+<dd>重庆希尔安药业有限公司 </dd>
+<dd>深圳信立泰药业股份有限公司_ </dd>
+<dd>河南张仲景大药房股份有限公司 </dd>
+<dd>东北制药集团股份有限公司</dd>
+<dd>新华制药股份有限公司</dd>
+<dd>四川丰谷酒业有限公司</dd> 
+<dd>深圳金威啤酒有限公司</dd>
+<dd>山东兔巴哥集团有限公司</dd>
+<dd>喜旺集团 </dd>
+<dd>蜡笔小新（福建）食品工业...</dd> 
+<dd>广东嘉豪食品有限公司 </dd>
+<dd>好想你枣业股份有限公司 </dd>
+<dd>...</dd>
+</dl>
+<dl class="mr0">
+<dt class="ftyahei">化工行业<br />成功客户</dt>
+<dd>北京正美丰业玻璃有限公司</dd>
+<dd>广州立大树脂有限公司</dd>
+<dd>贵州威顿晶磷电子材料有限公司</dd>
+<dd>江苏龙蟠石化有限公司</dd>
+<dd>南通醋酸化工股份有限公司</dd>
+<dd>宁波凯驰胶带有限公司</dd>
+<dd>青岛双桃精细化工集团有限公司</dd>
+<dd>美丰农化有限公司</dd>
+<dd>中盐宏博(集团)有限公司</dd>
+<dd>三井化学复合塑料（中山）...</dd>
+</dl>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<dl>
+<dt class="ftyahei">集团财务<br />成功客户</dt>
+<dd>香港中旅(集团)有限公司</dd>
+<dd>天津港股份有限公司</dd>
+<dd>招商局集团有限公司</dd>
+<dd>平安信托有限责任公司</dd>
+<dd>深圳市中燃科技有限公司</dd>
+<dd>上海陆家嘴金融贸易区开发股份...</dd>
+<dd>宁波港股份有限公司</dd>
+<dd>中国南车股份有限公司</dd>
+<dd>中国航空器材集团公司</dd>
+<dd>大连港集团有限公司</dd>
+<dd>中国东方资产管理公司</dd>
+<dd>中国长江航运集团南京油运股份...</dd>
+<dd>威莱（广州）日用品有限公司</dd>
+<dd>西王集团有限公司</dd>
+</dl>
+<dl>
+<dt class="ftyahei">合并报表<br />成功客户</dt>
+<dd>中国东方航空集团公司</dd>
+<dd>中国信达资产管理公司</dd>
+<dd>浙江省物产集团公司</dd>
+<dd>中金岭南有色金属股份有限公司</dd>
+<dd>万科企业股份有限公司</dd>
+<dd>黑龙江北大荒农业股份有限公司</dd>
+<dd>上海隧道工程股份有限公司</dd>
+<dd>山东新希望六和集团有限公司</dd>
+<dd>上海电影（集团）有限公司</dd>
+<dd>深圳茂业商厦有限公司</dd>
+<dd>上海城投控股股份有限公司</dd>
+<dd>吉峰农机连锁股份有限公司</dd>
+<dd>中国华电集团公司</dd>
+<dd>浙江省交通投资集团有限公司</dd>
+</dl>
+<dl>
+<dt class="ftyahei">预算管理<br />成功客户</dt>
+<dd>联华超市股份有限公司</dd>
+<dd>四川省投资集团有限责任公司</dd>
+<dd>广东省长大公路工程有限公司</dd>
+<dd>鑫苑（中国）置业有限公司</dd>
+<dd>福建中烟工业公司</dd>
+<dd>松下电器（中国）有限公司</dd>
+<dd>天津天保控股有限公司</dd>
+<dd>中天建设集团有限公司</dd>
+<dd>中电投电力工程有限公司</dd>
+<dd>奥园集团有限公司</dd>
+<dd>九牧王股份有限公司</dd>
+<dd>中国投资担保有限公司</dd>
+<dd>九州通医药集团股份有限公司</dd>
+<dd>招金矿业股份有限公司</dd>
+</dl>
+<dl>
+<dt class="ftyahei">资金管理<br />成功客户</dt>
+<dd>广东省农垦集团公司</dd>
+<dd>中邮普泰通信服务股份有限公司</dd>
+<dd>广东南方报业传媒集团有限公司</dd>
+<dd>黑龙江龙煤矿业集团股份有限公司</dd>
+<dd>广东韶能集团股份有限公司</dd>
+<dd>上海公路桥梁（集团）有限公司</dd>
+<dd>广东中旅(集团)有限公司</dd>
+<dd>宁波开发投资集团有限公司</dd>
+<dd>中国科学器材公司</dd>
+<dd>光明食品（集团）有限公司</dd>
+<dd>雪龙黑牛股份有限公司</dd>
+<dd>重庆三峡银行股份有限公司</dd>
+<dd>渤海证券股份有限公司</dd>
+<dd>海隆石油工业集团有限公司</dd>
+</dl>
+<dl class="mr0">
+<dt class="ftyahei">供应链管理<br />成功客户</dt>
+<dd>中集车辆（集团）有限公司</dd>
+<dd>中顺洁柔纸业股份有限公司</dd>
+<dd>今麦郎日清食品有限公司</dd>
+<dd>南车株洲电力机车有限公司</dd>
+<dd>中船重工物资贸易集团有限公司</dd>
+<dd>建滔积层板控股有限公司</dd>
+<dd>厦门姚明织带饰品有限公司</dd>
+<dd>唐人神集团股份有限公司</dd>
+<dd>新疆冠农果茸集团股份有限公司</dd>
+<dd>仁和（集团）发展有限公司</dd>
+<dd>广东康宝电器有限公司</dd>
+<dd>湖南亚华乳业有限公司</dd>
+<dd>长城汽车股份有限公司</dd>
+<dd>海南天然橡胶产业集团股份...</dd>
+</dl>
+</div>
+
+</div>
+<!-- 成功案例End -->
+
+<!-- 版本和功能-->
+<div class="gongneng J_tab" id="t5">
+<div class="banner" style="background-image:url(themes/site_themes/LandMover/apps/cms/default/images/2013v1/banner3.jpg);">
+<div class="page">
+ <ul class="tab ft13 ftyahei"><li class="cur">金蝶在线产品</li><li>金蝶KIS</li><li>金蝶K/3 WISE</li><li>金蝶K/3 Cloud</li><li>金蝶EAS</li></ul>
+</div>
+</div>
+
+<div class="page clearfix tabcon">
+<h4 class="ftyahei">金蝶在线产品</h4>
+<ul>
+<li><span><a href="http://kuaiji.youshang.com/" target="_blank">金蝶在线会计企业版</a></span>账务处理、数量核算、外币核算...</li>
+<li><span><a href="http://dz.youshang.com/" target="_blank">金蝶在线会计代账个人版</a></span>账务处理、账簿自动生成、多账套管理...</li>
+<li><span><a href="http://dz.youshang.com/" target="_blank">金蝶在线会计代账公司版</a></span>账务核算、客户管理、合同管理、收费管理、报税管理、工作量管理...</li>
+<li><span>固定资产</span>资产卡片管理、自动计提折旧、折旧报表...</li>
+<li><span>现金流量表</span>自动生成、自动平衡...</li>
+<li><span><a href="http://www.youshang.com/online_invoicing/" target="_blank">金蝶在线进销存基础版</a></span>采购管理、销售管理、仓库管理、资金管理...</li>
+<li><span><a href="http://www.youshang.com/online_invoicing/" target="_blank">金蝶在线进销存标准版</a></span>采购管理、销售管理、仓库管理、往来管理...</li>
+<li><span><a href="http://www.youshang.com/invoicing_accounting/" target="_blank">金蝶在线会计+进销存</a></span>采购管理、销售管理、仓库管理、财务管理...</li>
+<li><span>金蝶在线进销存网店</span>电商集成、进销存一体化管理、往来管理...</li>
+<li><span>移动应用</span>手机查询、手机开单、移动盘点...</li>
+<li><span><a href="http://8.kingdee.com/" target="_blank">金蝶企业理财</a></span> 盘活闲置资金、资金安全、随时转入转出...</li>
+</ul>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<h4 class="ftyahei">金蝶财务软件-金蝶KIS</h4>
+<ul>
+<li><span><a href="http://kis.kingdee.com/kis_qjb/" target="_blank">金蝶财务软件-金蝶KIS旗舰版</a></span>网店管理、采购管理、销售管理、仓存管理、委外加工、存货核算、客户管理、生产数据管理...</li>
+<li><span><a href="http://kis.kingdee.com/kis_zyb/" target="_blank">金蝶财务软件-金蝶KIS专业版</a></span>总账、报表与分析、工资管理、出纳管理、固定资产、存货核算、仓存管理...</li>
+<li><span><a href="http://kis.kingdee.com/kis_mnb/" target="_blank">金蝶财务软件-金蝶KIS迷你版</a></span>账务处理、往来管理、出纳、报表...</li>
+<li><span><a href="http://kis.kingdee.com/kis_bzb/" target="_blank">金蝶财务软件-金蝶KIS标准版</a></span>账务处理、往来管理、出纳管理、报表与分析、固定资产、工资管理...</li>
+<li><span><a href="http://kis.kingdee.com/kis_smb/" target="_blank">金蝶财务软件-金蝶KIS商贸版</a></span>采购管理、销售管理、价格管理、返利管理、仓存管理、资金管理、财务管理、经营分析...</li>
+<li><span><a href="http://kis.kingdee.com/html/kis_gjbzb/" target="_blank">金蝶财务软件-金蝶KIS国际版</a></span>采购管理、销售管理、库存管理、资金管理、会计核算管理、税务处理...</li>
+<li><span><a href="http://kis.kingdee.com/kis_xzsyb/" target="_blank">金蝶财务软件-金蝶KIS行政事业版</a></span>账务处理、固定资产、工资管理、往来管理、报表与分析、出纳管理...</li>
+</ul>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<h4 class="ftyahei">金蝶ERP软件-金蝶K/3 WISE</h4>
+<ul>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶K/3 WISE财务会计</a></span>总账、报表、现金管理、固定资产、网上银行、费用管理...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶K/3 WISE管理会计</a></span>合并报表、合并账务、预算管理、结算中心...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶K/3 WISE资产管理</a></span>资产购置、低置易耗品、资产条码管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE企业绩效</a></span>目标管理、管理门户、商业分析...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE风险与内控</a></span>风险评估、控制活动、信息与沟通、内控评价...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">ERP软件-金蝶K/3 WISE供应链管理</a></span>采购管理、VMI、供应商管理、门店管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE电子商务</a></span>供应商门户、经销商门户、网店管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE客户关系管理</a></span>客户管理、销售过程、服务管理、决策分析...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">ERP软件-金蝶K/3 WISE生产制造</a></span>生产排程、任务管理、物料需求计划、车间作业管理、MTO计划、看板管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE成本管理</a></span>实际成本、成本分析、作业成本、日成本...</li>
+<li><span><a href="http://www.kingdee.com/products/s-hr/solution.html" target="_blank">ERP软件-金蝶K/3 WISE人力资源管理</a></span>人事管理、薪酬管理、招聘选拔、培训发展、绩效管理、CEO平台...</li>
+<li><span><a href="http://www.kingdee.com/products/k3wise/solution.html" target="_blank">ERP软件-金蝶K/3 WISE条形码管理</a></span>条码标签打印、物流条码管理...</li>
+</ul>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<h4 class="ftyahei">金蝶ERP软件-金蝶K/3 Cloud</h4>
+<ul>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud财务会计系统</a></span>总账、应收款、应付款、合并报表、智能会计平台...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud资产管理</a></span>固定资产...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud供应链系统</a></span>采购管理、销售管理、信用管理、分销管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud成本管理系统</a></span>存货核算、产品成本核算、成本分析...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud生产管理系统</a></span>工程数据管理、计划管理、生产管理、委外管理...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud流程中心</a></span>工作流、业务流程、信息中心...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud客户化工具包</a></span>BOS集成开发平台、套打设计平台、万能报表平台...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud协同开发云平台</a></span>开发平台、应用商城...</li>
+<li><span><a href="http://www.kingdee.com/products/k3cloud/solution.html" target="_blank">ERP软件-金蝶K/3 Cloud基础系统</a></span>业务监控、数据中心管理、许可管理、安全管理...</li>
+</ul>
+</div>
+
+<div class="page clearfix tabcon" style="display:none">
+<h4 class="ftyahei">金蝶ERP软件-金蝶EAS</h4>
+<ul>
+<li><span><a href="http://www.kingdee.com/products/eas/solution.html" target="_blank">ERP软件-金蝶EAS预算管理</a></span>预算编制、预算调整、预算分析...</li>
+<li><span><a href="http://www.kingdee.com/products/eas/solution.html" target="_blank">ERP软件-金蝶EAS财务共享</a></span>费用共享、支付共享、应付共享、核算共享、报表共享...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶EAS管理会计</a></span>成本管理、利润中心会计、盈利分析...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶EAS财务会计</a></span>总账会计、出纳管理、应收应付、固定资产...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶EAS合并报表</a></span>法定合并、管理合并、多模拟方案...</li>
+<li><span><a href="http://www.kingdee.com/products/kbi/solution.html" target="_blank">ERP软件-金蝶EAS商业分析</a></span>扩展报表、指标监控...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">ERP软件-金蝶EAS资金管理</a></span>资金结算、流动性管理、投融资管理...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">ERP软件-金蝶EAS供应链管理</a></span>集中采购、集中销售、内部交易...</li>
+<li><span><a href="http://www.kingdee.com/products/eas/solution.html" target="_blank">ERP软件-金蝶EAS分销管理</a></span>渠道管理、渠道订货、渠道库存...</li>
+<li><span><a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">ERP软件-金蝶EAS生产制造管理</a></span>S&OP、MPS&MRP、车间管理...</li>
+<li><span><a href="http://www.kingdee.com/mobile-app/eas.html" target="_blank">ERP软件-金蝶EAS移动应用</a></span>资金洞察、费用报销、流程助手...</li>
+</ul>
+</div>
+
+</div>
+<!-- 版本和功能End -->
+
+
+<!-- 页脚-->
+<div class="footer">
+<div class="page clearfix">
+<dl>
+<dt>关于金蝶</dt>
+<dd><a href="http://www.kingdee.com/company/index.html" target="_blank">集团简介</a></dd>
+<dd><a href="http://www.kingdee.com/company/chairperson.html" target="_blank">主席致辞</a></dd>
+<dd><a href="http://www.kingdee.com/company/management.html" target="_blank">董事及管理层</a></dd>
+<dd><a href="http://www.kingdee.com/company/road.html" target="_blank">成长历程</a></dd>
+<dd><a href="http://www.kingdee.com/company/honor.html" target="_blank">企业荣誉</a></dd>
+<dd><a href="http://www.kingdee.com/company/contact.html" target="_blank">分支机构</a></dd>
+<dd><a href="http://www.kingdee.com/ir/index.html" target="_blank">投资者关系</a></dd>
+<dd><a href="http://www.kingdee.com/pearl/index.html" target="_blank">金蝶明珠会</a></dd>
+</dl>
+
+<dl>
+<dt>产品/方案</dt>
+<dd><a href="http://www.kingdee.com/products/eas/index.html" target="_blank">大型企业及集团业务</a></dd>
+<dd><a href="http://www.kingdee.com/products/k3wise/index.html" target="_blank">中小型企业业务</a></dd>
+<dd><a href="http://kis.kingdee.com/" target="_blank">小微型企业业务</a></dd>
+<dd><a href="http://www.youshang.com/" target="_blank">金蝶在线会计</a></dd>
+<dd><a href="http://www.kingdee.com/products/s-hr/index.html" target="_blank">人力资源管理</a></dd>
+<dd><a href="http://www.kingdee.com/solutions/industry/real-estate/index.html" target="_blank">房地产行业管理系统</a></dd>
+<dd><a href="http://www.kingdee.com/solutions/industry/car4s/index.html" target="_blank">汽车4S店管理系统</a></dd>
+<dd><a href="http://mall.kingdee.com/" target="_blank">在线购买</a></dd>
+</dl>
+
+<dl>
+<dt><a href="http://www.kingdee.com/operations/index.html" target="_blank">售后服务</a></dt>
+<dd><a href="http://reg.kingdee.com/" target="_blank">产品注册</a></dd>
+<dd><a href="http://cms.kingdee.com/genuine/" target="_blank">正版验证</a></dd>
+<dd><a href="http://service.kingdee.com/attachment/links/20130918ksm/index.html" target="_blank">金蝶服务管理平台KSM</a></dd>
+<dd><a href="http://service.kingdee.com/attachment/links/ycpzNew/index.html" target="_blank">金蝶原厂服务</a></dd>
+<dd><a href="http://www.kingdee.com/operations/program.html" target="_blank">金蝶ERP产品服务方案</a></dd>
+</dl>
+
+<dl>
+<dt><a href="http://www.kingdee.com/partner/index.html" target="_blank">合作伙伴</a></dt>
+<dd><a href="http://www.kingdee.com/partner/join.html" target="_blank">在线加盟申请</a></dd>
+<dd><a href="http://www.kingdee.com/partner/index.html" target="_blank">伙伴认证查询</a></dd>
+<dd><a href="http://partner.kingdee.com/login/" target="_blank">伙伴社区</a></dd>
+<dd><a href="http://www.kingdee.com/partner/market.html" target="_blank">营销伙伴</a></dd>
+<dd><a href="http://www.kingdee.com/partner/service.html" target="_blank">服务伙伴</a></dd>
+</dl>
+</div>
+
+<div class="page clearfix bottom-menu">
+<div class="l fl J_down_menu_box">
+相关网站
+<div class="uplinks pos_a J_down_menu none" >
+<a href="http://www.kingdee.com" target="_blank">金蝶中国</a>
+<a href="http://www.kingdee.com.hk" target="_blank">金蝶亚太区</a>
+<a href="http://www.apusic.com" target="_blank">金蝶中间件</a>
+<a href="http://www.youshang.com" target="_blank">金蝶在线会计</a>
+<a href="http://yiliao.kingdee.com" target="_blank">金蝶医疗</a>
+<a href="http://www.830836.com" target="_blank">金蝶配套商城</a>
+</div>
+</div>
+<div class="l fl J_down_menu_box">
+| 站点导航
+<div class="uplinks pos_a J_down_menu none" style="width:120px">
+<a href="http://www.kingdee.com" target="_blank">金蝶</a>
+<a href="http://www.kingdee.com/products/index.html" target="_blank">ERP</a>
+<a href="http://www.kingdee.com/products/eas/index.html" target="_blank">EAS企业管理软件</a>
+<a href="http://www.kingdee.com/products/k3cloud/index.html" target="_blank">金蝶K3</a>
+<a href="http://www.kingdee.com/products/k3wise/index.html" target="_blank">金蝶K3 WISE</a>
+<a href="http://www.kingdee.com/products/s-hr/index.html" target="_blank">EHR人力资源管理</a>
+<a href="http://www.kingdee.com/products/oa/index.html" target="_blank">OA软件</a>
+<a href="http://www.kingdee.com/products/plm/index.html" target="_blank">PLM系统</a>
+<a href="http://www.kingdee.com/products/kbi/index.html" target="_blank">BI商业智能</a>
+<a href="http://www.kingdee.com/products/bos/index.html" target="_blank">BOS</a>
+<a href="http://www.kingdee.com/mobile-app/index.html" target="_blank">移动办公软件</a>
+<a href="http://www.kingdee.com/mobile-app/eas.html" target="_blank">EAS移动版</a>
+<a href="http://www.kingdee.com/mobile-app/k3wise.html" target="_blank">K3Wise手机版</a>
+<a href="http://www.kingdee.com/mobile-app/oa.html" target="_blank">移动OA</a>
+<a href="http://www.kingdee.com/mobile-app/hr.html" target="_blank">HR软件</a>
+<a href="http://www.kingdee.com/mobile-app/k3cloud.html" target="_blank">K3手机版</a>
+<a href="http://www.kingdee.com/mobile-app/realty.html" target="_blank">房地产APP</a>
+<a href="http://www.kingdee.com/mobile-app/kbi.html" target="_blank">KBI手机版</a>
+<a href="http://www.kingdee.com/solutions/industry/index.html" target="_blank">企业信息化解决方案</a>
+<a href="http://www.kingdee.com/solutions/industry/real-estate/index.html" target="_blank">房地产软件</a>
+<a href="http://www.kingdee.com/solutions/industry/retail/index.html" target="_blank">零售连锁管理</a>
+<a href="http://www.kingdee.com/solutions/industry/microfinance/index.html" target="_blank">金融系统</a>
+<a href="http://www.kingdee.com/solutions/field/index.html" target="_blank">行业信息化</a>
+<a href="http://www.kingdee.com/solutions/field/financial/index.html" target="_blank">财务管理</a>
+<a href="http://www.kingdee.com/solutions/field/manufacture/index.html" target="_blank">精益生产</a>
+<a href="http://www.kingdee.com/solutions/field/risk-management/index.html" target="_blank">风险控制</a>
+<a href="http://www.kingdee.com/solutions/field/system/index.html" target="_blank">系统集成</a>
+<a href="http://www.kingdee.com/solutions/field/scm/index.html" target="_blank">SCM供应链管理</a>
+<a href="http://www.kingdee.com" target="_blank">财务软件</a>
+<a href="http://www.kingdee.com" target="_blank">ERP软件</a>
+<a href="http://www.kingdee.com" target="_blank">OA办公系统</a>
+</div>
+</div>
+<div class="m fl"> |  <a href="http://www.kingdee.com/xinwen/5686.html" target="_blank">使用条款</a> |  <a href="http://www.kingdee.com/company/contact.html" target="_blank">联系金蝶</a> |  <a href="http://e.weibo.com/kingdee#1366169385226" target="_blank">关注金蝶</a> |  <a href="http://cms.kingdee.com/genuine/" target="_blank">正版验证</a> |  <a href="http://cms.kingdee.com" target="_blank">回顾旧版</a></div>
+<div class="r fr">&copy;1993-2014金蝶国际软件集团有限公司<br />粤ICP备05041751号-21
+</div>
+</div>
+<div class="friendly-link">
+<div class="page">
+友情链接：
+<a href="http://kis.kingdee.com" target="_blank">小微型企业ERP</a>
+<a href="http://www.kingdee.com/products/k3wise/index.html" target="_blank" class="ml10">中小型企业ERP</a>
+<a href="http://www.kingdee.com/products/k3cloud/index.html" target="_blank" class="ml10">大中型企业ERP</a>
+<a href="http://www.kingdee.com/products/eas/index.html" target="_blank" class="ml10">大型集团企业ERP</a>
+<a href="http://blog.sina.com.cn/kingdee0268" target="_blank" class="ml10">金蝶ERP博客</a>
+<a href="http://weibo.com/u/3996493773" target="_blank" class="ml10">金蝶ERP站</a>
+<a href="http://www.canet.com.cn/" target="_blank" class="ml10">中华会计网</a>
+</div>
+</div>
+
+<!-- 页脚End -->
+</div>
+
+		</div>
+	    <a id="showDialogLink" href="#popup-dialog" style="display:none"></a>
+		<div id="popup-dialog" style="display:none;"></div>
+		<input id="viewPageId" type="hidden" value="">
+
+		<script type="text/javascript">
+		    var _gaq = _gaq || [];
+		    _gaq.push(['_setAccount', 'UA-143964-19']);
+		    _gaq.push(['_trackPageview']);
+		    _gaq.push(['_trackPageLoadTime']);
+		    (function () {
+
+		        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+		    })();
+		</script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/base/js/sdk.js?3801042459" ></script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/cms/default/js/jquery/plugins/jquery.cycle.all.js?1448680044" ></script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/cms/default/js/jquery/plugins/jquery.masonry.js?2441411614" ></script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/cms/default/js/kingdee.js?1876572040" ></script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/cms/default/js/base.js?4128997615" ></script>
+		<script type="text/javascript" src="themes/site_themes/LandMover/apps/cms/default/js/front.js?3214566309" ></script>
+		
+					<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+					<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faff7fbe8fcb98b060541077cc76465f2' type='text/javascript'%3E%3C/script%3E"));</script>
+		
+		<script type="text/javascript">
+		    (function ($) {
+
+		        var m = $('.J-scroll-menu');
+		        var t = $('.J_tab').find('.tab');
+
+		        $('.J_posters').cycle({
+
+		            fx: 'scrollLeft',
+		            pager: '.J_contro_dot',
+		            timeout: 10000,
+		            speed: 300,
+		            pauseOnPagerHover: false
+
+		        });
+
+		        t.find('li').click(function () {//tab 切换
+		            var index = $(this).index();
+		            var tabcon = $(this).parents('.J_tab').find('.tabcon');
+		            $(this).parents('.tab').find('li').removeClass('cur');
+		            $(this).addClass('cur');
+		            tabcon.hide().eq(index).show();
+
+		        });
+
+		        m.find('li').click(function () {
+
+		            var i = $(this).index();
+		            $('html,body').animate({ scrollTop: $('#t' + i).offset().top - 40 + 'px' }, 200);
+
+		        });
+
+		        $(window).scroll(function () {
+
+		            if ($(document).scrollTop() > 470) {
+
+		                m.addClass('fix');
+
+		            } else {
+
+		                m.removeClass('fix');
+
+		            }
+
+		        });
+
+
+		    })(jQuery);
+		</script>
+		<script>
+		    var shareId = "";
+		    var shareUrl = window.location.href;
+		    if (shareId != "" && shareUrl.indexOf("shareId=") == -1) {
+
+		        if (shareUrl.indexOf("?") > 0) {
+
+		            shareUrl += "&shareId=" + shareId;
+
+		        } else {
+
+		            shareUrl += "?shareId=" + shareId;
+
+		        }
+
+		    }
+		    window._bd_share_config = { "common": { "bdUrl": shareUrl, "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["tsina", "qzone", "weixin", "renren", "t163", "tqq"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["tsina", "qzone", "weixin", "renren", "t163", "tqq"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion=' + ~(-new Date() / 36e5)];
+		</script>
+  	</body>
+	<!--[if IE 6]>
+	<script type="text/javascript" src="http://cms.kingdee.com/st/static/apps/cms/default/js/DD_belatedPNG.js" ></script>
+	<script type="text/javascript">
+			//IE6透明
+			$(window).load(function(){
+				DD_belatedPNG.fix('img,.open,.close,.nav-arrow,.about-web,.iepngfix,.menu');				
+			});
+	</script>
+	<![endif]-->
 </html>
-<script type="text/javascript">
-
-// �ٶȵ�ͼAPI����
-var map = new BMap.Map("allmap");            // ����Mapʵ��
-var point = new BMap.Point(116.404, 39.915);    // ����������
-map.centerAndZoom(point,15);                     // ��ʼ����ͼ,�������ĵ�����͵�ͼ����
-map.enableScrollWheelZoom();                            //���ù��ַŴ���С
-
-</script>
