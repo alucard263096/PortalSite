@@ -8,7 +8,7 @@
     <div class="page pos_r clearfix">
         <div class="fl mt20">
             <a class=" fl" href="<{$rootpath}>/index.phpg">
-                <img style="margin-top: -10px;" src="themes/site_themes/LandMover/logo/logo3.png" /></a>
+                <img  src="themes/site_themes/LandMover/images/logo4.png" /></a>
         </div>
         <ul class="menu fr mt30">
             <li class="J-mian-nav">

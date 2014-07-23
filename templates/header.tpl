@@ -36,56 +36,6 @@
 		</div>
 		<!-- 最顶层 #site-nav -->
 		<{include file="$smarty_root/menu.tpl" }>
-<!-- #高度容器 -->
-        <!-- 轮播海报-->
-       <div class="posters page">
-         <span class="J_contro_dot pos_a contro-dot"></span>
-         <ul class="J_posters">
-         <li><img src="themes/site_themes/LandMover/images/banner-0704.jpg" /></li>             
-         <li><img src="themes/site_themes/LandMover/images/banner-0704.jpg" /></li>             
-         <li><img src="themes/site_themes/LandMover/images/banner-0704.jpg" /></li>
-
-<!--         <li>
-         <div class="notes pos_a ftyahei"><span class="ftbold">346张报表<br />满足招商局三大需求</span> <br /><a href="http://www.kingdee.com/xinwen/6195.html" target="_blank">详情了解 ></a></div>
-         <img src="themes/site_themes/LandMover/apps/cms/default/images/2014/banner-0704.jpg" />
-         </li>-->
-         </ul>
-       </div>
-        <!-- 轮播海报End-->
-
-            
-        <!-- 滚动菜单 -->
-       <div class="J-scroll-menu scroll-menu">
-          <div class="page">
-            <ul>
-            <li>公司动态</li>
-            <li>移动应用</li>
-            <li>管理软件</li>
-            <li>提交需求</li>
-            <li>成功案例</li>
-            <li>版本和功能</li>
-            </ul>
-          </div>
-        </div>
-        <!-- 滚动菜单End -->
-
-            
-        <!-- 公司动态-->
-        <div class="active-news" id="t0">
-        <div class="page clearfix">
-            <div class="active">
-              <h4 class="ftyahei">专注服务</h4>
-            </div>
-            <div class="active weibo">
-            <h4 class="ftyahei">专注技术</h4>
-            </div>
-            <div class="active weibo">
-            <h4 class="ftyahei">专注客户</h4>
-            </div>
-        </div>
-        
-        </div>
-        <!-- 公司动态End -->
 
 
 

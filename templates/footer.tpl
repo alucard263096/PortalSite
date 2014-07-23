@@ -27,11 +27,12 @@
     <div class="page clearfix bottom-menu">
 
         <div class="l fl J_down_menu_box">
-            站点导航
+          <a href="#" target="_blank">站点导航</a>
+            |  <a href="#" target="_blank">使用条款</a>
+            |  <a href="#" target="_blank">联系我们</a>
         </div>
-        <div class="m fl">
-            |  <a href="http://www.kingdee.com/xinwen/5686.html" target="_blank">使用条款</a>
-            |  <a href="http://www.kingdee.com/company/contact.html" target="_blank">联系我们</a>
+        <div class="m fl" style="text-align:right;">
+          <img  src="themes/site_themes/LandMover/logo/logo3.png" />
         </div>
         <div class="r fr">
             &copy;2014雷德睦华医药科技（北京）有限公司 版权所有<br />
