@@ -20,12 +20,20 @@
 .fix{position:fixed; top:0; z-index:10000}
 
 /*首页公司动态*/
-.active-news,.erpsoft{ background:#F5F5F5;}
+.active-news,{ background:#ffffff;}
+.erpsoft{ background:#f5f5f5;}
 .active-news .active{ width:300px; height:330px; float:left; padding-top:10px; margin:10px 0}
 .active-news .active h4{ font-size:16px;}
 .active-news .weibo{width:319px; border-left:1px solid #ccc; padding:10px 0 0 20px; background:none}
 .active-news .weixin{ width:185px; height:72px; background: url(../../../images/2013v1/weixin2code.png) 7px center no-repeat; padding-left:105px; line-height:18px; font-size:14px; padding-top:30px; margin:10px 0 15px 0}
 .active-news .weibo .con{ width:300px; height:290px; }
+
+
+.erpsoft .active{ width:300px; height:130px; float:left; padding-top:10px; margin:10px 0}
+.erpsoft .active h4{ font-size:16px;}
+.erpsoft .weibo{width:319px; border-left:1px solid #ccc; padding:10px 0 0 20px; background:none}
+.erpsoft .weixin{ width:185px; height:72px; background: url(../../../images/2013v1/weixin2code.png) 7px center no-repeat; padding-left:105px; line-height:18px; font-size:14px; padding-top:30px; margin:10px 0 15px 0}
+.erpsoft .weibo .con{ width:300px; height:290px; }
 
 /*移动应用*/
 .mod-title{ padding:30px 0; }
