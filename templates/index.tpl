@@ -24,7 +24,7 @@
             <li>优点</li>
             <li>品质</li>
             <li>风险</li>
-            <li>更多保护</li>
+            <li>庆大霉素</li>
             </ul>
           </div>
         </div>
@@ -177,10 +177,68 @@
       <div class="mod-title t-center ftyahei ft14">
         <h3>长期的成功 - 翻修风险低</h3>
       </div>
-
-      临床观察证实
+      临床观察证实，骨水泥的类型是假体使用寿命的决定性因素。从1979年至今，瑞典髋关节登记处以及记录了
+      超过250,000例的髋关节和膝关节植入术。髋关节登记处的数据分析显示，PALACOS的返修率是最低的。其与其他
+      骨水泥相比，使用PALACOS骨水泥的假体在植入10年后，翻修的案例仅为其他骨水泥的一半。
     </div>
   </div>
   <!-- 风险 End -->
 
+
+  <!-- 庆大霉素-->
+  <div class="anli J_tab" id="t4">
+    <div class="banner" style="background-image:url(http://www.kingdee.com/st/static/apps/cms/default/images/2013v1/banner1.jpg);">
+      <div class="page">
+        <ul class="tab ft13 ftyahei">
+          <li class="cur">预防感染</li>
+          <li>有效保护</li>
+          <li>负担更小</li>
+          <li>有效性高</li>
+        </ul>
+      </div>
+    </div>
+    <h3>PALACOS@-庆大霉素提供了更有效的保护</h3>
+    <h3>局部释放率搞，全身负担低</h3>
+    <div class="page clearfix tabcon">
+
+      <div class="mod-title t-center ftyahei ft14">
+        <h3>添加抗生素预防感染</h3>
+      </div>
+      PALACOS家族的所有产品都可以添加庆大霉素。使用添加了抗生素的骨水泥能够降低手术植入区域的感染几率，以及假体有菌
+      松弛的风险。
+    </div>
+
+    <div class="page clearfix tabcon" style="display:none">
+
+      <div class="mod-title t-center ftyahei ft14">
+        <h3>有效地保护作用</h3>
+      </div>
+      和只施用全身抗生素相比，骨水泥中的抗生素能够局部地释放，并且局部浓度较高。这一点对于延长假体的使用寿命有
+      着积极的作用。抗生素初始释放浓度很高，活性作用还能够持续一段时间，这就为假体提供了有效保护作用。
+      在制造工厂将抗生素混合到骨水泥中，能够保证抗生素的分布均匀性，以及骨水泥表面有效成分的可持续释放。
+    </div>
+
+    <div class="page clearfix tabcon" style="display:none">
+
+      <div class="mod-title t-center ftyahei ft14">
+        <h3>病人负担小</h3>
+      </div>
+      抗生素从骨水泥中局部释放，从而降低了病人的全身负担。这一点保证了病人的安全，并且减少了不必要的副作用。
+    </div>
+
+    <div class="page clearfix tabcon" style="display:none">
+
+      <div class="mod-title t-center ftyahei ft14">
+        <h3>有效性高</h3>
+      </div>
+      庆大霉素有两个决定性的优点：一方面，与其他抗生素相比，庆大霉素从PALACOS骨水泥的释放能力最佳；另一方面，
+      庆大霉素具有一个广泛的抗菌谱，他对73%以上的临床相关病原体都有有效地杀菌作用。
+    </div>
+    <div class="mod-title t-center ftyahei ft14">
+      <h3>有力的数据</h3>
+    </div>
+  </div>
+  <!-- 庆大霉素 End -->
+  
+  
   <{include file="$smarty_root/footer.tpl" }>
