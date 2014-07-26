@@ -25,10 +25,14 @@
 			<div class="page clearfix">
 				<ul class="fl left">
 					<li class="welcome">欢迎光临雷德睦华医疗器材官方网站</li>
-					<li class="top-weibo"><a href="#">设为首页</a>&nbsp;|&nbsp;<a href="#">收藏我们</a></li>
+					<li class="top-weibo">
+						<a href="#" >设为首页</a>
+						&nbsp;|&nbsp;
+						<a href="#">收藏我们</a>
+					</li>
 				</ul>
 				<ul class="fr">
-					<li class="online-sale orange J_down_menu_box"><b>在线咨询</b><div class="c2 J_down_menu none"></div></li>
+					<li class="online-sale orange J_down_menu_box"><b>关注我们，在线咨询</b><div class="c2 J_down_menu none"></div></li>
 					<li class="phone-number mr10"><span class="fl">或致电</span>&nbsp;<a style="font-weight:bolder;font-size:15px;color:darkred;">4000-000-000</a></li>
 					<!--<li class="J_searchBox search-box pos_r"><input id="sKey" class="pos_a" type="text" value="搜索"/><a id="sBtn" class="search-button pos_a" href="javascript:;"></a></li>-->
 				</ul>

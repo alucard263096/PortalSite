@@ -2,7 +2,7 @@
               <div class="sideContent">
                 <h2>推荐产品</h2>
                 <div class="newsBox">
-                  <img width="120px;" src="themes/site_themes/yaletown/products/3ebc8f60-b924-4d1b-af32-b4ac2f8408cf.jpg" alt="Tasktop" />
+                  <img width="120px;" src="<{$rootpath}>/themes/site_themes/yaletown/products/3ebc8f60-b924-4d1b-af32-b4ac2f8408cf.jpg" alt="Tasktop" />
                   <h3>
                     <a href="product.php" target="_blank">最新IPhone 6现在只售$5999</a>
                   </h3>

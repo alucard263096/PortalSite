@@ -13,15 +13,15 @@
     <ul class="J_posters">
 
       <li>
-        <img src="themes/site_themes/LandMover/images/banner-0704.jpg" />
+        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/banner-0704.jpg" />
       </li>
 
       <li>
-        <img src="themes/site_themes/LandMover/images/banner-0704.jpg" />
+        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/banner-0704.jpg" />
       </li>
 
       <li>
-        <img src="themes/site_themes/LandMover/images/banner-0704.jpg" />
+        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/banner-0704.jpg" />
       </li>
 
     </ul>
@@ -71,7 +71,7 @@
   <div class="active-news" style="height:900px;" id="t0">
     <div class="page">
       <div class="mod-title t-center ftyahei ft18">
-        <img src="themes/site_themes/LandMover/images/palacos.png"></img>
+        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/palacos.png"></img>
       </div>
     </div>
 
@@ -86,7 +86,7 @@
           PALACOS®R+G添加了庆大霉素作为活性物质，在30多年来的手术应用上，保持着最低的翻修率。
         </div>
         <div style="text-align:center;width:100%;">
-          <img src="themes/site_themes/LandMover/images/product_r.png"></img>
+          <img src="<{$rootpath}>/themes/site_themes/LandMover/images/product_r.png"></img>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
           PALACOS®MV尤其适合用于真空混合系统系统-甚至不用预冷。目前也有添加了庆大霉素的PALACOS®MV+G。
         </div>
         <div style="text-align:center;width:100%;">
-          <img src="themes/site_themes/LandMover/images/product_m.png"></img>
+          <img src="<{$rootpath}>/themes/site_themes/LandMover/images/product_m.png"></img>
         </div>
       </div>
 
@@ -112,7 +112,7 @@
           良好的锚定作用。
         </div>
         <div style="text-align:center;width:100%;">
-          <img src="themes/site_themes/LandMover/images/product_l.png"></img>
+          <img src="<{$rootpath}>/themes/site_themes/LandMover/images/product_l.png"></img>
         </div>
       </div>
 
@@ -200,14 +200,14 @@
           <p>超过70%的骨水泥式人工髋关节，使用寿命大于25年。</p>
           <p>下表所涉及到的翻修案例，是登记处所记录数据的所有需要翻修的骨水泥式假体。</p>
           <div style="text-align:center;width:100%;">
-            <img src="themes/site_themes/LandMover/images/data1.png"></img>
+            <img src="<{$rootpath}>/themes/site_themes/LandMover/images/data1.png"></img>
           </div>
         </div>
         <div style="width:50%;float:right;" >
           <p>大约有30%的无骨水泥式髋关节，使用寿命少于14年。</p>
           <p>下表所涉及到的翻修案例，是登记处所记录数据的所有需要翻修的骨水泥式假体。</p>
           <div style="text-align:center;width:100%;">
-            <img src="themes/site_themes/LandMover/images/data2.png"></img>
+            <img src="<{$rootpath}>/themes/site_themes/LandMover/images/data2.png"></img>
           </div>
         </div>
       </div>

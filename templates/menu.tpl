@@ -7,8 +7,8 @@
 <div class="main-nav ftheiti">
     <div class="page pos_r clearfix">
         <div class="fl mt20">
-            <a class=" fl" href="<{$rootpath}>/index.phpg">
-                <img  src="themes/site_themes/LandMover/images/logo4.png" /></a>
+            <a class=" fl" href="<{$rootpath}>/index.php">
+                <img  src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" /></a>
         </div>
         <ul class="menu fr mt30">
             <li class="J-mian-nav">
@@ -57,10 +57,11 @@
             <dl style="width: 130px;"><dt><a href="" target="">关节翻修术</a></dt></dl>
         </div>
         <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="" target="">供应商</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">医疗结构</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">医生</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">全国网点</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php" target="">伙伴列表</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=1" target="">供应商</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=2" target="">医疗结构</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=3" target="">医生</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?showmap=1" target="">全国网点</a></dt></dl>
         </div>
         <div class="subnav-li">
             <dl style="width: 130px;"><dt><a href="" target="">最新资讯</a></dt></dl>

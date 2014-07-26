@@ -12,7 +12,7 @@
                         <li id="brad-johns">
                           <div class="prebiowrapper clearfix">
                             <div class="thumb">
-                              <img alt="F1"  src="themes/site_themes/yaletown/products/3ebc8f60-b924-4d1b-af32-b4ac2f8408cf.jpg">
+                              <img alt="F1"  src="<{$rootpath}>/themes/site_themes/yaletown/products/3ebc8f60-b924-4d1b-af32-b4ac2f8408cf.jpg">
                             </div>
                             <div class="stats clearfix" style="width:500px;">
                               <span class="protitle">
