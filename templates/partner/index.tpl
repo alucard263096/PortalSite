@@ -1,5 +1,10 @@
 ﻿<{include file="$smarty_root/header.tpl" }>
 
+</style><script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3GpApnIzrOQnwXVn99MmeeUE"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+
 
   <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/css/plist.css" />
 
@@ -78,8 +83,8 @@
       </div>
       
       
-      
-      <div class="m"  id="result"  >
+      <div style="margin-top: 20px;">
+      <div class="m"  id="result"  style="float:left;" >
         <div class="mt">
           <div style="display:none;float:left;">
             <input type="checkbox"  style="margin-top:7px;float:left;" /><span>&nbsp;全选</span>
@@ -94,24 +99,131 @@
             <div class="attr" style="width:498px;">
             <div style="float:left;width:20px;">[<{$rs.seq}>]</div>
             <div style="width:478px;float:right;">
-              <h3><{$rs.name}></h4>
-              <p>地址：<{$rs.address}></p>
-              <span>电话：<{$rs.tel}></span>
-              <a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>">查看详情</a>
+              <h3 class="name"><{$rs.name}></h4>
+              <p class="address">地址：<{$rs.address}></p>
+              <span class="tel">电话：<{$rs.tel}></span>
+              <a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>"><b>查看详情</b></a>
               </div>
+              <input type="hidden" class="seq" value="<{$rs.seq}>" />
+              <input type="hidden" class="id" value="<{$rs.id}>" />
+              <input type="hidden" class="point_x" value="<{$rs.x}>" />
+              <input type="hidden" class="point_y" value="<{$rs.y}>" />
             </div>
           </div>
         </div>
         <{/foreach}>
       </div>
+      <div  style="float:right;width:480px;height:500px;" >
+	      <div id="allmap" style="overflow:hidden;zoom:1;height:480px;">	
+		    <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+		  </div>
+      </div>
+      </div>
+      
+      <script type="text/javascript">
+
+      var pointList=new Array();
+      var map = null;
+      var searchInfoWindow = null; 
+      
+      $(document).ready(function(){
+          map = new BMap.Map('map');
+          var midinchine = new BMap.Point(116.743722,34.362871);
+          map.centerAndZoom(midinchine, 5);
+          map.enableScrollWheelZoom();
+          
+		  var i=0;
+          $(".resulattr").each(function(){
+            var seq=Number($(this).find(".seq").val());
+        	var point = new BMap.Point($(this).find(".point_x").val(),$(this).find(".point_y").val());
+        	var marker = new BMap.Marker(point); //创建marker对象
+			var info={
+				"seq":seq,
+				"id":$(this).find(".id").val(),
+				"name":$(this).find(".name").text(),
+				"address":$(this).find(".address").text(),
+				"tel":$(this).find(".tel").text(),
+				"result":$(this)
+			};
+        	marker.info=info;
+			pointList[i++]=marker;
+			var label = new BMap.Label(""+seq,{"offset":new BMap.Size(5,2)});
+			label.setStyle({backgroundColor:"transparent",color:"#ffffff",border:"0px"});
+			marker.setLabel(label);
+      	    map.addOverlay(marker);
+
+
+    	    marker.addEventListener("click", function(e){
+    		    var vmarker=this;
+    		    $(".resulattr").removeClass("hover");
+				vmarker.info.result.addClass("hover");
+				var seq=Number($(this).find(".seq").val());
+				showPointInfo(vmarker);
+    	    })
+			
+          });
+          refreshMap();
+
+          
+          
+      });
+
+      function closeAllPointInfo(){
+    	  $.each(pointList,function(i,val){
+    		  val.hide();
+    	  });if(searchInfoWindow!=null){
+    		  searchInfoWindow.close();
+    	  }
+      }
+
+      function refreshMap(){
+    	  //map.clearOverlays();
+    	  closeAllPointInfo();
+    	  
+    	  $.each(pointList,function(i,val){
+    		var marker=val;
+      	    var result=val.info.result;
+      	    if(result.hasClass("hide")==false){
+      	    	marker.show(); //在地图中添加marker
+      	      if(result.hasClass("hover")==true){
+
+      	    	showPointInfo(marker);
+      	    	
+      	      }
+      	    }
+    	  });
+      }
+
+      function showPointInfo(marker){
+    	  var content = '<div style="wmargin:0;line-height:20px;padding:2px;">' +
+          marker.info.address+'<br/>'+marker.info.tel +
+        '</div>';
+    	      
+	     searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+	    			title  : marker.info.name,      //标题
+	    			width  : 290,             //宽度
+	    			height : 105,              //高度
+	    			enableAutoPan : true,     //自动平移
+	    			enableSendToPhone:false, 
+	    		    searchTypes :[
+	    		              ]
+	    		});
+	     searchInfoWindow.open(marker); //在marker上打开检索信息串口dow.open(marker);
+      }
+      
+      </script>
+      
       
       <script type="text/javascript">
       $(document).ready(function(){
 
 			$(".resulattr").hover(function(){
+				$(".resulattr").removeClass("hover");
 				$(this).addClass("hover");
+				var seq=Number($(this).find(".seq").val());
+				showPointInfo(pointList[seq-1]);
 			},function(){
-				$(this).removeClass("hover");
+				//$(this).removeClass("hover");
 			});
           
       });
@@ -132,6 +244,7 @@
 			}
 		});
 		$(".resulattr").removeClass("hide");
+		$(".resulattr").removeClass("hover");
 			$(".resulattr").each(function(){
 				var type=$(this).attr("type");
 				var city=$(this).attr("city");
@@ -145,7 +258,8 @@
 					$(this).addClass("hide");
 				}
 			});
-
+			
+			refreshMap();
 		
 		
       }
@@ -194,13 +308,14 @@
     <script>
       $(document).ready(function(){
 
-      var provincejson=
-      [{name:"北京",id:1}
-      ,{name:"上海",id:2}
-      ,{name:"深圳",id:3}
-      ,{name:"长沙",id:4}
-      ];
+      
 
+    	    var provincejson=
+    	        [{name:"北京",id:1}
+    	        ,{name:"上海",id:2}
+    	        ,{name:"深圳",id:3}
+    	        ,{name:"长沙",id:4}
+    	        ];
 
 
       $.each( provincejson, function(index, content)
