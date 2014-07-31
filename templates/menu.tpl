@@ -9,6 +9,7 @@
         <div class="fl mt20">
             <a class=" fl" href="<{$rootpath}>/index.php">
                 <img  src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" /></a>
+                <img width="50px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png" />
         </div>
         <ul class="menu fr mt30">
             <li class="J-mian-nav">
@@ -50,10 +51,10 @@
             <dl style="width: 130px;"><dt><a href="#" target="">企业荣誉</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="#" target="">我们的团队</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="#" target="">企业历程</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">联系我们</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/contactus.php" target="">联系我们</a></dt></dl>
         </div>
         <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="" target="">初次关节置换术</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/product/index.php" target="">PALACSO®家族</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="" target="">关节翻修术</a></dt></dl>
         </div>
         <div class="subnav-li">
