@@ -9,7 +9,7 @@
         <div class="fl mt20">
             <a class=" fl" href="<{$rootpath}>/index.php">
                 <img  src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" /></a>
-                <img width="50px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png" />
+                <!-- <img width="50px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png" /> -->
         </div>
         <ul class="menu fr mt30">
             <li class="J-mian-nav">
@@ -21,15 +21,11 @@
                 <span class="J-nav-arrow nav-arrow"></span>
             </li>
             <li class="J-mian-nav">
+                <a href="#" target="target: _blank;">最新消息</a>
+                <span class="J-nav-arrow nav-arrow"></span>
+            </li>
+            <li class="J-mian-nav">
                 <a href="#">合作伙伴</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li class="J-mian-nav">
-                <a href="#" target="target: _blank;">新闻中心</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li class="J-mian-nav">
-                <a href="#">加入我们</a>
                 <span class="J-nav-arrow nav-arrow"></span>
             </li>
             <li>
@@ -47,15 +43,18 @@
 <div class="J-subnav subnav pos_r">
     <div class="J-subnav-wrap subnav-wrap clearfix page pos_r">
         <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="#" target="">企业介绍</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="#" target="">企业荣誉</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="#" target="">我们的团队</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="#" target="">企业历程</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/index.php" target="">企业介绍</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/contactus.php" target="">联系我们</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/joinus.php" target="">加入我们</a></dt></dl>
         </div>
         <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/product/index.php" target="">PALACSO®家族</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">关节翻修术</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/index.php" target="">Palacos Family</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="" target="">Osteopal V 脊柱骨水泥</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="" target="">骨水泥真空混合系统</a></dt></dl>
+        </div>
+        <div class="subnav-li">
+            <dl style="width: 130px;"><dt><a href="" target="">下载中心</a></dt></dl>
+            <dl style="width: 130px;"><dt><a href="" target="">新闻报道</a></dt></dl>
         </div>
         <div class="subnav-li">
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php" target="">伙伴列表</a></dt></dl>
@@ -63,14 +62,6 @@
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=2" target="">医疗结构</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=3" target="">医生</a></dt></dl>
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?showmap=1" target="">全国网点</a></dt></dl>
-        </div>
-        <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="" target="">最新资讯</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">近期活动</a></dt></dl>
-        </div>
-        <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="" target="">社会招聘</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">校园招聘</a></dt></dl>
         </div>
     </div>
 </div>

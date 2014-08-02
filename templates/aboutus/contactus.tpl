@@ -27,6 +27,10 @@
           <li>联系人：李倢瑞 Jerry</li>
         </ul>
       </div>
+      <div class="prompt_list prompt_list_second">
+        <strong>关注我们</strong>
+        <img alt="" width="130px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png">
+      </div>
     </div>
     <!--公司信息 提示 end--><!--公司信息 提示-->
     <div class="clearfix"></div>
@@ -90,7 +94,7 @@
         <li>电话：13922160737</li>
     </ul>
     <ul>
-        <li class="company_name">黑龙江，吉林，辽宁</li>
+        <li class="company_name">黑龙江、吉林、辽宁</li>
         <li>张婷 Tina</li>
         <li>电话：15331988207</li>
     </ul>
