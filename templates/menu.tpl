@@ -48,7 +48,7 @@
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/joinus.php" target="">加入我们</a></dt></dl>
         </div>
         <div class="subnav-li">
-            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/index.php" target="">Palacos Family</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/palacos.php" target="">Palacos Family</a></dt></dl>
             <dl style="width: 200px;"><dt><a href="" target="">Osteopal V 脊柱骨水泥</a></dt></dl>
             <dl style="width: 200px;"><dt><a href="" target="">骨水泥真空混合系统</a></dt></dl>
         </div>

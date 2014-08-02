@@ -44,14 +44,7 @@
 .mobileapp li a,.erpsoft li a{display:block; width:230px; height:174px; text-decoration:none}
 .mobileapp li a .icon,.erpsoft li a .icon{display:block; width:230px; height:130px; background:#CCC;}
 .mobileapp li a .tt,.erpsoft li a .tt{display:block; height:44px; line-height:44px;}
-.mobileapp li a .icon{ background:#009BEF url(../../../images/2013v1/app.png) no-repeat;}
-.mobileapp li.item-1 a .icon{ background-position:0 -130px}
-.mobileapp li.item-2 a .icon{ background-position:0 -260px}
-.mobileapp li.item-3 a .icon{ background-position:0 -390px}
-.mobileapp li.item-4 a .icon{ background-position:0 -520px}
-.mobileapp li.item-5 a .icon{ background-position:0 -650px}
-.mobileapp li.item-6 a .icon{ background-position:0 -780px}
-.mobileapp li.item-7 a .icon{ background-position:0 -910px}
+.mobileapp li a .icon{ background:#009BEF;color:white;font-size:35px;text-align:center;line-height:130px; }
 .mobileapp li a:hover .icon{ background-color:#105EA9}
 
 

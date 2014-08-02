@@ -11,7 +11,7 @@ require '../include/common.inc.php';
 $array = array(
     "seq" => "1",
     "id" => "1",
-    "name" => "雷德睦华总代理（北京）",
+    "name" => "PALACOS®R",
     "address" => "北京市丰台区马家堡东路106号自然新天地写字楼606室",
     "tel" => "010-58032661",
     "type"=> "1",

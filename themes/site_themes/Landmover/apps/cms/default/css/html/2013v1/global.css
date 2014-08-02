@@ -6,7 +6,7 @@
 body
 {
 	font-size: 12px;
-	font-family: Arial,Verdana,Tahoma!important;
+	font-family: Arial,Verdana,Tahoma,黑体!important;
 	margin: 0 auto;
 	color: #3f3e3e;
 	background: #fff;
@@ -789,19 +789,19 @@ Block CSS Document
 /*焦点图1*/
 .focus
 {
-	height: 345px;
+	height: 360px;
 	z-index: 3;
 }
 
 .focus-con
 {
 	width: 980px;
-	height: 345px;
+	height: 360px;
 }
 
 	.focus-con li
 	{
-		height: 345px;
+		height: 360px;
 		width: 980px;
 		background: url(../../../images/common/linebg1.gif) repeat-y center top;
 	}

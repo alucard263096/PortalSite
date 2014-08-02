@@ -8,9 +8,10 @@
   require 'include/common.inc.php';
   require ROOT.'/classes/mgr/download.cls.php';
   
+  $filename=base64_decode($_REQUEST["filename"]);
   
   //file name,filepath
-  $downloadMgr->downFileFromServer('shit',ROOT."/excel.php");
+  $downloadMgr->downFileFromServer($filename,ROOT."/upload/".$filename);
   
   
   

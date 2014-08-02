@@ -178,9 +178,9 @@ Block CSS Document
 
 
 /*焦点图1*/
-.focus{height:345px;  z-index:3; }
-.focus-con{ width:980px; height:345px;}
-.focus-con li{ height:345px; width:980px; background:url(../../images/common/linebg1.gif) repeat-y center top;}
+.focus{height:360px;  z-index:3; }
+.focus-con{ width:980px; height:360px;}
+.focus-con li{ height:360px; width:980px; background:url(../../images/common/linebg1.gif) repeat-y center top;}
 #contro-dot{z-index:20000; right:10px; bottom:20px; height:12px; width:115px; overflow:hidden; left:50%; margin-left:-78px; text-indent:-1000px; text-align:center;}
 #contro-dot a,#contro-dot a.activeSlide{background:url(../../images/common/easfocusbtn.png) no-repeat; behavior: url(../css/iepngfix/iepngfix.htc);}
 #contro-dot a{ float:left; cursor:pointer; height:12px;   cursor:pointer; width:13px; margin:0 1px; background-position:right top; margin-right:5px; overflow:hidden; -background:url(../../images/common/easfocusbtnie.png) no-repeat;  }
