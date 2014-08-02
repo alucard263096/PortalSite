@@ -147,8 +147,8 @@ Block CSS Document
 
 
 /*按钮*/
-.btns{ border:none;  color:#FFF; display:inline-block; height:30px; line-height:30px; padding:0 20px; background:#009;   border-radius:5px; font-size:14px; FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#57C5F5,endColorStr=#4CAAD4);/*IE6*/background:-moz-linear-gradient(top,#57C5F5,#4CAAD4);/*非IE6的其它*/background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#57C5F5), to(#4CAAD4));/*非IE6的其它*/ cursor:pointer;}
-.btnr{ border:none;  color:#666; display:inline-block; height:30px; line-height:30px; padding:0 20px; background:#009;   border-radius:5px; font-size:14px; FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFEEEE,endColorStr=#CDCDCD);/*IE6*/background:-moz-linear-gradient(top,#EFEEEE,#CDCDCD);/*非IE6的其它*/background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#EFEEEE), to(#CDCDCD));/*非IE6的其它*/ cursor:pointer;}
+.btns{ border:none;  color:#FFF; display:inline-block; height:30px; line-height:30px; padding:0 20px; background:#4FB2DD;   border-radius:5px; font-size:14px; FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#57C5F5,endColorStr=#4CAAD4);/*IE6*/background:-moz-linear-gradient(top,#57C5F5,#4CAAD4);/*非IE6的其它*/background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#57C5F5), to(#4CAAD4));/*非IE6的其它*/ cursor:pointer;}
+.btnr{ border:none;  color:#666; display:inline-block; height:30px; line-height:30px; padding:0 20px; background:#4FB2DD;   border-radius:5px; font-size:14px; FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#EFEEEE,endColorStr=#CDCDCD);/*IE6*/background:-moz-linear-gradient(top,#EFEEEE,#CDCDCD);/*非IE6的其它*/background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#EFEEEE), to(#CDCDCD));/*非IE6的其它*/ cursor:pointer;}
 
 /*面包屑导航*/
 .breadcrumb-nav{ color:#ccc;}

@@ -13,7 +13,7 @@ a{text-decoration:none;}
 
 .province a{display:none; position:absolute;}
 
-.map_detail{ padding:15px 20px 20px 20px; color:#333; font-family:微软雅黑; border-radius:5px; width:480px; background:#fff; border:3px solid #98999b; position:absolute; z-index:1000;}
+.map_detail{ padding:15px 20px 20px 20px; color:#333; font-family:微软雅黑; border-radius:5px; width:180px; background:#fff; border:3px solid #98999b; position:absolute; z-index:1000;}
 
 .map_detail .arrow{width:15px; height:28px; background:url(../images/map/arrow.png) no-repeat; display:block; position:absolute; right:-15px; top:50%; margin-top:-14px;}
 .map_detail h2{font-size:16px; font-weight:normal; margin-bottom:15px;}

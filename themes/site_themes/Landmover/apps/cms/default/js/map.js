@@ -137,7 +137,6 @@ $(document).ready(function(){
 				pvMapId : 'pro_'+subfix,
 				pvMap : $('#pro_'+subfix)
 			});
-			
 		});
 
 		$.each(mapElements,function(){
