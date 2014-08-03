@@ -73,10 +73,12 @@
 		<td>
 		</td>
 	</tr>
+	
 	<tr>
 		<td colspan="3">
 		<div style="width:100%">
 			<p><span style="color:#f5f5f5;font-size:30px;">以下内容由后台自由编辑</span></p>
+			<!-- 
 			<{if $info.id == 1 or $info.id == 2 }>
 			
 			<p><span style="color:#ACC353;font-size:20px;">初次关节置换术 - 已证实、质量稳定的骨水泥</span></p>
@@ -102,8 +104,8 @@
 			<p>低粘度性容许通过细小的套管精确使用</p>
 			<p>添加庆大霉素预防感染</p>
 			
-			<{/if}>
+			<{/if}>-->
 		</div>
 		</td>
-	</tr>
+	</tr> 
 </table>

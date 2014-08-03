@@ -39,12 +39,12 @@
 .mod-title{ padding:30px 0; }
 .mod-title h3{ font-size:36px;}
 
-.mobileapp li,.erpsoft li{ display:block; width:230px; height:174px; margin-right:20px; float:left; overflow:hidden}
+.mobileapp li,.erpsoft li{ display:block; width:120px; height:100px; margin-left:5px; float:left; overflow:hidden}
 
-.mobileapp li a,.erpsoft li a{display:block; width:230px; height:174px; text-decoration:none}
-.mobileapp li a .icon,.erpsoft li a .icon{display:block; width:230px; height:130px; background:#CCC;}
+.mobileapp li a,.erpsoft li a{display:block; width:120px; height:100px; text-decoration:none}
+.mobileapp li a .icon,.erpsoft li a .icon{display:block; width:120px; height:90px; background:#CCC;}
 .mobileapp li a .tt,.erpsoft li a .tt{display:block; height:44px; line-height:44px;}
-.mobileapp li a .icon{ background:#009BEF;color:white;font-size:35px;text-align:center;line-height:130px; }
+.mobileapp li a .icon{ background:#009BEF;color:white;font-size:25px;text-align:center;line-height:90px; }
 .mobileapp li a:hover .icon{ background-color:#105EA9}
 
 

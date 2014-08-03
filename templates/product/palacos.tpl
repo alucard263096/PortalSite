@@ -25,8 +25,8 @@
 			</li>
 		</ul>
 	</div>
-	
-	<div class="prompt_box bg-t pt20 mb20 overh fl">
+	<div>
+	<div class="prompt_box bg-t pt20 mb20 overh fl" style="width:720px;float:left;">
       <div class="prompt_list prompt_list_first">
       <strong>PALACOS®R<br>PALACOS®R+G</strong>
       <strong class="substrong">原装进口 德国制造</strong>
@@ -67,16 +67,16 @@
     
 <!-- 移动应用-->
 
-<div class="mobileapp mt10" id="t1">
+<div class="mobileapp mt10" style="width:250px;float:right;">
 
-<div class="page">
+<div >
 
 
-<ul class="clearfix">
+<ul class="clearfix" style="width:250px;">
 
 <li><a  class="showtips"  ref="tips1"  ><span class="icon">安全</span></a></li>
 
-<li ><a  class="showtips"  ref="tips2"  ><span class="icon">使用寿命</span></a></li>
+<li class="mr0"><a  class="showtips"  ref="tips2"  ><span class="icon">使用寿命</span></a></li>
 
 <li ><a  class="showtips"  ref="tips3"  ><span class="icon">负重力</span></a></li>
 
@@ -84,7 +84,7 @@
 
 <li ><a  class="showtips"  ref="tips5"  ><span class="icon">经验</span></a></li>
 
-<li ><a  class="showtips"  ref="tips6" ><span class="icon">品质</span></a></li>
+<li class="mr0"><a  class="showtips"  ref="tips6" ><span class="icon">品质</span></a></li>
 
 <li ><a   class="showtips"  ref="tips7" ><span class="icon">稳定性</span></a></li>
 
@@ -92,8 +92,10 @@
 
 <li ><a   class="showtips"  ref="tips9" ><span class="icon">翻修风险</span></a></li>
 
-<li ><a   class="showtips"  ref="tips10" ><span class="icon">庆大霉素</span></a></li>
+<li class="mr0"><a   class="showtips"  ref="tips10" ><span class="icon">庆大霉素</span></a></li>
 </ul>
+
+</div>
 
 </div>
 
@@ -174,7 +176,12 @@
 
 
 <!-- 移动应用End -->
-    
+<style>
+.ui-widget-header{
+border:0px;
+background:none;
+}
+</style>
 	
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -186,19 +193,15 @@
 			$( "#dialog-content" ).load("<{$rootpath}>/product/detail.php",{id:productid},
 					function(data){
 				$( "#dialog-content" ).dialog({
+					  closeText:"hide",
 					  height:600,
 					  width:800,
 				      modal: true,
-				      title:title,
+				      title:" ",
 				      draggable:false,
 				      closeOnEscape:true,
 				      resizable:false,
-				      show: { effect: "blind", duration: 800 },
-				      buttons: {
-				        "关闭": function() {
-				          $( this ).dialog( "close" );
-				        }
-				      }
+				      show: { effect: "blind", duration: 800 }
 				    });
 			});
 		});
@@ -214,12 +217,8 @@
 			      draggable:false,
 			      closeOnEscape:true,
 			      resizable:false,
-			      show: { effect: "blind", duration: 800 },
-			      buttons: {
-			        "关闭": function() {
-			          $( this ).dialog( "close" );
-			        }
-			      }
+			      title:" ",
+			      show: { effect: "blind", duration: 800 }
 			});
 		});
 		

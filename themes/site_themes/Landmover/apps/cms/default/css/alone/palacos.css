@@ -1,5 +1,5 @@
 .prompt_box{}
-.prompt_list{ font-size:16px;margin-top:10px; float:left; border-bottom:1px solid #D9D9D9;padding-top:20px;  width:770px; min-height:270px;}
+.prompt_list{ font-size:16px;margin-top:10px; float:left; border-bottom:1px solid #D9D9D9;padding-top:20px;  width:450px; min-height:270px;}
 .prompt_list_first{padding-left:230px; background:url(../../images/product/product_r.png) no-repeat left top; }
 .prompt_list_second{padding-right:230px;background:url(../../images/product/product_m.png) no-repeat  right top; }
 .prompt_list_third{padding-left:230px;background:url(../../images/product/product_l.png) no-repeat  left top; }

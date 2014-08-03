@@ -13,7 +13,7 @@
     <ul class="J_posters">
 
       <li>
-        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/banner-0704.jpg" />
+        <img src="<{$rootpath}>/themes/site_themes/LandMover/images/palacosbanner.jpg" />
       </li>
 
       <li>
