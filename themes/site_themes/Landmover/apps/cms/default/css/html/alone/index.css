@@ -87,7 +87,7 @@
 
 
 /*页脚*/
-.footer{ background:#F5F5F5; padding:10px 0}
+.footer{  padding:10px 0}
 .footer dl{ display:block; float:left; width:245px; height:auto}
 .footer dl dt{ padding:10px 0; font:14px; font-weight:bold }
 .bottom-menu{ height:70px; border-top:1px solid #DCDCDC; line-height:70px; margin-top:20px}

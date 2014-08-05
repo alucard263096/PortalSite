@@ -193,7 +193,6 @@ Block CSS Document
 .style-1,.style-2{ padding-bottom:30px; width:100%;}
 .style-1 .l,.style-1 .r,.style-2 .l,.style-2 .r{ float:left; margin-top:30px;}
 .style-1 .r,.style-2 .l{ position:relative; width:400px;}
-.style-1 .r img,.style-2 .l img{ height:268px; width:400px;}
 .style-1 .r span img,.style-2 .l span img{ height:71px; width:71px;}
 /*.style-1 .l,.style-2 .r{ padding-top:30px;}*/
 .style-1 .l span,.style-2 .r span{font-size:32px; color:#333; font-family:"黑体"; line-height:42px; display:block; padding-bottom:15px;}

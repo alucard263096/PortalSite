@@ -872,20 +872,11 @@ Block CSS Document
 	.style-1 .r, .style-2 .l
 	{
 		position: relative;
-		width: 400px;
+		width: 210px;
 	}
 
-		.style-1 .r img, .style-2 .l img
-		{
-			height: 268px;
-			width: 400px;
-		}
+		
 
-		.style-1 .r span img, .style-2 .l span img
-		{
-			height: 71px;
-			width: 71px;
-		}
 	/*.style-1 .l,.style-2 .r{ padding-top:30px;}*/
 	.style-1 .l span, .style-2 .r span
 	{
@@ -933,7 +924,7 @@ Block CSS Document
 
 	.style-1 .l
 	{
-		width: 540px;
+		width: 730px;
 		margin-right: 40px;
 	}
 
@@ -948,7 +939,7 @@ Block CSS Document
 
 	.style-2 .r
 	{
-		width: 450px;
+		width: 720px;
 		margin-left: 45px;
 	}
 

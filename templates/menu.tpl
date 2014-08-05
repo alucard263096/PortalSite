@@ -11,6 +11,7 @@
                 <img  src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" /></a>
                 <!-- <img width="50px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png" /> -->
         </div>
+        <div class="winxin-box fl J_down_menu_box" style="position: relative;"><div class="c2 J_down_menu none" style="display: none;"></div></div>
         <ul class="menu fr mt30">
             <li class="J-mian-nav">
                 <a href="#">关于我们</a>
@@ -20,8 +21,12 @@
                 <a href="#">产品</a>
                 <span class="J-nav-arrow nav-arrow"></span>
             </li>
-            <li class="J-mian-nav">
-                <a href="#" target="target: _blank;">最新消息</a>
+            <li >
+                <a href="<{$rootpath}>/download/index.php" >下载中心</a>
+                <span class="J-nav-arrow nav-arrow"></span>
+            </li>
+            <li >
+                <a href="<{$rootpath}>/news/index.php">最新消息</a>
                 <span class="J-nav-arrow nav-arrow"></span>
             </li>
             <li class="J-mian-nav">
@@ -51,10 +56,6 @@
             <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/palacos.php" target="">Palacos Family</a></dt></dl>
             <dl style="width: 200px;"><dt><a href="" target="">Osteopal V 脊柱骨水泥</a></dt></dl>
             <dl style="width: 200px;"><dt><a href="" target="">骨水泥真空混合系统</a></dt></dl>
-        </div>
-        <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="" target="">下载中心</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="" target="">新闻报道</a></dt></dl>
         </div>
         <div class="subnav-li">
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php" target="">伙伴列表</a></dt></dl>
