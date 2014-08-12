@@ -6,7 +6,11 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
   require '../include/common.inc.php';
+  require ROOT.'/classes/datamgr/general.cls.php';
   
+  $content=$generalMgr->getKeyContent('company_descript');
+  
+  $smarty->assign('content',$content);
   $smarty->display(ROOT.'/templates/aboutus/index.tpl');
   
 ?>

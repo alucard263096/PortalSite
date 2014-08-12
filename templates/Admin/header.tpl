@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=<{$charset}>" />
 <TITLE><{$Title}> <{$Subtitle}></TITLE>
     <link rel="stylesheet" href="<{$rootpath}>/css/template.css" type="text/css" />
-    <script language="javascript" src="<{$rootpath}>/js/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui-1.8.2.custom.js"></script>
+    <script language="javascript" src="<{$rootpath}>/js/jquery.js"></script>
+	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui.min.js"></script>
     <script language="javascript" src="<{$rootpath}>/js/ui-alert.js"></script>
 	<script type="text/javascript" src="<{$rootpath}>/js/jquery.cookie.js"></script>
-	<link type="text/css" href="<{$rootpath}>/themes/base/jquery.ui.all.css" media="screen" rel="stylesheet" />
+	<link type="text/css" href="<{$rootpath}>/js/ui/jquery-ui.min.css" media="screen" rel="stylesheet" />
 	<link type="text/css" href="<{$rootpath}>/themes/blue/style.css" media="screen" rel="stylesheet" />
 	<link type="text/css" href="<{$rootpath}>/css/demos.css" media="screen" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="<{$rootpath}>/css/pro_dropdown_2/pro_dropdown_2.css" />

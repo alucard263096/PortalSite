@@ -1,7 +1,11 @@
 
 function MsgInfo(msg)
 {
+	try{
 	$( "#dialog-message-info" ).dialog( "destroy" );
+	}catch(exception){
+		
+	}
 	$( "#dialog-message-info p").text(msg);
 	
 	$( "#dialog-message-info" ).dialog({
@@ -16,7 +20,11 @@ function MsgInfo(msg)
 }
 function MsgError(msg)
 {
-	$( "#dialog-message-error" ).dialog( "destroy" );
+	try{
+		$( "#dialog-message-error" ).dialog( "destroy" );
+		}catch(exception){
+			
+		}
 	$( "#dialog-message-error p").text(msg);
 	$( "#dialog-message-error" ).dialog({
 		modal: true,
@@ -30,7 +38,11 @@ function MsgError(msg)
 }
 function MsgWarning(msg)
 {
-	$( "#dialog-message-warning" ).dialog( "destroy" );
+	try{
+		$( "#dialog-message-warning" ).dialog( "destroy" );
+		}catch(exception){
+			
+		}
 	$( "#dialog-message-warning p").text(msg);
 	
 	$( "#dialog-message-warning" ).dialog({

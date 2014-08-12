@@ -31,13 +31,13 @@ if(isset($smarty)&&isset($_SESSION["sysMenu"]))
 		{
 			$fc=$menu[$i]["sub_function"][$j]["function_name"];
 			$cr=$menu[$i]["sub_function"][$j]["function_link"];
-			
 			//echo strstr($cr,$request_uri);
-			
-			if(strstr($cr,$request_uri)||$getpremmis_id==$menu[$i]["sub_function"][$j]["function_id"])
+			if(strstr($cr,$request_uri)
+			||$getpremmis_id==$menu[$i]["sub_function"][$j]["function_id"])
 			{
 				$smarty->assign("Subtitle",$fc);
 				$cr_id=$menu[$i]["sub_function"][$j]["function_id"];
+				
 				
 				foreach($menu[$i]["sub_function"][$j]["access_right"] as $ckey => $cvalue)
 				{
@@ -45,7 +45,7 @@ if(isset($smarty)&&isset($_SESSION["sysMenu"]))
 					{
 						if($cvalue["right_id"]==$value)
 						{
-							$smarty->assign("$key",0);
+							$smarty->assign($key,"0");
 						}
 					}
 				}
@@ -62,13 +62,12 @@ if(isset($checkpremmis_id))
 		//exit();
 	}
 }
-
  $smarty->assign('sysUserName',$_SESSION["sysUser"]["user_name"]);
  $smarty->assign('sysMenu',$_SESSION["sysMenu"]);
  $smarty->assign('menu_direction',"H");
- $smarty->assign('sysA',"0");
- $smarty->assign('sysU',"0");
- $smarty->assign('sysD',"0");
+ //$smarty->assign('sysA',"0");
+ //$smarty->assign('sysU',"0");
+ ///$smarty->assign('sysD',"0");
 
 
 ?>

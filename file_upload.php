@@ -1,28 +1,28 @@
-<?php
-/*
- * Created on 2011-1-22
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
- */
-  require 'include/common.inc.php';
-  require ROOT.'/classes/datamgr/db_example.php';
-  require ROOT.'/classes/obj/upload.php';
- echo "a";
- $file=$_FILES["file"];
- 
- print_r($file);
- $file=new Upload($file,$file["name"],"",false);
- echo $file->getSize();
- echo $file->safetyUpload();
- 
-?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/style.css" rel="Stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
 
-
-<form action="file_upload.php" method="post"
-enctype="multipart/form-data">
 <label for="file">Filename:</label>
 <input type="file" name="file" id="file" /> 
 <br />
-<input type="submit" name="submit" value="Submit" />
-</form>
+<input type="button" id="go" name="submit" value="Submit" />
+
+
+<script type="">
+$(document).ready(function(){
+	$("#go").click(function(){
+		$.post("helloworld.php",{"file":$("#file").val()},function(data){
+			alert(data);
+		});
+	});
+});
+</script>
+
+
+</body>
+</html>

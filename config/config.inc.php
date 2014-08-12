@@ -37,7 +37,7 @@ $CONFIG['database']['psw']		= 'root';
 
 #[File upload]
 $CONFIG['fileupload']['upload_path']	= "upload";
-$CONFIG['fileupload']['nt_check']		= true; 
+$CONFIG['fileupload']['nt_check']		= false; 
 $CONFIG['fileupload']['ftp_url']		= "127.0.0.1";
 $CONFIG['fileupload']['ftp_user']		= "anonymous";
 $CONFIG['fileupload']['ftp_password']		= "";
@@ -59,15 +59,13 @@ $CONFIG['email']['smtp_auth']	= true;
 $CONFIG['email']['smtp_secure']	= "ssl";
 
 
-$CONFIG["function"]["about_us"]="2";
-$CONFIG["function"]["contact_us"]="3";
-$CONFIG["function"]["employee"]="4";
-$CONFIG["function"]["partner"]="5";
-$CONFIG["function"]["product"]="6";
-$CONFIG["function"]["user"]="7";
-
-$CONFIG["function"]["station_report"]="12";
-$CONFIG["function"]["media_report"]="13";
+$CONFIG["function"]["general"]="2";
+$CONFIG["function"]["download"]="3";
+$CONFIG["function"]["news"]="4";
+$CONFIG["function"]["manager"]="6";
+$CONFIG["function"]["partner"]="10";
+$CONFIG["function"]["user"]="8";
+$CONFIG["function"]["website"]="9";
 
 
 $CONFIG["access_right"]["sysA"]="2";

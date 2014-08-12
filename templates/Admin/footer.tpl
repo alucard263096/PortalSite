@@ -24,7 +24,18 @@ $(document).ready(function(){
 });
 
 </script>
-			
+			<script type="text/javascript">
+$(document).ready(function(){
+	$(".number").keyup(function(){     
+        var tmptxt=$(this).val();     
+        $(this).val(tmptxt.replace(/\D|^0/g,''));     
+    }).bind("paste",function(){     
+        var tmptxt=$(this).val();     
+        $(this).val(tmptxt.replace(/\D|^0/g,''));     
+    }).css("ime-mode", "disabled");  
+	
+});
+</script>
 		
 
 <div style='display:none;'>

@@ -114,12 +114,12 @@ $(document).ready(function(){
 
 	$(".m_fun").click(function(){
 	
-		$(".s_fun_"+$(this).val()).attr("checked",$(this).attr("checked"));
+		$(".s_fun_"+$(this).val()).prop("checked",$(this).prop("checked"));
 		
 	});
 	$(".c_fun").click(function(){
 	
-		$(".right_"+$(this).val()).attr("checked",$(this).attr("checked"));
+		$(".right_"+$(this).val()).prop("checked",$(this).prop("checked"));
 		
 	});
 	$("#detail_new").click(function(){
@@ -128,7 +128,7 @@ $(document).ready(function(){
 				$("#edit_title").hide();
 				
 				$(".spText").val("");
-				$(".spChk").attr("checked",false);
+				$(".spChk").prop("checked",false);
 				$(".spDdl_1").val('A'); 
 				$(".spDdl_2").val('0'); 
 				
@@ -170,11 +170,11 @@ $(document).ready(function(){
 			return;
 		}
 		$.each($(".ckbAR"),function(){
-			if($(this).attr("checked"))
+			if($(this).prop("checked"))
 			{
 				var d_right="";
 				$.each($(".right_"+$(this).val()),function(){
-					if($(this).attr("checked"))
+					if($(this).prop("checked"))
 					{
 						d_right+=$(this).val()+"?";
 					}
@@ -216,7 +216,7 @@ $(document).ready(function(){
 											$("#edit_title").hide();
 											
 											$(".spText").val("");
-											$(".spChk").attr("checked",false);
+											$(".spChk").prop("checked",false);
 											$(".spDdl_1").val('A'); 
 											$(".spDdl_2").val('0'); 
 											$(".c_psw").attr("disabled",true);

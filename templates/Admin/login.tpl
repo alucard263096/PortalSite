@@ -28,12 +28,12 @@
 				            <tr>
 					            <td style="width:100"  align="right">登录名: </td>
 					            <td style="width:200">
-                                    <input id='txtLoginname' class='submit'  /></td>
+                                    <input id='txtLoginname' class='submit' value='admin'  /></td>
 				            </tr>
 				            <tr>
 					            <td style="width:100"  align="right">密码: </td>
 					            <td style="width:200">
-                                    <input id='txtPassword' type='password' class='submit'  /></td>
+                                    <input id='txtPassword' type='password' class='submit' value='abcd1234' /></td>
 				            </tr>
 				            <tr>
 					            <td>&nbsp;</td>
@@ -75,7 +75,7 @@ $(document).ready(function(){
 		}
 		
 		$.post("login.action.php",{"action":"login","loginname":loginname,"password":password},function(e){
-			alert($.trim(e));
+			//alert($.trim(e));
 			if($.trim(e)=="not_active")
 			{
 				MsgError("用户无效");

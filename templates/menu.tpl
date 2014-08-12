@@ -8,10 +8,11 @@
     <div class="page pos_r clearfix">
         <div class="fl mt20">
             <a class=" fl" href="<{$rootpath}>/index.php">
-                <img  src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" /></a>
-                <!-- <img width="50px" src="<{$rootpath}>/themes/site_themes/LandMover/images/qrcode.png" /> -->
+                <img width="180px" src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" />
+                <img width="120px" style="margin-top:-20px;margin-left:20px;" src="<{$rootpath}>/themes/site_themes/LandMover/images/mast_logo_vert.gif" />
+            </a>
         </div>
-        <div class="winxin-box fl J_down_menu_box" style="position: relative;"><div class="c2 J_down_menu none" style="display: none;"></div></div>
+        <!-- <div class="winxin-box fl J_down_menu_box" style="position: relative;"><div class="c2 J_down_menu none" style="display: none;"></div></div> -->
         <ul class="menu fr mt30">
             <li class="J-mian-nav">
                 <a href="#">关于我们</a>
@@ -53,9 +54,10 @@
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/joinus.php" target="">加入我们</a></dt></dl>
         </div>
         <div class="subnav-li">
-            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/palacos.php" target="">Palacos Family</a></dt></dl>
-            <dl style="width: 200px;"><dt><a href="" target="">Osteopal V 脊柱骨水泥</a></dt></dl>
-            <dl style="width: 200px;"><dt><a href="" target="">骨水泥真空混合系统</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/palacos.php" style="color:#98C554">Palacos Family</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="#"  style="color:#98C554">Osteopal V 脊柱骨水泥</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="#"  style="color:#98C554">骨水泥真空混合系统</a></dt></dl>
+            <dl style="width: 200px;"><dt><a href="" target="">MAST膜</a></dt></dl>
         </div>
         <div class="subnav-li">
             <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php" target="">伙伴列表</a></dt></dl>

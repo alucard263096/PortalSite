@@ -108,6 +108,8 @@ define('nt_check',$CONFIG['fileupload']['nt_check']);
 					unlink($this->folder.$this->name);
 					return "ftp_unconnect";
 				}
+			}else {
+				return $ret;
 			}
 			
 		}

@@ -282,7 +282,7 @@ class DbMysql
 
 
 
-//$dbmgr = DbMysql::getInstance();
-//$myconn = $dbmgr->connect($CONFIG['database']['host'], $CONFIG['database']['user'], $CONFIG['database']['psw'], $CONFIG['database']['database']);
+$dbmgr = DbMysql::getInstance();
+$myconn = $dbmgr->connect($CONFIG['database']['host'], $CONFIG['database']['user'], $CONFIG['database']['psw'], $CONFIG['database']['database']);
 
 ?>

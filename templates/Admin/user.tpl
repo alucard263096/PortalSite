@@ -129,7 +129,7 @@ $(document).ready(function() {
 
 		var user_list="";
 		$.each($(".listckb"),function(){
-			if($(this).attr("checked"))
+			if($(this).prop("checked"))
 			{
 				user_list+=$(this).val()+",";
 			}
