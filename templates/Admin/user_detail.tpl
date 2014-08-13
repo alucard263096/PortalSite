@@ -3,12 +3,12 @@
 
 <table>
 	<tr id='asd'>
-		<td width="2%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
-		<td width="14%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
-		<td width="34%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
-		<td width="2%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
-		<td width="14%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
-		<td width="34%"><img src="/{$rootpath}images/onedot.gif" width="30" height="1" /></td>
+		<td width="2%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
+		<td width="14%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
+		<td width="34%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
+		<td width="2%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
+		<td width="14%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
+		<td width="34%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
 	</tr>
 	<tr>
 		<td></td>

@@ -1,5 +1,5 @@
 ﻿<?php
 
-echo date('ymdHIs');
+echo date('Y-m-d');
 
 ?>

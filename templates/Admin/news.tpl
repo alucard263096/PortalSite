@@ -4,8 +4,14 @@
   <link type="text/css" href="<{$rootpath}>/js/datatable/css/demo_page.css" media="screen" rel="stylesheet" />
   <link type="text/css" href="<{$rootpath}>/js/datatable/css/demo_table.css" media="screen" rel="stylesheet" />
   
-  <script type="text/javascript" src="<{$rootpath}>/js/ajaxfileupload.js"></script>
 
+  
+	<link rel="stylesheet" href="<{$rootpath}>/kindeditor/themes/default/default.css" />
+	<link rel="stylesheet" href="<{$rootpath}>/kindeditor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="<{$rootpath}>/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="<{$rootpath}>/kindeditor/lang/zh-CN.js"></script>
+	<script charset="utf-8" src="<{$rootpath}>/kindeditor/plugins/code/prettify.js"></script>
+	
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>
@@ -15,9 +21,22 @@
 		<td width="49%"><img src="<{$rootpath}>/images/onedot.gif" width="1" height="1" /></td>
 	</tr>
 	<tr>
-		<td>文件名:</td>
+		<td>标题:</td>
 		<td>
-			<input id='c_filename' value='' type='text' />
+			<input id='c_title' value='' type='text' />
+		</td>
+		<td>导读:</td>
+		<td>
+			<input id='c_summary' value='' type='text' />
+		</td>
+	</tr>
+	<tr>
+		<td>发布日期:</td>
+		<td>
+			<label for="from">从</label>
+<input type="text" id="c_from" name="from">
+<label for="to">到</label>
+<input type="text" id="c_to" name="to">
 		</td>
 		<td>状态:</td>
 		<td>
@@ -52,8 +71,9 @@
         <tr>
           <th align='center'>操作</th>
           <th align='center'></th>
-          <th align='center'>栏目</th>
-          <th align='center'>文件</th>
+          <th align='center'>标题</th>
+          <th align='center'>发布日期</th>
+          <th align='center'>导读</th>
           <th align='center'>状态</th>
           <th align='center'>创建人</th>
           <th align='center'>创建日期</th>
@@ -72,11 +92,34 @@
 <div id='details'></div>
 </div>
 
-
 <script type="text/javascript" charset="utf-8">
 var oTable;
 
 $(document).ready(function() {
+
+	$( "#c_from" ).datepicker({
+	      defaultDate: "+1w",
+	      changeMonth: true,
+	      numberOfMonths: 3,
+	      dateFormat:"yy-mm-dd",
+	      onClose: function( selectedDate ) {
+	        $( "#c_to" ).datepicker( "option", "minDate", selectedDate );
+	      }
+	    });
+	    $( "#c_to" ).datepicker({
+	      defaultDate: "+1w",
+	      changeMonth: true,
+	      numberOfMonths: 3,
+	      dateFormat:"yy-mm-dd",
+	      onClose: function( selectedDate ) {
+	        $( "#c_from" ).datepicker( "option", "maxDate", selectedDate );
+	      }
+	    });
+
+
+
+
+	
 	//oTable = $('#result').dataTable({"oLanguage":oLanguage} );
 	$("#dev_result").hide();
 	
@@ -90,15 +133,21 @@ $(document).ready(function() {
 	$("#search").click(function(){
 		$("#dev_result").show();
 		
-		var filename=$("#c_filename").val();
+		var title=$("#c_title").val();
+		var summary=$("#c_summary").val();
+		var from=$("#c_from").val();
+		var to=$("#c_to").val();
 		var status=$("#c_status").val();
 		
 		
 		
-		$("#ListDiv").load("download.action.php",
+		$("#ListDiv").load("news.action.php",
 							{
 							"action":"search",
-							"filename":filename,
+							"title":title,
+							"summary":summary,
+							"from":from,
+							"to":to,
 							"status":status
 							},
 							function(data){
@@ -111,7 +160,7 @@ $(document).ready(function() {
 	
 	$("#new").click(function(){
 
-		$("#details").load('download_detail.php',function(){
+		$("#details").load('news_detail.php',function(data){
 			$("#details").dialog('open');
 		});
 		
@@ -127,7 +176,7 @@ $(document).ready(function() {
 			}
 		});
 		
-		$.post("download.action.php",{"action":"delete","list":list},function(data){
+		$.post("news.action.php",{"action":"delete","list":list},function(data){
 			
 			if(data=="success")
 			{
@@ -145,47 +194,11 @@ $(document).ready(function() {
 function detail(id)
 {
 	$("#details").dialog('open');
-		$("#details").load('download_detail.php',{"id":id},function(){
+		$("#details").load('news_detail.php',{"id":id},function(){
 			$("#details").dialog('open');
 		});
 }
 
-function upload(fid)
-{
-	if($.trim($("#ffile_"+fid).val())!="")
-	{
-		$(".detail_button").ajaxStart(function(){
-			$(".detail_button").prop("disabled",true);
-		})
-		.ajaxComplete(function(){
-			$(".detail_button").prop("disabled",false);
-		});
-		$.ajaxFileUpload
-		(
-			{
-				"url":'download.action.php?action=upload&fid='+fid,
-				"secureuri":false,
-				"fileElementId":"ffile_"+fid,
-				"dataType": 'text',
-				"success": function(data, status)
-				{
-					if(data.substring(0,7)=="success"){
-						str=data.substring(7,data.length);
-						$("#ffilename_"+fid).val(str.split('|~~|')[1]);
-						$("#flength_"+fid).val(str.split('|~~|')[0]);
-						$("#dc_"+fid).text(str.split('|~~|')[1]).attr("href","<{$rootpath}>/dc.php?filename="+str.split('|~~|')[1]);
-					}else{
-						alert("上传失败");
-					}
-				},
-				"error": function(data, status, e)
-				{
-					//alert(e);
-				}
-			}
-		);
-	}
-}
 
 
 </script>
