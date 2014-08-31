@@ -11,8 +11,7 @@
   
   
  
- 
   $smarty->assign("Subtitle","主页");
-  $smarty->display(ROOT.'/templates/admin/home.tpl');
+  $smarty->display(ROOT.'/templates/Admin/home.tpl');
  
 ?>

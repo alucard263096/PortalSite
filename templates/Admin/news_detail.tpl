@@ -36,7 +36,7 @@
 		<td></td>
 		<td>导读：</td>
 		<td colspan='4'>
-			<textarea rows="3" cols="40" id="detail_summary" class='spText'><{$detail.summary}></textarea>
+			<textarea rows="3" cols="70" id="detail_summary" class='spText'><{$detail.summary}></textarea>
 		</td>
 	</tr>
 	<tr valign='top'>
@@ -49,21 +49,22 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan='6' align='center'>
+		<td colspan='6' style="text-align:center;">
 			<input id='detail_id' value='<{$detail.id}>' type='hidden'  class='spText' />
 			<{if $sysU=="0"}>
-			<input id='save' value='保存' class='save detail_button' type='button' />
-			<input id='save_and_new' class='save detail_button' value='保存并新增' type='button' />
-			<input id='save_and_close' class='save detail_button' value='保存并关闭' type='button' />
+			<input id='save' value='保存' class='save detail_button submit' type='button' />
+			<input id='save_and_new' class='save detail_button submit' value='保存并新增' type='button' />
+			<input id='save_and_close' class='save detail_button submit' value='保存并关闭' type='button' />
 			<{/if}>
 			<{if $sysA=="0"}>
-			<input id='detail_new' class='detail_button' value='新增' type='button' />
+			<input id='detail_new' class='detail_button submit' value='新增' type='button' />
 			<{/if}>
-			<input class='close' value='关闭' type='button' />
+			<input class='close submit' value='关闭' type='button' />
 		</td>
 	</tr>
 </table>
 <script>
+var today="<{$today}>";
 $(document).ready(function(){
 	$( "#detail_published_date" ).datepicker({dateFormat:"yy-mm-dd"});
 	<{if $data_status == 'new'}>
@@ -71,7 +72,7 @@ $(document).ready(function(){
 	$("#edit_title").hide();
 	$(".c_psw").attr("disabled",true);
 	$(".lgn").attr("disabled",false);
-	$( "#detail_published_date" ).val('<{$today}>');
+	$( "#detail_published_date" ).val(today);
 	<{else}>
 	$("#new_title").hide();
 	$("#edit_title").show();
@@ -85,6 +86,8 @@ $(document).ready(function(){
 				$(".spChk").prop("checked",false);
 				$(".spDdl_1").val('A'); 
 				$(".spDdl_2").val('0');
+				editor1.html("");
+				$( "#detail_published_date" ).val(today);
 	});
 	
 	$(".save").click(function(){
@@ -144,7 +147,8 @@ $(document).ready(function(){
 											$(".spDdl_2").val('0'); 
 											$(".c_psw").attr("disabled",true);
 											$(".lgn").attr("disabled",false);
-
+											editor1.html("");
+											$( "#detail_published_date" ).val(today);
 										}
 										if(ac=="save_and_close")
 										{

@@ -5,7 +5,7 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */  
- require 'include/common.inc.php';
+ require '../include/common.inc.php';
  require ROOT.'/classes/datamgr/user.cls.php';
  
  $action=$_REQUEST["action"];

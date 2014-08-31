@@ -57,7 +57,7 @@
 						</select>
 					</td>
 					<td>
-						<input type='button' value='删除' class='deleteFileRow' onclick='deleteFileRow(<{$rs.id}>)'  />
+						<input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow(<{$rs.id}>)'  />
 					</td>
 				</tr>
 				<{/foreach}>
@@ -66,17 +66,17 @@
 		</td>
 	</tr>
 	<tr>
-		<td colspan='6' align='center'>
+		<td colspan='6' style="text-align:center;">
 			<input id='detail_id' value='<{$detail.id}>' type='hidden'  class='spText' />
 			<{if $sysU=="0"}>
-			<input id='save' value='保存' class='save detail_button' type='button' />
-			<input id='save_and_new' class='save detail_button' value='保存并新增' type='button' />
-			<input id='save_and_close' class='save detail_button' value='保存并关闭' type='button' />
+			<input id='save' value='保存' class='save detail_button submit' type='button' />
+			<input id='save_and_new' class='save detail_button submit' value='保存并新增' type='button' />
+			<input id='save_and_close' class='save detail_button submit' value='保存并关闭' type='button' />
 			<{/if}>
 			<{if $sysA=="0"}>
-			<input id='detail_new' class='detail_button' value='新增' type='button' />
+			<input id='detail_new' class='detail_button submit' value='新增' type='button' />
 			<{/if}>
-			<input class='close' value='关闭' type='button' />
+			<input class='close submit' value='关闭' type='button' />
 		</td>
 	</tr>
 </table>
@@ -117,7 +117,7 @@ $(document).ready(function(){
 					str=str+"		<option   value='I'>不启用</option>";
 					str=str+"	</select>";
 					str=str+"</td>";
-					str=str+"<td><input type='button' value='删除' class='deleteFileRow' onclick='deleteFileRow("+file_id+")' /></td>";
+					str=str+"<td><input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow("+file_id+")' /></td>";
 					str=str+"</tr>"; 
 
 					$("#filelist").append(str);

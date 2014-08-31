@@ -53,7 +53,7 @@ class DbMysql
 			$this->halt('service unavailable');
 		}
 		else
-		{
+		{	mysql_set_charset("utf8");
 			$this->select_db($dbname);
 		}
 		

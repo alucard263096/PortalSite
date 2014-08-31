@@ -10,6 +10,6 @@
  $checkpremmis_id=$CONFIG["function"]["news"];
  require ROOT.'/include/login.inc.php';
  
- $smarty->display(ROOT.'/templates/admin/news.tpl');
+ $smarty->display(ROOT.'/templates/Admin/news.tpl');
  
 ?>

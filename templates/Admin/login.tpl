@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<{$charset}>" />
 <TITLE><{$Title}> <{$Subtitle}></TITLE>
-    <link rel="stylesheet" href="<{$rootpath}>/css/template.css" type="text/css" />
-    <script language="javascript" src="<{$rootpath}>/js/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui-1.8.2.custom.js"></script>
+    <link rel="stylesheet" href="<{$rootpath}>/css/templatelogin.css" type="text/css" />
+    <script language="javascript" src="<{$rootpath}>/js/jquery.js"></script>
+	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui.js"></script>
     <script language="javascript" src="<{$rootpath}>/js/ui-alert.js"></script>
 	<link type="text/css" href="<{$rootpath}>/theme/ui.all.css" media="screen" rel="stylesheet" />
 </head>

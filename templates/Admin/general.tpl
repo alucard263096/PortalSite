@@ -29,11 +29,10 @@
 	</tr>
 	<tr>
 		<td colspan='4' align='left'>
-			<input id='search' value='搜索' type='button' />
+			<input id='search' value='搜索' type='button' class='submit' />
 		</td>
 	</tr>
 </table>
-</div>
 <div  id='dev_result' class="ui-layout-center" >
 <div class="fieldset">结果</div>
 <div style='padding:10px;'>

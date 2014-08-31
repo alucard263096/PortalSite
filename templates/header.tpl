@@ -1,42 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="robots" content="index,follow" />
-    <meta name="baidu-site-verification" content="ASdSGVrwiS" />
-    <script type="text/javascript">var _bdhm_top = 0; var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); var _bdhm_tim = new Image(1, 1); _bdhm_tim.id = "bdhmPerimg"; _bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=aff7fbe8fcb98b060541077cc76465f2&rnd=" + Math.round(Math.random() * 2147483647); _bdhm_tim.onload = function () { _bdhm_top = 1; }</script>
-    <meta name="Abstract" content="<{$Abstract}>" />
-    <meta name="Keywords" content="<{$Keywords}>" />
-    <meta name="Description" content="<{$Description}>" />
-    <title><{$Title}></title>
-    <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/common/css/jquery.fancybox-1.3.4.css?3066666465" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/html/base.css?203547428" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/html/2013v1/global.css?1305652573" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/html/2013v1/header1.1.css?166265974" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/html/alone/index.css?1042609638" media="screen" />
-    <script type="text/javascript" src="<{$rootpath}>/themes/site_themes/LandMover/common/js/jquery-1.6.1.min.js?3502627435"></script>
-    <script type="text/javascript" src="<{$rootpath}>/themes/site_themes/LandMover/common/js/jquery.easing-1.3.pack.js?2355431842"></script>
-</head>
-    <body class="cms">
-        <div class="J-wraper wraper pos_r">
-<!-- 背景 高度容器 -->
-	<div class="header pos_r clearfix"><!-- 主导航 logo -->
-		<div class="site-nav">
-			<div class="page clearfix">
-				<ul class="fl left">
-					<li class="welcome">欢迎光临雷德睦华医疗器材官方网站</li>
-					<li class="top-weibo">
-						<a href="#" >设为首页</a>
-						&nbsp;|&nbsp;
-						<a href="#">收藏我们</a>
-					</li>
-				</ul>
-				<ul class="fr">
-					<li class="online-sale orange J_down_menu_box"><b>关注我们，在线咨询</b><div class="c2 J_down_menu none"></div></li>
-				</ul>
-			</div>
-		</div>
-		<!-- 最顶层 #site-nav -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>骨水泥专家</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- styles -->
+		<link href="<{$rootpath}>/themes/lm/rinna/css/bootstrap.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/css/overwrite.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/font/stylesheet.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/css/flexslider.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/css/prettyPhoto.css" rel="stylesheet">
+		<link href="<{$rootpath}>/themes/lm/rinna/css/style.css" rel="stylesheet">
+		
+		<!-- skin color -->
+		<link id="css-skin" href="<{$rootpath}>/themes/lm/rinna/color/steel-blue.css" rel="stylesheet">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="ico/favicon.png">
+		
+    	 <script src="<{$rootpath}>/themes/lm/rinna/js/jquery.js"></script>
+		<script src="<{$rootpath}>/themes/lm/rinna/js/jquery.easing.1.3.js"></script>	
+	    <script src="<{$rootpath}>/themes/lm/rinna/js/bootstrap.js"></script>	
+	
+		<script src="<{$rootpath}>/themes/lm/rinna/js/navigation/jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="<{$rootpath}>/themes/lm/rinna/js/navigation/jquery.smooth-scroll.js"></script>
+		<script src="<{$rootpath}>/themes/lm/rinna/js/navigation/waypoints.min.js"></script>
+	
+	
+	
+	</head>
+	
+	
+	<body>
+	
+	
 		<{include file="$smarty_root/menu.tpl" }>
 
 

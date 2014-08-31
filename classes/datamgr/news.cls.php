@@ -21,6 +21,37 @@
 	{
 		
 	}
+	public  function  getHotNewsList(){
+		$sql="select  id,title,published_date,summary,viewcount
+		from tb_news 
+		where  status ='A' 
+		order by viewcount desc,published_date desc
+		limit 0, 5 ";
+		
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query); 
+		
+		return $result;
+		
+	}
+	
+	
+	public  function  getNewsList($page){
+		$page=parameter_filter($page);
+		$pagebeg=$page*15;
+		$sql="select  id,title,published_date,summary,viewcount
+		from tb_news 
+		where  status ='A' 
+		order by published_date desc
+		limit $pagebeg , 15 ";
+		
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query); 
+		
+		
+		return $result;
+		
+	}
 	
 	
 	
@@ -30,8 +61,6 @@
 		$summary=parameter_filter($summary);
 		$from=parameter_filter($from);
 		$to=parameter_filter($to);
-		
-		
 		
 		
 		$sql="select distinct n.id,n.title,n.published_date,n.summary,n.status
@@ -46,7 +75,8 @@
 		and ('$from'='' or n.published_date >= '$from' )
 		and ('$to'='' or n.published_date <= '$to' )
 		and n.status <>'D' 
-		order by published_date desc";
+		order by published_date desc
+		limit 0, 100 ";
 		
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query); 
@@ -58,7 +88,8 @@
 	
 	
 	public function getNews($id){
-		$sql="select id,title,summary,published_date,content,status
+		$id=parameter_filter($id);
+		$sql="select id,title,summary,published_date,content,status,viewcount
 		from tb_news
 		where id=$id ";
 		
@@ -66,10 +97,14 @@
 		$result = $this->dbmgr->fetch_array($query); 
 		return $result;
 	}
-	
-	
-	
-	
+ 
+	public function updateViewCount($id){
+		$id=parameter_filter($id);
+		$sql="update tb_news set viewcount=viewcount+1
+		where id=$id ";
+		
+		$query = $this->dbmgr->query($sql);
+	}
 		
  public function save($id,$title,$summary,$published_date,$content,$status,$sysUser_id)
 	{

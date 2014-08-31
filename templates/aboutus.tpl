@@ -1,5 +1,7 @@
 ﻿<{include file="$smarty_root/header.tpl" }>
 
+		
+
           <div id="container" class="clearfix">
             <div id="primary">
         		<div class="head_image">

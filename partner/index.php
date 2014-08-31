@@ -6,62 +6,24 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 require '../include/common.inc.php';
+require ROOT.'/classes/datamgr/partner.cls.php';
+require ROOT.'/classes/datamgr/city.cls.php';
 
 
-$array = array(
-    "seq" => "1",
-    "id" => "1",
-    "name" => "PALACOS®R",
-    "address" => "北京市丰台区马家堡东路106号自然新天地写字楼606室",
-    "tel" => "010-58032661",
-    "type"=> "1",
-    "cityid"=>"1",
-    "x"=>"116.393358",
-    "y"=>"39.847141"
-);
-$result[]=$array;
+ $partnertype=$partnerMgr->getPartnerType();	
+ $smarty->assign("ptlist",$partnertype);
+ 
+ 
+ $result=$partnerMgr->getPartnerList();
+$smarty->assign('partnerlist',$result);
 
-$array = array(
-    "seq" => "2",
-    "id" => "2",
-    "name" => "雷德睦华医院（上海）",
-    "address" => "上海市人民大道200号",
-    "tel" => "020-5002200",
-    "type"=> "2",
-    "cityid"=>"2",
-    "x"=>"121.480241",
-    "y"=>"31.2363"
-);
-$result[]=$array;
+ $citylist=$partnerMgr->getPartnerCityList();
+$smarty->assign('citylist',$citylist);
 
-$array = array(
-    "seq" => "3",
-    "id" => "3",
-    "name" => "雷德睦华医生（深圳）",
-    "address" => "深圳市罗湖区文锦中路1008号罗湖管理中心大厦",
-    "tel" => "0755-25578945",
-    "type"=> "3",
-    "cityid"=>"3",
-    "x"=>"114.138094",
-    "y"=>"22.554637"
-);
-$result[]=$array;
-
-$array = array(
-    "seq" => "4",
-    "id" => "4",
-    "name" => "雷德睦华代理（长沙）",
-    "address" => "长沙市芙蓉区人民东路189号",
-    "tel" => "0731-889999176",
-    "type"=> "1",
-    "cityid"=>"4",
-    "x"=>"113.002354",
-    "y"=>"28.191841"
-);
-$result[]=$array;
 //print_r($result);
 
-$smarty->assign('partnerlist',$result);
+$smarty->assign('ptselected',$_REQUEST["type"]);
+//$smarty->assign('partnerlist',$result);
 $smarty->display(ROOT.'/templates/partner/index.tpl');
 
 

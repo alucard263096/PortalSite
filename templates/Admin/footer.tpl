@@ -1,10 +1,46 @@
+
+		</div>
+
+		<div id="separator"></div>
+
+	</div>
+
+
+
+	<script type='text/javascript'>
+
+		//DOM加载完毕执行
+
+		$(document).ready(function(){
+
+			//隔行换色
+
+			$(".list_table tr:nth-child(even)").addClass('even');
+
+			$(".list_table tr").hover(
+
+				function () {
+
+					$(this).addClass("sel");
+
+				},
+
+				function () {
+
+					$(this).removeClass("sel");
+
+				}
+
+			);
+
+
+
 			
-			
-			
-			</td>
-		</tr>
-	</table>
-			
+
+		});
+	</script>
+	
+		
 <script>
 $(document).ready(function(){
 
@@ -55,5 +91,9 @@ $(document).ready(function(){
 	</p>
 </div>
 </div>
+	
+	
+	
 </body>
+
 </html>

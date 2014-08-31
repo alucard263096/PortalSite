@@ -12,10 +12,10 @@
  require ROOT.'/classes/datamgr/download.cls.php';
  
  $id=$_REQUEST["id"];
- 
  if($id!='')
  {
  	$detail=$downloadMgr->getDownloadCategory($id);
+ 	//print_r( $detail);
   	$smarty->assign('detail',$detail);
   	$smarty->assign('data_status','edit');
  }

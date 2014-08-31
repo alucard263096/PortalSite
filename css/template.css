@@ -1,11 +1,11 @@
 .header.text { font-family:Arial, Helvetica, sans-serif; font-size: 10px;}
 .header.login { font-family:Arial, Helvetica, sans-serif; font-size: 10px; }
 .header.textfield { width: 100px; }
-body, td, input {
+td, input {
+	text-align:left;
     font-family:Arial;
     font-size:12px;
 }
-body {  margin:4px 4px 4px 4px; padding:0;font-family: Arial, sans-serif;font-size: 12px;}
 .hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
 /*
 .fg-button { clear:left; margin:0px 4px 4px 0px; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
@@ -122,6 +122,7 @@ fieldset:hover    {
     border-color: #0ca0ff;
     }
 .fieldset    {
+	text-align:left;
 	font-family:Arial, Helvetica, sans-serif;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -140,7 +141,7 @@ fieldset:hover    {
 	border-bottom-color: #000000;
 	border-left-color: #000000;
 	font-size: 18px;
-	color: #097BC3;
+	color: #f77804;
 	font-style: normal;
 	font-weight: bolder;
     }
@@ -148,6 +149,10 @@ fieldset:hover    {
 .fieldset:hover    {
     border-color: #0ca0ff;
     }
+    
+table.fieldsetContent	{
+	margin:10px;
+}
 .fieldsetContent	{
 	padding-left:10px;
 	padding-right:10px;

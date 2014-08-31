@@ -7,6 +7,7 @@
  */
   require '../include/common.inc.php';
   
+  $smarty->assign('module',"aboutus");
   $smarty->display(ROOT.'/templates/aboutus/joinus.tpl');
   
 ?>

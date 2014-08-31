@@ -1,62 +1,128 @@
 ﻿<{include file="$smarty_root/header.tpl" }>
-<link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/alone/about_news.css?2342795671" media="screen" />
 
-<div class="page case-relative clearfix" style="height:500px;">
- 
-<div class="sub-nav-box mt10 clearfix">
-	<h3 class="fl">
-		<em class="ft28 clr3 ftheiti">新闻中心</em>
-	</h3>
-</div>
- 
-<div class="new_box bg-t col2-set clearfix pt20">
-	<div class="news_list col-1">
-	<div id="listContent" cid="248">
-<div class="newslist">
-	<{foreach from=$newslist item=rs}>
-	<dl>
-		<h4><a href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" target="_blank"><{$rs.title}></a></h4>
-		<p><{$rs.summary}></p>
-		<span><i><{$rs.publishedDate}></i><em>浏览（<{$rs.viewcount}>）</em></span>
-	</dl>
-	<{/foreach}>
-</div>
-<div class="changepage_box">
-<div class="pages-container changepage mb25">
-<div class="pages2">
-	 <span class="fbj disabled">上一页</span>
-	<span class="current">1</span>
-	<a class="fb" href="#">2</a>
-	<a class="fb" href="#">3</a>
-	<a class="fb" href="#">4</a>
-	<a class="fb" href="#">5</a>
-	<a class="fb" href="#">6</a>
-	<a class="fb" href="#">7</a>
-	<a class="fb" href="#">8</a>
-	<a class="fb" href="#">9</a>
-	<a class="fb" href="#">10</a>
-	<a class="fb" href="#">31</a>
-	<a class="bbj" href="#">下一页 </a>
-</div>
-</div>
-</div>
-	</div>
-</div>
-<div class="focusnews col-2">
-		<div class="active">
-	  	<h3 class="h3-l" style="color:red">热点新闻</h3>
-	  	<{foreach from=$hotlist item=rs}>
-	  	<dl>
-	    	<dd><a href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" target="_blank"><{$rs.title}></a><p><{$rs.summary}></p></dd>
-	  	</dl>
-		<{/foreach}>
-	</div>
-    
-</div></div>
-    
-    
+<!-- Start page head -->
+		<section class="page-head contain-head">
+			<div class="container">
+			
+				<div class="row">
+					<div class="span9 head-text">
+						<h3><i class="icon-info"></i>新闻中心</span></h3>
+						<p>
+						在这里为你展示雷德睦华的所有最新资讯 
+						</p>
+					</div>
+					<div class="span3">
+						<i class="icon icon-info"></i>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<!-- End page head -->
 
-</div>
 
+
+<section class="page-contain">
+			<div class="container">
+				<div class="row">
+					<!-- End article -->
+					<div  class="span9 margintop20">
+					<p>
+						<a href="#"><img class="median" alt="" src="<{$rootpath}>/themes/lm/images/news.jpg"></a>
+					</p>
+					<div id='newslist'>
+					<{foreach from=$hotlist item=rs}>
+						<article>
+							<div class="row-fluid">
+								<div class="span2">
+								<a class="media-icon" href="#"><i class="icon-picture icon64"></i></a>
+								</div>
+								<div class="span10">
+									<h4><a href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" target="_blank"><{$rs.title}></a></h4>
+									<div class="meta-post">
+										<span><i class="icon-calendar"></i> <a href="#"><{$rs.published_date}></a></span>
+										<!-- <span><i class="icon-file-alt"></i> <a href="#">Web designs</a></span>
+										<span><i class="icon-tags"></i> <a href="#">Designs ,</a> <a href="#">Creative ,</a><a href="#">Webs</a></span> -->
+										<span><i class="icon-comments"></i> <a href="#">浏览（<{$rs.viewcount}>）</a></span>
+									</div>
+									<p>
+									<{$rs.summary}> 
+									</p>
+									<p><a class="btn btn-primary"  href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" target="_blank">阅读正文</a></p>
+								</div>
+							</div>
+						</article>
+					<{/foreach}>		
+					</div>	
+					<div id='showwaiting'><img alt=""  src="<{$rootpath}>/images/loading.gif"><div>正在加载，请稍后</div></div>
+					</div>
+					<!-- End article -->
+					
+					<!-- Start aside -->
+					<div class="span3 margintop10">
+						<aside>
+							<div class="widget">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active"><a href="#popular" data-toggle="tab">热点新闻</a></li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade in active" id="popular">
+										<ul class="recent">
+										<{foreach from=$hotlist item=rs}>
+										<li>
+												<!-- <a class="alignleft" href="#"><img alt="" src="img/dummies/blog/thumbs/thumb4.jpg"></a> -->
+												<h6><a href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" target="_blank"><{$rs.title}></a></h6>
+										</li>
+										<{/foreach}>							
+										</ul>
+									</div>
+								</div>
+							</div>						
+						</aside>
+					</div>
+					<!-- End aside -->						
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+
+
+<script type="text/javascript">
+
+var newspage=0;
+var newsLoading=false;
+var isEnd=false;
+function isScrollToBottom(){
+	return $(document).scrollTop()>=$(document).height()-$(window).height();
+}
+
+$(document).ready(function(){
+	$("#showwaiting").hide();
+	$(document).scroll(function(){
+		if(isScrollToBottom()
+				&&newsLoading==false
+				&&isEnd==false){
+			newsLoading=true;
+			$("#showwaiting").show();
+			$.post("getnews.php",{"page":++newspage},function(data){
+				newsLoading=false;
+				if($.trim(data)==""){
+					$("#showwaiting").html("已经没有了").show();
+					isEnd=true;
+				}else{
+					$("#showwaiting").hide();
+					$("#newslist").append(data);
+				}
+			});
+		}
+	});
+
+});
+
+
+</script>
 
 <{include file="$smarty_root/footer.tpl" }>

@@ -22,6 +22,38 @@
 		
 	}
 	
+	public function  getDownladCateList(){
+		$sql="select distinct seq,id,name
+		from tb_download_category 
+		where  status ='A' 
+		order by seq";
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query); 
+		
+		$sum=count($result);
+		for($i=0;$i<$sum;$i++)
+		{
+			$result[$i]["seq"]=$i;
+			$filelist=$this->getActivedFileListByCategory($result[$i]["id"]);
+			$result[$i]["filelist"]=$filelist;
+			$result[$i]["filecount"]=count($filelist);
+		}
+		
+		return $result;
+	}
+	
+	
+	public function getActivedFileListByCategory($category_id){
+		$sql="select seq,name,`status`,id,length,filename
+		from tb_download_file
+		where category_id=$category_id 
+		and status ='A' 
+		order by seq";
+		
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query); 
+		return $result;
+	}
 	
 	
 	public function searchDownloadCategory($name,$status)
@@ -64,12 +96,11 @@
 	}
 	
 	public function getDownloadCategory($id){
-		$sql="select * from tb_download_category";
+		$sql="select * from tb_download_category where id=$id ";
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array($query); 
 		
 		$result["filelist"]=$this->getFileListByCategory($id);
-		
 		return $result;
 		
 	}

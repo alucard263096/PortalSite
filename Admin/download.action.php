@@ -73,7 +73,7 @@
  $fid=$_REQUEST["fid"];
  $file=$_FILES["ffile_".$fid];
  $filename=date('ymdHIs').$file["name"];
- $file=new Upload($file,$filename,ROOT."/upload/",true);
+ $file=new Upload($file,$filename,ROOT."/upload/download/",true);
  echo $file->safetyUpload();
  echo $file->getSize()."|~~|".$filename;
  }

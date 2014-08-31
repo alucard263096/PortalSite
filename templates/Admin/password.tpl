@@ -1,6 +1,6 @@
-<{include file="$smarty_root/header.tpl" }>
+<{include file="$smarty_root/Admin/header.tpl" }>
 
-<table>
+<table class="fieldsetContent">
 	<tr>
 		<td>当前密码：</td>
 		<td><input type='password' id='current_password' /></td>
@@ -26,6 +26,12 @@ $(document).ready(function(){
 		var dnpws=$("#duplic_new_password").val();
 		var cpws=$("#current_password").val();
 
+		if($.trim(npws)==""){
+			MsgError("新密码不能为空");
+			return;
+		}
+
+		
 		if(npws!=dnpws)
 		{
 			MsgError("两个新密码不相同");
@@ -50,4 +56,4 @@ $(document).ready(function(){
 });
 </script>
 
-<{include file="$smarty_root/footer.tpl" }>
+<{include file="$smarty_root/Admin/footer.tpl" }>

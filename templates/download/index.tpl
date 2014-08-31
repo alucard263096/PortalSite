@@ -1,55 +1,65 @@
 ﻿<{include file="$smarty_root/header.tpl" }>
-<link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/css/alone/about_company_info_contact.css?1856470724" media="screen" />
 
-<div class="page case-relative clearfix" style="height:500px;">
- 
-<div class="sub-nav-box mt10 clearfix">
-	<h3 class="fl">
-		<em class="ft28 clr3 ftheiti">下载中心</em>
-	</h3>
-</div>
- <style>
- .style-1 .l span{
- padding-bottom:0px;
- 
- }
- 
- .style-1 .l a{
- padding-top:0px;
- 
- }
- 
- </style>
+<!-- Start page head -->
+		<section class="page-head contain-head">
+			<div class="container">
+				<div class="row">
+					<div class="span9 head-text">
+						<h3><i class="icon-download"></i>下载中心</span></h3>
+						<p>
+						请下载你所需要的资料 
+						</p>
+					</div>
+					<div class="span3">
+						<i class="icon icon-download"></i>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<!-- End page head -->
 
-<div class="show-list overh fl">
-<{foreach from=$list item=rs}>
-  	<dl class="style-1 <{if $rs.seq%2 == 1}>bg<{else}>bg-t<{/if}>">
-    	<dt class="l">
-        	<span class="clear2">
-        		<span class="til f-l"><{$rs.name}></span>
-        	</span>
-        	
-            	<{if count($rs.downloadlist) ==0 }>
-            	<p>暂无下载</p>
-            	<{else}>
-            <ul>
-            	<{foreach from=$rs.downloadlist item=info}>
-            	<li >
-            	<a href="<{$rootpath}>/download.php?filename=<{$info.filename}>"><{$info.name}></a>
-				</li>
-				<{/foreach}>
-            </ul>
-            <{/if}>
-        </dt>
-    </dl>
-<{/foreach}>
-</div>
 
-    
-    
-    
+<section id="portfolio">
+			
+			<div class="container">
+				<div class="page-section">
+					<div class="row">
+						<div class="span12">				
+							<ul class="portfolio-categ filter">
+								<li class="all active"><a href="#">全部</a></li>
+								<{foreach from=$list item=rs}>
+								<li class="cl<{$rs.id}>"><a href="#"><{$rs.name}></a>
+								</li>
+								<{/foreach}>
+							</ul>					
+						</div>
+					</div>
+					<div class="row">
+						<ul class="portfolio-area">	
+							<{foreach from=$list item=rs}>
+							<{foreach from=$rs.filelist item=info}>
+							<li class="portfolio-item" data-type="cl<{$rs.id}>" data-id="id-0">	
+								<div class="span3">
+									
+									<div class="folio-title">
+										<h6><{$info.name}></h6>
+										<a class="detaillink" href="download.php?filename=<{$info.filename}>">下载</a>
+									</div>
+								</div>
+							</li>
+							<{/foreach}>
+							<{/foreach}>
+						</ul>					
+					</div>
+				</div>
+			</div>			
+		</section>
 
-</div>
+
+
+	<script src="<{$rootpath}>/themes/lm/rinna/js/quicksand/jquery.quicksand.js"></script>	
+	<script src="<{$rootpath}>/themes/lm/rinna/js/quicksand/setting.js"></script>
+
 
 
 <{include file="$smarty_root/footer.tpl" }>

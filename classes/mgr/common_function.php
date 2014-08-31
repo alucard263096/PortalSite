@@ -49,4 +49,29 @@ function remote_file_exists($url_file){
 	}
 }
 
+function getMenuJson($menu){
+	
+	
+$item["current"]=true;
+$item["title"]="管理工具";
+$item["link"]="#";
+foreach ($menu as $val){
+	
+	$sm=$val["sub_function"];
+	$subitemcontent=null;
+	foreach ($sm as $vc){
+		$url=null;
+		$url["name"]=$vc["function_name"];
+		$url["urlPathinfo"]=$vc["function_link"];
+		$subitemcontent[$vc["function_link"]]=$url;
+	}
+	$list[$val["function_name"]]=$subitemcontent;
+	
+	
+}
+$item["list"]=$list;
+
+return json_encode($item);
+}
+
 ?>

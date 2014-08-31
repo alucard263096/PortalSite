@@ -1,70 +1,39 @@
 
-
-
-
-
-<!-- 主导航 -->
-<div class="main-nav ftheiti">
-    <div class="page pos_r clearfix">
-        <div class="fl mt20">
-            <a class=" fl" href="<{$rootpath}>/index.php">
-                <img width="180px" src="<{$rootpath}>/themes/site_themes/LandMover/images/logo4.png" />
-                <img width="120px" style="margin-top:-20px;margin-left:20px;" src="<{$rootpath}>/themes/site_themes/LandMover/images/mast_logo_vert.gif" />
-            </a>
-        </div>
-        <!-- <div class="winxin-box fl J_down_menu_box" style="position: relative;"><div class="c2 J_down_menu none" style="display: none;"></div></div> -->
-        <ul class="menu fr mt30">
-            <li class="J-mian-nav">
-                <a href="#">关于我们</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li class="J-mian-nav">
-                <a href="#">产品</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li >
-                <a href="<{$rootpath}>/download/index.php" >下载中心</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li >
-                <a href="<{$rootpath}>/news/index.php">最新消息</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li class="J-mian-nav">
-                <a href="#">合作伙伴</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-            <li>
-                <a href="topic.php">进入论坛</a>
-                <span class="J-nav-arrow nav-arrow"></span>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 隐藏的按钮 -->
-<div class="J-nav-button-hide hide"></div>
-<!-- 主导航 -->
-</div>	
-	<!-- 二级子菜单 -->
-<div class="J-subnav subnav pos_r">
-    <div class="J-subnav-wrap subnav-wrap clearfix page pos_r">
-        <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/index.php" target="">企业介绍</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/contactus.php" target="">联系我们</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/aboutus/joinus.php" target="">加入我们</a></dt></dl>
-        </div>
-        <div class="subnav-li">
-            <dl style="width: 200px;"><dt><a href="<{$rootpath}>/product/palacos.php" style="color:#98C554">Palacos Family</a></dt></dl>
-            <dl style="width: 200px;"><dt><a href="#"  style="color:#98C554">Osteopal V 脊柱骨水泥</a></dt></dl>
-            <dl style="width: 200px;"><dt><a href="#"  style="color:#98C554">骨水泥真空混合系统</a></dt></dl>
-            <dl style="width: 200px;"><dt><a href="" target="">MAST膜</a></dt></dl>
-        </div>
-        <div class="subnav-li">
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php" target="">伙伴列表</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=1" target="">供应商</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=2" target="">医疗结构</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?type=3" target="">医生</a></dt></dl>
-            <dl style="width: 130px;"><dt><a href="<{$rootpath}>/partner/index.php?showmap=1" target="">全国网点</a></dt></dl>
-        </div>
-    </div>
-</div>
+		<!-- Start navigation -->
+		<section class="nav-container">	
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="row">
+						<div class="span12">			
+							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/rinna/img/logo-small.png" alt="" /></a>		
+							<nav> 
+								<ul>
+									<li class="dropdown">
+									<a  href="#" class="dropdown-toggle <{if $module=='aboutus'}>active<{/if}>" data-toggle="dropdown" >关于我们 <b class="caret"></b></a>		
+										<ul class="dropdown-menu">
+											<li><a href="<{$rootpath}>/aboutus/index.php">公司简介</a></li>
+											<li><a href="<{$rootpath}>/aboutus/contactus.php">联系我们</a></li>	
+											<li><a href="<{$rootpath}>/aboutus/joinus.php">加入我们</a></li>										
+										</ul>						
+									</li>				
+									<li class="dropdown">
+									<a  href="#" class="dropdown-toggle <{if $module=='product'}>active<{/if}>" data-toggle="dropdown" >产品 <b class="caret"></b></a>		
+										<ul class="dropdown-menu">
+											<li><a href="#">Palacos 骨水泥</a></li>
+											<li><a href="#">Osteopal V 脊柱骨水泥</a></li>	
+											<li><a href="#">PALAMIX 骨水泥真空混合系统</a></li>		
+											<li><a href="#">MAST手术保护膜膜</a></li>							
+										</ul>						
+									</li>				
+									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	
+									<li><a href="<{$rootpath}>/news/index.php" <{if $module=='news'}>class='active'<{/if}>>新闻中心</a></li>	
+									<li><a href="#" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
+									<li><a href="#" >进入论坛</a></li>				
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End navigation -->

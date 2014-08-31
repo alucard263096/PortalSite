@@ -10,6 +10,6 @@
  $checkpremmis_id=$CONFIG["function"]["general"];
  require ROOT.'/include/login.inc.php';
  
- $smarty->display(ROOT.'/templates/admin/general.tpl');
+ $smarty->display(ROOT.'/templates/Admin/general.tpl');
  
 ?>

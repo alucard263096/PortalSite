@@ -4,7 +4,7 @@ if(!isset($_SESSION["sysUser"]))
 {
 	
 	$_SESSION["url_request"]="http://".$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-	WindowRedirect($CONFIG['smarty']['rootpath']."/admin/login.php");
+	WindowRedirect($CONFIG['smarty']['rootpath']."/Admin/login.php");
 	exit();
 }
 
@@ -61,13 +61,32 @@ if(isset($checkpremmis_id))
 		//WindowRedirect($CONFIG['smarty']['rootpath']."/Admin/home.php");
 		//exit();
 	}
+ $smarty->assign('currentFunctionId',$checkpremmis_id);
+	
 }
+
+$menuJson=getMenuJson($_SESSION["sysMenu"]);
+
+
  $smarty->assign('sysUserName',$_SESSION["sysUser"]["user_name"]);
  $smarty->assign('sysMenu',$_SESSION["sysMenu"]);
+ $smarty->assign('sysMenuJson',$menuJson);
  $smarty->assign('menu_direction',"H");
  //$smarty->assign('sysA',"0");
  //$smarty->assign('sysU',"0");
  ///$smarty->assign('sysD',"0");
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 ?>

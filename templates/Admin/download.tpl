@@ -30,17 +30,16 @@
 	</tr>
 	<tr>
 		<td colspan='4' align='left'>
-			<input id='search' value='搜索' type='button' />
+			<input id='search' value='搜索' type='button' class='submit' />
 			<{if $sysA=="0"}>
-			<input id='new' value='新增' type='button' />
+			<input id='new' value='新增' type='button' class='submit' />
 			<{/if}>
 			<{if $sysD=="0"}>
-			<input id='delete' value='删除' type='button' />
+			<input id='delete' value='删除' type='button' class='submit' />
 			<{/if}>
 		</td>
 	</tr>
 </table>
-</div>
 <div  id='dev_result' class="ui-layout-center" >
 <div class="fieldset">结果</div>
 <div style='padding:10px;'>
@@ -155,10 +154,10 @@ function upload(fid)
 	if($.trim($("#ffile_"+fid).val())!="")
 	{
 		$(".detail_button").ajaxStart(function(){
-			$(".detail_button").prop("disabled",true);
+			$(".detail_button").attr("disabled",true);
 		})
 		.ajaxComplete(function(){
-			$(".detail_button").prop("disabled",false);
+			$(".detail_button").attr("disabled",false);
 		});
 		$.ajaxFileUpload
 		(

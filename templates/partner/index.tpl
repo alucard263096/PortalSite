@@ -48,15 +48,11 @@
                     <li>
                       <a  href="#" remove="type" class="remove_condition_type">所有</a>
                     </li>
+                    <{foreach from=$ptlist item=rs}>
                     <li>
-                      <a  href="#" class="condition" id="type_1">供应商</a>
+                      <a  href="#" class="condition" id="type_<{$rs.code}>"><{$rs.name}></a>
                     </li>
-                    <li>
-                      <a  href="#" class="condition" id="type_2">医疗机构</a>
-                    </li>
-                    <li>
-                      <a  href="#" class="condition"  id="type_3">医生</a>
-                    </li>
+                    <{/foreach}>
                   </ul>
                 </div>
               </div>
@@ -94,12 +90,12 @@
           </div>
         </div>
         <{foreach from=$partnerlist item=rs}>
-        <div type="<{$rs.type}>" city="<{$rs.cityid}>" class="mc attrs  resulattr"  >
+        <div type="<{$rs.type}>" city="<{$rs.city_id}>" class="mc attrs  resulattr"  >
           <div class="prop-attrs">
             <div class="attr" style="width:498px;">
             <div style="float:left;width:20px;">[<{$rs.seq}>]</div>
             <div style="width:478px;float:right;">
-              <h3 class="name"><{$rs.name}></h4>
+              <h3 class="name"><a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>"><{$rs.name}></a></h3>
               <p class="address">地址：<{$rs.address}></p>
               <span class="tel">电话：<{$rs.tel}></span>
               <a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>"><b>查看详情</b></a>
@@ -307,16 +303,11 @@
     </div>
     <script>
       $(document).ready(function(){
-
-      
-
-    	    var provincejson=
-    	        [{name:"北京",id:1}
-    	        ,{name:"上海",id:2}
-    	        ,{name:"深圳",id:3}
-    	        ,{name:"长沙",id:4}
-    	        ];
-
+    	  var provincejson=new Array();
+    	  
+		<{foreach from=$citylist item=rs}>
+		provincejson.push({name:"<{$rs.cityName}>",id:<{$rs.serialId}>});
+		<{/foreach}>
 
       $.each( provincejson, function(index, content)
       {
@@ -431,5 +422,16 @@
         </div>
       </dd>
     </dl>
+    
+    <{if $ptselected != ""}>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		var id=$("#type_<{$ptselected}>").attr("id");
+	    var name=$("#type_<{$ptselected}>").text();
+	    $("#store-selector").hide();
+	    AddToCondition(id,name);
+	});
+</script>
+    <{/if}>
 
     <{include file="$smarty_root/footer.tpl" }>

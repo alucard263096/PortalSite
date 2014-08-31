@@ -10,6 +10,6 @@
  $checkpremmis_id=$CONFIG["function"]["download"];
  require ROOT.'/include/login.inc.php';
  
- $smarty->display(ROOT.'/templates/admin/download.tpl');
+ $smarty->display(ROOT.'/templates/Admin/download.tpl');
  
 ?>

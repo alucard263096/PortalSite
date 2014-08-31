@@ -1,1 +1,141 @@
-﻿<reg />
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>后台管理</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="css/admin.css" />
+
+	<script type="text/javascript" charset="UTF-8" src="js/jquery.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type='text/javascript' src="js/common.js"></script>
+	<script type='text/javascript' src="js/admin.js"></script>
+	<script type='text/javascript' src="js/menu.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div id="header">
+
+			<div class="logo">
+
+				<a href="/gangangshop/index.php?controller=system&action=default"><img src="/gangangshop/views/default/skin/default/images/admin/logo.gif" width="303" height="43" /></a>
+
+			</div>
+
+			<div id="menu">
+
+				<ul name="menu">
+
+				</ul>
+
+			</div>
+
+			<p><a href="<{$rootpath}>/Admin/logout.php">退出管理</a> <a href="<{$rootpath}>/Admin/home.php">后台首页</a> <a href="<{$rootpath}>/index.php" target='_blank'>前台</a> <span>您好 <label class='bold'><{$sysUserName}></label></span></p>
+
+		</div>
+
+		<div id="info_bar">
+
+			<!--<label class="navindex"><a href="/gangangshop/index.php?controller=system&action=navigation">快速导航管理</a></label>-->
+
+			<span class="nav_sec">
+
+									</span>
+
+		</div>
+
+
+
+		<div id="admin_left">
+
+			<ul class="submenu"></ul>
+
+			<div id="copyright"></div>
+
+		</div>
+
+
+
+		<div id="admin_right">
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		</div>
+
+		<div id="separator"></div>
+
+	</div>
+
+
+
+	<script type='text/javascript'>
+
+		//DOM加载完毕执行
+
+		$(function(){
+
+			//隔行换色
+
+			$(".list_table tr:nth-child(even)").addClass('even');
+
+			$(".list_table tr").hover(
+
+				function () {
+
+					$(this).addClass("sel");
+
+				},
+
+				function () {
+
+					$(this).removeClass("sel");
+
+				}
+
+			);
+
+
+
+			//后台菜单创建
+
+						var data = [{"current":false,"title":"商品","link":"\/gangangshop\/index.php?controller=goods&action=goods_list"},{"current":false,"title":"会员","link":"\/gangangshop\/index.php?controller=member&action=member_list"},{"current":false,"title":"订单","link":"\/gangangshop\/index.php?controller=order&action=order_list"},{"current":false,"title":"营销","link":"\/gangangshop\/index.php?controller=market&action=pro_rule_list"},{"current":false,"title":"统计","link":"\/gangangshop\/index.php?controller=market&action=user_reg"},{"current":false,"title":"系统","link":"\/gangangshop\/index.php?controller=system&action=default"},{"current":true,"title":"工具","link":"\/gangangshop\/index.php?controller=tools&action=db_bak","list":{"数据库管理":{"\/gangangshop\/index.php?controller=tools&action=db_bak":{"name":"数据库备份","urlPathinfo":"\/tools\/db_bak"},"\/gangangshop\/index.php?controller=tools&action=db_res":{"name":"数据库还原","urlPathinfo":"\/tools\/db_res"}},"文章管理":{"\/gangangshop\/index.php?controller=tools&action=article_cat_list":{"name":"文章分类","urlPathinfo":"\/tools\/article_cat_list"},"\/gangangshop\/index.php?controller=tools&action=article_list":{"name":"文章列表","urlPathinfo":"\/tools\/article_list"}},"帮助管理":{"\/gangangshop\/index.php?controller=tools&action=help_cat_list":{"name":"帮助分类","urlPathinfo":"\/tools\/help_cat_list"},"\/gangangshop\/index.php?controller=tools&action=help_list":{"name":"帮助列表","urlPathinfo":"\/tools\/help_list"}},"广告管理":{"\/gangangshop\/index.php?controller=tools&action=ad_position_list":{"name":"广告位列表","urlPathinfo":"\/tools\/ad_position_list"},"\/gangangshop\/index.php?controller=tools&action=ad_list":{"name":"广告列表","urlPathinfo":"\/tools\/ad_list"}},"公告管理":{"\/gangangshop\/index.php?controller=tools&action=notice_list":{"name":"公告列表","urlPathinfo":"\/tools\/notice_list"},"\/gangangshop\/index.php?controller=tools&action=notice_edit":{"name":"公告发布","urlPathinfo":"\/tools\/notice_edit"}},"网站地图":{"\/gangangshop\/index.php?controller=tools&action=seo_sitemaps":{"name":"网站搜索地图","urlPathinfo":"\/tools\/seo_sitemaps"}}}}];
+
+			var current = '/tools/db_bak';
+
+			var url='/gangangshop/index.php';
+
+			initMenu(data,current,url);
+
+		});
+
+	</script>
+
+</body>
+
+</html>
+
