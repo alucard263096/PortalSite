@@ -28,7 +28,7 @@
 	</tr>
 	<tr valign='top'>
 		<td colspan='6' align='center'>
-			<textarea id='detail_content' style="width:700px;height:400px;visibility:hidden;"><{$info.content}></textarea>
+			<textarea id='detail_content' style="width:700px;height:400px;"><{$info.content}></textarea>
 		</td>
 	</tr>
 	<tr>
@@ -62,7 +62,9 @@ $(document).ready(function(){
 
 	
 	$(".save").click(function(){
+		<{if $info.type=='html'}>
 		editor1.sync();
+		<{/if}>
 		$(".detail_button").attr("disabled",true);
 		var ac=$(this).attr("id");
 		var id=$("#detail_id").val();
@@ -102,8 +104,9 @@ $(document).ready(function(){
 	
 });
 </script>
-
+<{if $info.type=='html'}>
 	<script>
+			$("#detail_content").hide();
 			var editor1 = KindEditor.create('#detail_content', {
 				cssPath : '<{$rootpath}>/kindeditor/plugins/code/prettify.css',
 				uploadJson : '<{$rootpath}>/kindeditor/php/upload_json.php',
@@ -112,3 +115,4 @@ $(document).ready(function(){
 			});
 			prettyPrint();
 	</script>
+<{/if}>

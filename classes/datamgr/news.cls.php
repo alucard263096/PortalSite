@@ -21,12 +21,12 @@
 	{
 		
 	}
-	public  function  getHotNewsList(){
+	public  function  getHotNewsList($count){
 		$sql="select  id,title,published_date,summary,viewcount
 		from tb_news 
 		where  status ='A' 
 		order by viewcount desc,published_date desc
-		limit 0, 5 ";
+		limit 0, $count ";
 		
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query); 

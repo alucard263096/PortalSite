@@ -10,7 +10,7 @@
  
  $result=$newsMgr->getNewsList(0);
   
-$hot=$newsMgr->getHotNewsList();
+$hot=$newsMgr->getHotNewsList(5);
   
 
  

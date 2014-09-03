@@ -5,7 +5,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="span12">			
-							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/rinna/img/logo-small.png" alt="" /></a>		
+							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/images/h_logo.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="<{$rootpath}>/themes/lm/images/mast_logo4.png" alt="" /></a>		
 							<nav> 
 								<ul>
 									<li class="dropdown">

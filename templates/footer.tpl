@@ -10,11 +10,13 @@
 							
 			</div>
 			<div class="clearfix"></div>
-			<div class="subfooter">
+			<div class="subfooter" >
 				<div class="container">
 					<div class="row">
-						<div class="span12">
-							<span class="copyright">&copy; 2014 雷德睦华医药科技（北京）有限公司</span>	
+						<div class="span12" style='text-align:right;'>
+							<span class="copyright">
+								<img src="<{$rootpath}>/themes/lm/images/lmlogo.jpg" alt="" />
+							</span>	
 						</div>
 					</div>
 				</div>

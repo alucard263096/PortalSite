@@ -199,43 +199,25 @@
 				<a href="#" class="not-mobile " target=""> 如何购买 </a> <a href="#" class="only-mobile " target=""> 如何购买 </a>
 		</div>
 	</div>
-</div><div class="teaser wide news">
+</div>
+<div class="teaser wide news">	
 	<div class="slider">
+<{foreach from=$hotlist item=rs}>
 				<div class="slide">
-	<p class="date">18.08.2014</p>
-	<p class="summary">贺利氏贵金属的更新</p>
+	<p class="date"><{$rs.published_date}></p>
+	<p class="summary"><{$rs.title}></p>
 	<div class="layer">
-		<p class="date">2014年8月18日</p>
-		<p class="summary">贺利氏贵金属的更新</p>
-		<img src="<{$rootpath}>/themes/lm/index/media/news_bilder_405x149_px/Marktbericht.jpg" alt="贺利氏贵金属的更新" title="贺利氏贵金属的更新" />
-		<p>Though <strong>gold</strong> managed to stay above the 1,300 $/oz mark, there was no worthwhile price increase. Much more Gold recorded a slight loss, mainly driven by speculative selling last Friday.</p><p>Speculative selling on Friday pushed <strong>silver</strong> in the red. Worth mentioning is how little it benefitted from the gains in gold until Thursday.</p><p>With restrained trading and no real change in the environment – even the ETF stocks hardly moved – <strong>platinum</strong> recorded the a loss of 1.40%.</p>
-				<a href="#" class="" target=""> 阅读全文 </a>
+		<p class="date"><{$rs.published_date}></p>
+		<p class="summary"><{$rs.title}></p>
+		<p><{$rs.summary}></p>
+				<a href="<{$rootpath}>/news/detail.php?id=<{$rs.id}>" class="" target=""> 阅读全文 </a>
 	</div>
-</div>			
-				<div class="slide">
-	<p class="date">11.06.2014</p>
-	<p class="summary">贺利氏取得加热系统专家火神催化系统有限公司</p>
-	<div class="layer">
-		<p class="date">11.06.2014</p>
-		<p class="summary">贺利氏取得加热系统专家火神催化系统有限公司</p>
-		<img src="<{$rootpath}>/themes/lm/index/media/news_bilder_405x149_px/Noblelight_image.jpg" alt="贺利氏取得加热系统专家火神催化系统有限公司" title="贺利氏取得加热系统专家火神催化系统有限公司" />
-		<p>Heraeus Noblelight, the specialty light sources business group that is part of the Heraeus precious metals and technology group, has concluded an asset deal to acquire the business activities of US-based Vulcan Catalytics Systems Ltd. </p><p>The American company manufactures gas catalytic infrared systems for especially for industrial powder coating processes.</p>
-				<a href="#" class="" target=""> 阅读全文 </a>
-	</div>
-</div>			
-				<div class="slide">
-	<p class="date">08.05.2014</p>
-	<p class="summary">贺利氏计划的两个财政年缓慢复苏后</p>
-	<div class="layer">
-		<p class="date">08.05.2014</p>
-		<p class="summary">贺利氏计划的两个财政年缓慢复苏后</p>
-		<img src="<{$rootpath}>/themes/lm/index/media/news_bilder_405x149_px/NewsKachel_GB_405x149.jpg" alt="贺利氏计划的两个财政年缓慢复苏后" title="贺利氏计划的两个财政年缓慢复苏后" />
-		<p><strong>The Hanau-based Heraeus precious metals and technology group finished financial year 2013 with satisfactory results despite some lower numbers. This was announced by the Heraeus Holding GmbH Board of Management at a press conference on annual results held in Frankfurt on May 8.</strong></p><p>Heraeus had total product revenue of €3.6 billion (10 percent less than in 2012).</p>
-				<a href="#" class="" target=""> 阅读全文 </a>
-	</div>
-</div>			
+</div>						
+<{/foreach}>	
 	</div>
 </div>
+
+
 <div class="teaser about normal"><!-- Teaserklassen triggern hauptsächlich das Aussehen der Boxen -->
 	<a>
 		<span class="small">加盟</span>
@@ -313,7 +295,7 @@
 	
 	<!-- Start Footer -->
 	<div id="footer" class="clearfix">
-	<p id="copyright">© 2014 雷德睦华医药科技（北京）有限公司</p>
+	<p id="copyright"><img src="<{$rootpath}>/themes/lm/images/lmlogo.jpg" alt="" /></p>
 	
 </div>
  

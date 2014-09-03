@@ -11,7 +11,8 @@
   
   $smarty->assign('module',"aboutus");
   $content=$generalMgr->getKeyContent('company_descript');
-  $smarty->assign('content',$content);
+  $smarty->assign('content',explode("\n", $content));
+  
   $smarty->display(ROOT.'/templates/aboutus/index.tpl');
   
 ?>

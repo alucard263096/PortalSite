@@ -37,7 +37,7 @@
  
 	public function getGeneral($id)
 	{
-		$sql="select id,name,position,content from tb_general where id=$id ";
+		$sql="select id,name,position,content,`type` from tb_general where id=$id ";
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array($query);
 		return $result;

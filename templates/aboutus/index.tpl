@@ -26,12 +26,11 @@
 			<div class="row">
 						<div class="span6">
 							<h4>我们是雷德睦华</h4>
+							<{foreach from=$content item=rs}>
 							<p>
-							本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。 
+							<{$rs}>
 							</p>
-							<p>
-							公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！
-							</p>					
+							<{/foreach}>					
 							<a class="btn btn-primary" href="<{$rootpath}>/aboutus/contactus.php">如何联系我们</a>
 						</div>
 						

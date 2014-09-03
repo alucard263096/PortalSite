@@ -14,8 +14,8 @@ $(document).ready(function(){
 	<{/foreach}>
 });
 </script>
-		<script type="text/javascript" src="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/js/jquery/jquery.accordion.js?1066871252" ></script>
-		<script type="text/javascript" src="<{$rootpath}>/themes/site_themes/LandMover/apps/cms/default/js/map.js?3186767804" ></script>
+		<script type="text/javascript" src="<{$rootpath}>/themes/lm/js/jquery/jquery.accordion.js?1066871252" ></script>
+		<script type="text/javascript" src="<{$rootpath}>/themes/lm/js/map.js?3186767804" ></script>
 <div class="china_map clearfix">
 <{include file="$smarty_root/aboutus/maparea.tpl" }>
 	<div class="province" id="pro_pro">
