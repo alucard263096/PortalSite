@@ -6,17 +6,36 @@
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 
 
-  <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/site_themes/LandMover/css/plist.css" />
-
-    <div class="page case-relative clearfix">
-
-      <div class="sub-nav-box mt10 clearfix">
-        <h3 class="fl">
-          <em class="ft28 clr3 ftheiti">合作伙伴</em>
-        </h3>
-      </div>
-
-      <div class="m" id="select"  >
+  <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/lm/css/plist.css" />
+  
+  <!-- Start page head -->
+		<section class="page-head contain-head">
+			<div class="container">
+			
+				<div class="row">
+					<div class="span9 head-text">
+						<h3><i class="icon-globe"></i>合作伙伴</h3>
+						<p>
+						雷德睦华诚意邀请加入成为我们的合作伙伴，一起走向成功！
+						</p>
+					</div>
+					<div class="span3">
+						<i class="icon icon-globe"></i>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<!-- End page head -->
+		
+		<!-- Start contain -->
+		<section class="page-contain">
+			<div class="container">
+				<div class="row">
+							<div class="span12">
+							
+							
+							
+		<div class="m" id="select"  >
         <div class="mt">
           <h1>
             <strong>筛选条件</strong>
@@ -79,9 +98,14 @@
       </div>
       
       
-      <div style="margin-top: 20px;">
-      <div class="m"  id="result"  style="float:left;" >
-        <div class="mt">
+      
+      
+      
+							</div>
+							<div class="span7">
+							
+	<div class="m"  id="result"  style="float:left;" >
+        <div class="mt" style="height:50px;">
           <div style="display:none;float:left;">
             <input type="checkbox"  style="margin-top:7px;float:left;" /><span>&nbsp;全选</span>
           </div>
@@ -92,13 +116,14 @@
         <{foreach from=$partnerlist item=rs}>
         <div type="<{$rs.type}>" city="<{$rs.city_id}>" class="mc attrs  resulattr"  >
           <div class="prop-attrs">
-            <div class="attr" style="width:498px;">
+            <div class="attr" style="width:98%;">
             <div style="float:left;width:20px;">[<{$rs.seq}>]</div>
-            <div style="width:478px;float:right;">
-              <h3 class="name"><a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>"><{$rs.name}></a></h3>
-              <p class="address">地址：<{$rs.address}></p>
+            <div style="width:95%;float:right;">
+              <h5 class="name"><{$rs.name}></h5>
+              <span class="address">地址：<{$rs.address}></span>
+              <br />
               <span class="tel">电话：<{$rs.tel}></span>
-              <a href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>"><b>查看详情</b></a>
+              <a class='btn btn-small' style='float:right;' href="<{$rootpath}>/partner/detail.php?id=<{$rs.id}>">查看详情</a>
               </div>
               <input type="hidden" class="seq" value="<{$rs.seq}>" />
               <input type="hidden" class="id" value="<{$rs.id}>" />
@@ -109,12 +134,39 @@
         </div>
         <{/foreach}>
       </div>
-      <div  style="float:right;width:480px;height:500px;" >
-	      <div id="allmap" style="overflow:hidden;zoom:1;height:480px;">	
-		    <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
-		  </div>
-      </div>
-      </div>
+							
+							
+							
+							
+							
+							
+							
+							
+							</div>
+							<div class="span5">
+							
+							<div  style="float:right;width:480px;height:500px;" >
+						      <div id="allmap" style="overflow:hidden;zoom:1;height:480px;">	
+							    <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+							  </div>
+					      </div>
+							
+							
+							
+							
+							
+							
+							
+							
+							</div>
+				</div>
+			</div>
+		</section>
+  
+  
+  
+
+   
       
       <script type="text/javascript">
 
@@ -143,8 +195,8 @@
 			};
         	marker.info=info;
 			pointList[i++]=marker;
-			var label = new BMap.Label(""+seq,{"offset":new BMap.Size(5,2)});
-			label.setStyle({backgroundColor:"transparent",color:"#ffffff",border:"0px"});
+			var label = new BMap.Label(""+seq,{"offset":new BMap.Size(0,0)});
+			label.setStyle({backgroundColor:"#ff00ff",color:"#ffffff",border:"0px"});
 			marker.setLabel(label);
       	    map.addOverlay(marker);
 
@@ -393,7 +445,6 @@
       }
       }
 
-
     </script>
 
     <dl class="store" id="citys" >
@@ -423,15 +474,6 @@
       </dd>
     </dl>
     
-    <{if $ptselected != ""}>
-    <script type="text/javascript">
-	$(document).ready(function(){
-		var id=$("#type_<{$ptselected}>").attr("id");
-	    var name=$("#type_<{$ptselected}>").text();
-	    $("#store-selector").hide();
-	    AddToCondition(id,name);
-	});
-</script>
-    <{/if}>
+    
 
     <{include file="$smarty_root/footer.tpl" }>

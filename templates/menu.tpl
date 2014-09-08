@@ -1,11 +1,14 @@
 
 		<!-- Start navigation -->
 		<section class="nav-container">	
-			<div class="navbar-inner">
+			<div class="navbar-inner" style='background: url(<{$rootpath}>/themes/lm/images/ban.png) center no-repeat;background-size:cover;'>
 				<div class="container">
 					<div class="row">
 						<div class="span12">			
-							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/images/h_logo.png" alt="" /></a>		
+							<a href="<{$rootpath}>/index.php" class="small-logo">
+							<img style='margin-top:-30px' src="<{$rootpath}>/themes/lm/images/h_logo.png" alt="" />
+							<div style='color:white;font-size:20px;font-weight:bold;margin-left:50px;margin-top:-10px'>贺利氏骨水泥</div>	
+							</a>	
 							<nav> 
 								<ul>
 									<li class="dropdown">
@@ -27,7 +30,7 @@
 									</li>				
 									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	
 									<li><a href="<{$rootpath}>/news/index.php" <{if $module=='news'}>class='active'<{/if}>>新闻中心</a></li>	
-									<li><a href="#" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
+									<li><a href="<{$rootpath}>/partner/index.php" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
 									<li><a href="#" >进入论坛</a></li>		
 								</ul>
 							</nav>

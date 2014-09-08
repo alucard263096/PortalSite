@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span9 head-text">
-						<h3><i class="icon-plus-sign-alt"></i>雷德睦华诚邀您的加盟！</span></h3>
+						<h3><i class="icon-plus-sign-alt"></i>雷德睦华诚邀您的加盟！</h3>
 						<p>
 						公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。
 						</p>

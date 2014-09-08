@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span9 head-text">
-						<h3><i class="icon-download"></i>下载中心</span></h3>
+						<h3><i class="icon-download"></i>下载中心</h3>
 						<p>
 						请下载你所需要的资料 
 						</p>

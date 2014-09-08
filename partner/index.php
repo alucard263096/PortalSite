@@ -23,6 +23,7 @@ $smarty->assign('citylist',$citylist);
 //print_r($result);
 
 $smarty->assign('ptselected',$_REQUEST["type"]);
+  $smarty->assign('module',"partner");
 //$smarty->assign('partnerlist',$result);
 $smarty->display(ROOT.'/templates/partner/index.tpl');
 

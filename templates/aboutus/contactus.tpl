@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span9 head-text">
-						<h3><i class="icon-comments"></i>联系我们</span></h3>
+						<h3><i class="icon-comments"></i>联系我们</h3>
 						<p>
 						如果你对我们的产品感到有兴趣，请立即联系我们！
 						</p>

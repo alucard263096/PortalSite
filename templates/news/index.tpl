@@ -6,7 +6,7 @@
 			
 				<div class="row">
 					<div class="span9 head-text">
-						<h3><i class="icon-info"></i>新闻中心</span></h3>
+						<h3><i class="icon-info"></i>新闻中心</h3>
 						<p>
 						在这里为你展示雷德睦华的所有最新资讯 
 						</p>

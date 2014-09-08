@@ -5,7 +5,7 @@
 			
 				<div class="row">
 					<div class="span9 head-text">
-						<h3><i class="icon-group"></i>公司简介</span></h3>
+						<h3><i class="icon-group"></i>公司简介</h3>
 						<p>
 						本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。 
 						</p>

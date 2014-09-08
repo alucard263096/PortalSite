@@ -18,7 +18,7 @@
 		<link href="<{$rootpath}>/themes/lm/rinna/css/style.css" rel="stylesheet">
 		
 		<!-- skin color -->
-		<link id="css-skin" href="<{$rootpath}>/themes/lm/rinna/color/conifer.css" rel="stylesheet">
+		<link id="css-skin" href="<{$rootpath}>/themes/lm/rinna/color/steel-blue.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
