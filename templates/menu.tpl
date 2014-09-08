@@ -5,7 +5,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="span12">			
-							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/images/h_logo.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="<{$rootpath}>/themes/lm/images/mast_logo4.png" alt="" /></a>		
+							<a href="<{$rootpath}>/index.php" class="small-logo"><img src="<{$rootpath}>/themes/lm/images/h_logo.png" alt="" /></a>		
 							<nav> 
 								<ul>
 									<li class="dropdown">
@@ -28,7 +28,7 @@
 									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	
 									<li><a href="<{$rootpath}>/news/index.php" <{if $module=='news'}>class='active'<{/if}>>新闻中心</a></li>	
 									<li><a href="#" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
-									<li><a href="#" >进入论坛</a></li>				
+									<li><a href="#" >进入论坛</a></li>		
 								</ul>
 							</nav>
 						</div>

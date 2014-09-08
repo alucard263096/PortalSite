@@ -156,9 +156,7 @@
 	<tr>
 		<td></td>
 		<td>内容：</td>
-	</tr>
-	<tr>
-		<td colspan='6' align='center'>
+		<td colspan='4' align='center'>
 			<textarea id='detail_content' style="width:300px;height:350px;visibility:hidden;"><{$detail.content}></textarea>
 		</td>
 	</tr>

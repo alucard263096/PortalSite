@@ -10,6 +10,9 @@
  $checkpremmis_id=$CONFIG["function"]["website"];
  require ROOT.'/include/login.inc.php';
  
+ $base=$websiteMgr->getWebsiteBase();
+ $smarty->assign("base",$base);
+ 
  $smarty->display(ROOT.'/templates/Admin/website.tpl');
  
 ?>

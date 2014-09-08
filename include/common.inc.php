@@ -92,5 +92,9 @@ include ROOT.'/classes/mgr/'.$CONFIG['database']['provider'].'.cls.php';
 include ROOT.'/classes/mgr/smarty.cls.php';
 
 
+ require ROOT.'/classes/datamgr/website.cls.php';
+ $sitesetting=$websiteMgr->getWebsiteBase();
+ 
+ $smarty->assign("sitesetting",$sitesetting);
 
 ?>

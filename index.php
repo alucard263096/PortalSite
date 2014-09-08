@@ -9,6 +9,9 @@
  require ROOT.'/classes/datamgr/news.cls.php';
 $hot=$newsMgr->getHotNewsList(3);
 	$smarty->assign('hotlist',$hot);
+	
+ $bannerlist=$websiteMgr->getIndexPageBannerList();
+ $smarty->assign("bannerlist",$bannerlist);
   
   $smarty->display(ROOT.'/templates/index.tpl');
   

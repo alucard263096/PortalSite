@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>骨水泥专家</title>
-	<meta name="description" content="Heraeus is a globally active precious metals and technology Group with firm roots in Germany, headquartered in Hanau near Frankfurt.  The company has been family-owned for more than 160 years.  Precious metals, sensors, medical products, quartz glass and specialty lighting sources are the focus of our activities." />
-	<meta name="keywords" content="innovation, innovations, responsibility, corporate responsibility, social engagement, initiative, initiatives,  diversity, future, technology report, technology magazine, product world, innovative, key competence, key competencies, Heraeus, business segments, Heraeus Quarzglas, Heraeus Noblelight, Heraeus Electro-Nite, precious metal, special metal, medical components, quartz glass, specialty lighting sources, careers, press, material technology" />
+	<title><{$sitesetting.seo_title}></title>
+	<meta name="description" content="<{$sitesetting.seo_description}>" />
+	<meta name="keywords" content="<{$sitesetting.seo_keywords}>" />
+	<link rel="shortcut icon" href="<{$rootpath}>/upload/fav/<{$sitesetting.favfile}>">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="cleartype" content="on" />
-	
 	<script>(function(h){h.className=h.className.replace(/\bno-js\b/,'js')}(document.documentElement))</script>
 	<script src="<{$rootpath}>/themes/lm/index/internalnotforuse/scripts/modernizrcustom.js"></script>
 	<link rel="stylesheet" href="<{$rootpath}>/themes/lm/index/internalnotforuse/style.css" />
@@ -36,112 +36,26 @@
 		<div id="stage">
 			<!-- Stage -->
 			<!-- Stage Container-->
-		<div class="slide hh">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/corporate/HH_RKF_2.jpg" alt="Precious metals and technology  " title="Precious metals and technology  ">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
+			<{foreach from=$bannerlist item=rs}>
+			<div class="slide <{$rs.style}>">
+				<img src="<{$rootpath}>/upload/index/<{$rs.pic}>" alt="<{$rs.slogan}>" title="<{$rs.title}>">
 				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
+					<h3><{$rs.slogan}></h3>
+						<a href="#" class="link" target=""> <{$rs.label}> </a>
 				</div>
-			</div>	
-		</div>
-		<div class="slide hq">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hqs/HQS_Tube.jpg" alt="Materials specialist for the manufacture and processing of high-purity quartz glass" title="Materials specialist for the manufacture and processing of high-purity quartz glass">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
+				<div class="infobox">
+					<div class="text">
+						<div class="infotext">
+							<h4><{$rs.title}></h4>
+							<p><{foreach from=$rs.cl item=rss}>
+								<{$rss}><br />
+								<{/foreach}>
+							</p>
+						</div>
+					</div>
+				</div>	
 			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="slide hpm">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hpm/HPM_Leitfaehige-Polymerejpg.jpg" alt="Precious metals and special metals for industrial products" title="Precious metals and special metals for industrial products">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="slide hm">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hm/HM_ABFA_Palacos_2.jpg" alt="Bone cement and biomaterials for elective orthopaedic and trauma surgery" title="Bone cement and biomaterials for elective orthopaedic and trauma surgery">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="slide hmt">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hmt/HMT_Walzwerk.jpg" alt="Skilled partner for processing precious metals and other innovative materials" title="Skilled partner for processing precious metals and other innovative materials">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="slide hen">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hen/HEN_Sensor.jpg" alt="World market leader in sensor and measurement systems for steel industrie" title="World market leader in sensor and measurement systems for steel industrie">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="slide hn">
-			<img src="<{$rootpath}>/themes/lm/index/media/bilder_startseite/hng/HNG_OAL_Formierung.jpg" alt="Specialty light systems and lamps for industrial, environmental and health applications" title="Specialty light systems and lamps for industrial, environmental and health applications">
-			<div class="text">
-				<h3>Slogan1 </h3>
-					<a href="#" class="link" target=""> 雷德睦华 </a>
-			</div>
-			<div class="infobox">
-				<div class="text">
-					<div class="infotext">
-						<h4>本公司为德国Heraeus Medical医疗器械生产商在中国大陆指定产品的总代理，同时作为企业驻中国的联络处。</h4>
-						<p>公司拥有稳定成熟的产品销售市场，经营的产品为同领域中的优秀产品，公司负责德国骨水泥产品在大陆地区的渠道销售管理及市场技术支持服务。为快速完成德国生产商对渠道规范的要求，也更符合国内市场的需求！</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-
+			<{/foreach}>
 			<!-- Stage-->
 		</div>
 		

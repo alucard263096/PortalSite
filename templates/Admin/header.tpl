@@ -10,9 +10,6 @@
 	<link rel="stylesheet" href="<{$rootpath}>/css/template.css" />
 	<script type="text/javascript" charset="UTF-8" src="<{$rootpath}>/js/jquery.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="<{$rootpath}>/js/jquery-migrate-1.2.1.min.js"></script>
-	<script type='text/javascript' src="<{$rootpath}>/js/common.js"></script>
-	<script type='text/javascript' src="<{$rootpath}>/js/admin.js"></script>
-	<script type='text/javascript' src="<{$rootpath}>/js/menu.js"></script>
 	
 	
 	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui.min.js"></script>
@@ -21,6 +18,10 @@
 	<link type="text/css" href="<{$rootpath}>/js/ui/jquery-ui.min.css" media="screen" rel="stylesheet" />
 	<link type="text/css" href="<{$rootpath}>/themes/blue/style.css" media="screen" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="<{$rootpath}>/css/pro_dropdown_2/pro_dropdown_2.css" />
+
+
+	<script type='text/javascript' src="<{$rootpath}>/js/admin.js"></script>
+	<script type='text/javascript' src="<{$rootpath}>/js/menu.js"></script>
 <script>
 var oLanguage = {
 					"sProcessing": "处理中...",

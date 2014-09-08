@@ -2,10 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>骨水泥专家</title>
+	<title><{$sitesetting.seo_title}></title>
+	<meta name="description" content="<{$sitesetting.seo_description}>" />
+	<meta name="keywords" content="<{$sitesetting.seo_keywords}>" />
+	<link rel="shortcut icon" href="<{$rootpath}>/upload/fav/<{$sitesetting.favfile}>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
 
 		<!-- styles -->
 		<link href="<{$rootpath}>/themes/lm/rinna/css/bootstrap.css" rel="stylesheet">
@@ -29,7 +30,6 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">
 		
     	 <script src="<{$rootpath}>/themes/lm/rinna/js/jquery.js"></script>
 		<script src="<{$rootpath}>/themes/lm/rinna/js/jquery.easing.1.3.js"></script>	
