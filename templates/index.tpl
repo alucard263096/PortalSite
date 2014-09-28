@@ -40,8 +40,8 @@
 			<div class="slide <{$rs.style}>">
 				<img src="<{$rootpath}>/upload/index/<{$rs.pic}>" alt="<{$rs.slogan}>" title="<{$rs.title}>">
 				<div class="text">
-					<h3><{$rs.slogan}></h3>
-						<a href="#" class="link" target=""> <{$rs.label}> </a>
+					<h3><a style='color:white;' <{if $rs.link == ''}><{else}>href="<{$rs.link}>"<{/if}>><{$rs.slogan}></a></h3>
+						<a href="<{if $rs.link == ''}>#<{else}><{$rs.link}><{/if}>" class="link" target=""> <{$rs.label}> </a>
 				</div>
 				<div class="infobox">
 					<div class="text">
@@ -96,21 +96,21 @@
 <div class="teaser business normal">
 	<a>
 		<span class="small">产品</span>
-		<span class="big">MAST手术保护膜</span>
+		<span class="big">聚乳酸手术保护膜</span>
 	</a>
 	<div class="layer">
-		<h3>MAST手术保护膜</h3>
+		<h3>聚乳酸手术保护膜</h3>
 		<div class="textteaser">
 			<img src="<{$rootpath}>/themes/lm/images/mast.png" alt="Heraeus" title="Heraeus" />
 			<div class="teasertext">
 				<p class="headline">SurgiWrap聚乳酸脂手术保护膜（简称“MAST膜”）是由美国MAST Biosurgery Inc.研制生产。</p>
 				<p>组织粘连的产生是人体自然愈合过程中的一部分，也是外科手术后软组织修复的一个严重并发症。这种不良的无法控制的现象会导致手术失败和愈后不良，例如肠梗阻、盆腹腔痛、不孕症、心包粘连、肌腱灵活性降低、瘢痕组织引起的神经束膜疼痛、压迫神经疼痛以及脑膜搏动引起植入物碎裂等症状发生。</p>
-				<a href="#" class="not-mobile " target=""> 更多关于MAST </a> <a href="#" class="only-mobile " target=""> 更多关于MAST </a>
+				<a href="product/mast.php" class="not-mobile " target=""> 更多关于MAST </a> <a href="product/mast.php" class="only-mobile " target=""> 更多关于聚乳酸脂手术保护膜 </a>
 			</div>
 		</div>
 		<div class="links">
-				<a href="#" class="not-mobile " target=""> 产品特性 </a> <a href="#" class="only-mobile " target=""> 产品特性 </a>
-				<a href="#" class="not-mobile " target=""> 如何购买 </a> <a href="#" class="only-mobile " target=""> 如何购买 </a>
+				<a href="product/mast.php" class="not-mobile " target=""> 产品特性 </a> <a href="product/mast.php" class="only-mobile " target=""> 产品特性 </a>
+				<a href="product/mast.php" class="not-mobile " target=""> 如何购买 </a> <a href="product/mast.php" class="only-mobile " target=""> 如何购买 </a>
 		</div>
 	</div>
 </div>

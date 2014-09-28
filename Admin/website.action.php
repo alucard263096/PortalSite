@@ -77,6 +77,7 @@
 					 	,$_REQUEST["cont"]
 					 	,$_REQUEST["seq"]
 					 	,$_REQUEST["pic"]
+					 	,$_REQUEST["link"]
 					 	,$_REQUEST["status"]);
 	echo $rt;
  }

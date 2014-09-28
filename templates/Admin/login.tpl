@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<{$charset}>" />
@@ -28,12 +28,12 @@
 				            <tr>
 					            <td style="width:100"  align="right">登录名: </td>
 					            <td style="width:200">
-                                    <input id='txtLoginname' class='submit' value='admin'  /></td>
+                                    <input id='txtLoginname' class='submit' value=''  /></td>
 				            </tr>
 				            <tr>
 					            <td style="width:100"  align="right">密码: </td>
 					            <td style="width:200">
-                                    <input id='txtPassword' type='password' class='submit' value='abcd1234' /></td>
+                                    <input id='txtPassword' type='password' class='submit' value='' /></td>
 				            </tr>
 				            <tr>
 					            <td>&nbsp;</td>

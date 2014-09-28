@@ -104,7 +104,7 @@
 							</div>
 							<div class="span7">
 							
-	<div class="m"  id="result"  style="float:left;" >
+	<div class="m"  id="result"  style="float:left;width:100%" >
         <div class="mt" style="height:50px;">
           <div style="display:none;float:left;">
             <input type="checkbox"  style="margin-top:7px;float:left;" /><span>&nbsp;全选</span>

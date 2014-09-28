@@ -121,7 +121,7 @@
 		return $result;
 	}
 	
-	public  function  updateBanner($id, $slogan, $label, $title, $cont, $seq, $pic, $status){
+	public  function  updateBanner($id, $slogan, $label, $title, $cont, $seq, $pic,$link, $status){
 		$id=parameter_filter($id);
 		$slogan=parameter_filter($slogan);
 		$label=parameter_filter($label);
@@ -129,6 +129,7 @@
 		$cont=parameter_filter($cont);
 		$seq=parameter_filter($seq);
 		$pic=parameter_filter($pic);
+		$link=parameter_filter($link);
 		$status=parameter_filter($status);
 		
 		$this->dbmgr->begin_trans();
@@ -142,9 +143,9 @@
 			
 			$id=$result[0];
 			$sql="insert into `tb_website_banner` 
-	(id, slogan, label, title, cont, seq, pic, status)
+	(id, slogan, label, title, cont, seq, pic,link, status)
 	values
-	($id, '$slogan', '$label', '$title', '$cont', '$seq', '$pic', '$status')";
+	($id, '$slogan', '$label', '$title', '$cont', '$seq', '$pic','$link', '$status')";
 			
 		}
 		else
@@ -156,6 +157,7 @@
 					cont='$cont',
 					seq='$seq',
 					pic='$pic',
+					link='$link',
 					status='$status'
 					where id=$id ";
 		}

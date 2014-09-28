@@ -47,9 +47,16 @@
 	</tr>
 	<tr>
 		<td></td>
+		<td>超链接：</td>
+		<td colspan='4'>
+			<textarea  id='banner_detail_link' class='spText ' rows="1" cols="50"><{$detail.link}></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
 		<td>内容：</td>
 		<td colspan='4'>
-			<textarea  id='banner_detail_cont' class='spText ' rows="3" cols="50"><{$detail.cont}></textarea>
+			<textarea  id='banner_detail_cont' class='spText ' rows="3" cols="100"><{$detail.cont}></textarea>
 		</td>
 	</tr>
 	
@@ -64,7 +71,7 @@
 		<td></td>
 		<td></td>
 		<td colspan='4'>
-			<img id='banner_detail_img' alt="未上传" maxheight="250px" maxwidth="500px"  src="<{$rootpath}>/upload/index/<{$detail.pic}>">
+			<img id='banner_detail_img' alt="未上传" height="250px" width="500px"  src="<{$rootpath}>/upload/index/<{$detail.pic}>">
 		</td>
 	</tr>
 	<tr>
@@ -123,6 +130,7 @@ $(document).ready(function(){
 		var cont=$("#banner_detail_cont").val();
 		var seq=$("#banner_detail_seq").val();
 		var pic=$("#banner_detail_pic").val();
+		var link=$("#banner_detail_link").val();
 		var status=$("#banner_detail_status").val();
 		
 
@@ -148,13 +156,7 @@ $(document).ready(function(){
 			$(".detail_button").attr("disabled",false);
 			return;
 		}
-		var id=$("#banner_detail_id").val();
-		var slogan=$("#banner_detail_slogan").val();
-		var label=$("#banner_detail_label").val();
-		var title=$("#banner_detail_title").val();
-		var cont=$("#banner_detail_cont").val();
-		var seq=$("#banner_detail_seq").val();
-		var pic=$("#banner_detail_pic").val();
+	
 		
 		var json={"action":"savebanner",
 				"id":id,
@@ -163,6 +165,7 @@ $(document).ready(function(){
 				"title":title,
 				"cont":cont,
 				"seq":seq,
+				"link":link,
 				"pic":pic,
 				"status":status
 				};
