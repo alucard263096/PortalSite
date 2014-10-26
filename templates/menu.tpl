@@ -25,7 +25,7 @@
 											<li><a href="#">Palacos 骨水泥</a></li>
 											<li><a href="#">Osteopal V 脊柱骨水泥</a></li>	
 											<li><a href="#">PALAMIX 骨水泥真空混合系统</a></li>		
-											<li><a href="<{$rootpath}>/product/mast.php">SurgiWrap聚乳酸脂手术保护膜</a></li>							
+											<li><a href="<{$rootpath}>/product/mast.php">SurgiWrap聚乳酸手术保护膜</a></li>							
 										</ul>						
 									</li>				
 									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	

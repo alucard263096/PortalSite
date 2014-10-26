@@ -10,8 +10,9 @@ border:0px;
   <link type="text/css" href="<{$rootpath}>/js/datatable/css/demo_table.css" media="screen" rel="stylesheet" />
 
   <script type="text/javascript" src="<{$rootpath}>/js/ajaxfileupload.js"></script>
-  
-  
+<div class='supperheader'>
+网站管理
+  </div>
   <div id="tabs">
   <ul>
     <li><a href="#tabs-1">网站基本设置</a></li>
@@ -41,7 +42,7 @@ $(document).ready(function(){
 	$('#details').dialog({
 		autoOpen: false,
 		modal: true,
-		width:800,
+		width:900,
 		height:600
 	});
 });

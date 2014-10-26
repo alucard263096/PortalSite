@@ -180,3 +180,8 @@ legend    {
 	color: #62C311; font-family: "Times New Roman", Times, serif; 
 }
 .caption { font-family: "Arial, Helvetica, sans-serif"; font-size: 30px; color:#CCCCCC; font-weight: bold;}
+
+
+tr{margin-bottom:20px;}
+
+.supperheader{text-align:left;font-size:24px;padding-left:20px;background-color:#FB8A02;color:white;font-weight:bold;}

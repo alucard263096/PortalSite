@@ -5,6 +5,9 @@
   <link type="text/css" href="<{$rootpath}>/js/datatable/css/demo_table.css" media="screen" rel="stylesheet" />
   
 
+<div class='supperheader'>
+用户管理
+  </div>
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>

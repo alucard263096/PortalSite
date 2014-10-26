@@ -12,7 +12,9 @@
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/lang/zh-CN.js"></script>
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/plugins/code/prettify.js"></script>
   
-
+<div class='supperheader'>
+一般管理
+  </div>
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>

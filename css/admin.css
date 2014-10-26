@@ -7,7 +7,7 @@ a:hover,a:active{text-decoration:none}
 html, body{overflow:hidden}
 body{font:12px/1.5 arial,verdana;color:black;background-color:#fcfcfc;text-align:center}
 img{border:0}
-table{border-collapse:collapse;}
+table{border-collapse:separate;}
 ul li{list-style:none}
 a.hidefocus{outline:none}
 button.hidefocus::-moz-focus-inner{border:none}
