@@ -17,7 +17,8 @@ if(isset($_SESSION["url_request"]))
 }
 
 $str=$_SERVER["REQUEST_URI"];
-$strA=explode("/", $str);;
+$strc=explode("?", $str);
+$strA=explode("/", $strc[0]);
 $request_uri=$strA[count($strA)-1];
 //print_r($_SESSION["sysMenu"]);
 

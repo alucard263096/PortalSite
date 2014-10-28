@@ -13,6 +13,9 @@
   
   <script type="text/javascript" src="<{$rootpath}>/js/ajaxfileupload.js"></script>
 	
+<div class='supperheader'>
+供应商管理
+  </div>
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>

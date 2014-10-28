@@ -46,11 +46,11 @@
 							</div>
 							<div class="team-wrapper">
 								<div class="team-desc pull-left tooltips">
-									<h5>李倢瑞 Jerry</h5>
-									<p>( 销售总监 )</p>				
+									<h5>黄小燕  Camille</h5>
+									<p>市场助理 </p>				
 								</div>
 								<div class="team-avatar avatar-left" style="left: 0px;">
-									<img alt="" src="<{$rootpath}>/themes/lm/rinna/img/dummies/team/avatar2.png">
+									<img alt="" src="<{$rootpath}>/themes/lm/rinna/img/dummies/team/yanzi.jpg">
 								</div>
 							</div>
 							<div class="team-wrapper">

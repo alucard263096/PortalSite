@@ -1,6 +1,6 @@
 <div id='banner_new_title' class="fieldset">新增</div>
 <div id='banner_edit_title' class="fieldset">更新</div>
-<table>
+<table style="border-spacing:5px;">
 	<tr id='asd'>
 		<td width="2%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>
 		<td width="14%"><img src="<{$rootpath}>/images/onedot.gif" width="30" height="1" /></td>

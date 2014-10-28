@@ -123,10 +123,10 @@
 	
 	public  function  updateBanner($id, $slogan, $label, $title, $cont, $seq, $pic,$link, $status){
 		$id=parameter_filter($id);
-		$slogan=parameter_filter($slogan);
+		$cont=str_replace("'", "''", $cont);
 		$label=parameter_filter($label);
-		$title=parameter_filter($title);
-		$cont=parameter_filter($cont);
+		$cont=str_replace("'", "''", $cont);
+		$cont=str_replace("'", "''", $cont);//parameter_filter($cont);
 		$seq=parameter_filter($seq);
 		$pic=parameter_filter($pic);
 		$link=parameter_filter($link);

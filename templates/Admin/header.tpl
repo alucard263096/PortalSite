@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="<{$rootpath}>/css/template.css" />
 	<script type="text/javascript" charset="UTF-8" src="<{$rootpath}>/js/jquery.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="<{$rootpath}>/js/jquery-migrate-1.2.1.min.js"></script>
-	
-	
 	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui.min.js"></script>
     <script language="javascript" src="<{$rootpath}>/js/ui-alert.js"></script>
 	<script type="text/javascript" src="<{$rootpath}>/js/jquery.cookie.js"></script>

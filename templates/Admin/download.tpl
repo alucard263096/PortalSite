@@ -5,7 +5,9 @@
   <link type="text/css" href="<{$rootpath}>/js/datatable/css/demo_table.css" media="screen" rel="stylesheet" />
   
   <script type="text/javascript" src="<{$rootpath}>/js/ajaxfileupload.js"></script>
-
+<div class='supperheader'>
+下载管理
+  </div>
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>

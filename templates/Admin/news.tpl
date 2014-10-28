@@ -12,6 +12,9 @@
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/lang/zh-CN.js"></script>
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/plugins/code/prettify.js"></script>
 	
+<div class='supperheader'>
+新闻管理
+  </div>
 <div class="fieldset">搜索条件</div>
 <table class="fieldsetContent">
 	<tr>
@@ -125,8 +128,8 @@ $(document).ready(function() {
 	$('#details').dialog({
 		autoOpen: false,
 		modal: true,
-		width:800,
-		height:600
+		width:850,
+		height:650
 	});
 		
 	$("#search").click(function(){

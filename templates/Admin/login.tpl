@@ -7,7 +7,7 @@
     <script language="javascript" src="<{$rootpath}>/js/jquery.js"></script>
 	<script type="text/javascript" src="<{$rootpath}>/js/ui/jquery-ui.js"></script>
     <script language="javascript" src="<{$rootpath}>/js/ui-alert.js"></script>
-	<link type="text/css" href="<{$rootpath}>/theme/ui.all.css" media="screen" rel="stylesheet" />
+	<link type="text/css" href="<{$rootpath}>/js/ui/jquery-ui.min.css" media="screen" rel="stylesheet" />
 </head>
 <body>
 <table width='100%' height='600' >

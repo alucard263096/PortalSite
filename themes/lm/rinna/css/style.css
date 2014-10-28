@@ -107,7 +107,7 @@ General layout
 body{
 	background:#fff;
 	color:#454545;
-	font-size:14px;
+	font-size:15px;
 	line-height:22px;
 
 }
@@ -157,10 +157,14 @@ body{
 	background:#f1f1f1;
 	position:relative;
 	overflow:hidden;
-	font-size:32px;
+	font-size:24px;
 	line-height:44px;
 	margin: 0;
 	padding: 140px 0 40px 0;	
+}
+
+.page-head h3{
+	font-size:40px;
 }
 
 .contain-head{
