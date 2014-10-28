@@ -57,6 +57,22 @@
 		</td>
 	</tr>
 	<tr>
+		<td></td>
+		<td>Logo：</td>
+		<td><input type="file" name='file' id='file' onchange='upload()' />
+			<input id='detail_logo_file' value='<{$detail.logo}>' type='hidden' class='spText ' />
+		</td>
+		<td></td>
+		<td colspan='2'>请上传格式为：270（width）*186（height）</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>
+			<img id='detail_logo_img' alt="未上传" height="80px"  src="<{$rootpath}>/upload/product/<{$detail.logo}>">
+		</td>
+	</tr>
+	<tr>
 		<td><br><br><br></td>
 	</tr>
 	<tr>
@@ -109,6 +125,7 @@ $(document).ready(function(){
 		var id=$("#detail_id").val();
 		var category_id=$("#detail_category_id").val();
 		var name=$("#detail_name").val();
+		var logo=$("#detail_logo_file").val();
 		var seq=$("#detail_seq").val();
 		var summary=$("#detail_summary").val();
 		var content=$("#detail_content").val();
@@ -117,6 +134,9 @@ $(document).ready(function(){
 		var valstr="";
 		if($.trim(name)==""){
 			valstr+="请输入名称\r\n";
+		}
+		if($.trim(logo)==""){
+			valstr+="请上传logo\r\n";
 		}
 		if($.trim(category_id)=="0"){
 			valstr+="请选择产品分类\r\n";
@@ -132,6 +152,7 @@ $(document).ready(function(){
 		var json={"action":"save",
 				"id":id,
 				"name":name,
+				"logo":logo,
 				"category_id":category_id,
 				"summary":summary,
 				"content":content,
@@ -181,6 +202,7 @@ $(document).ready(function(){
 		$( "#details" ).dialog( "close" );
 	});
 });
+
 </script>
 
 	<script>

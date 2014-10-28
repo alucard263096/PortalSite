@@ -10,6 +10,8 @@
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/lang/zh-CN.js"></script>
 	<script charset="utf-8" src="<{$rootpath}>/kindeditor/plugins/code/prettify.js"></script>
 	
+  <script type="text/javascript" src="<{$rootpath}>/js/ajaxfileupload.js"></script>
+  
   <div class='supperheader'>
 产品管理
   </div>
@@ -101,7 +103,7 @@ $(document).ready(function() {
 		autoOpen: false,
 		modal: true,
 		width:850,
-		height:650
+		height:750
 	});
 		
 
@@ -176,6 +178,40 @@ function detail(id)
 		});
 }
 
+function upload()
+{
+	
+		$(".detail_button").ajaxStart(function(){
+			$(".detail_button").attr("disabled",true);
+		})
+		.ajaxComplete(function(){
+			$(".detail_button").attr("disabled",false);
+		});
+		$.ajaxFileUpload
+		(
+			{
+				"url":'product.action.php?action=uploadlogo',
+				"secureuri":false,
+				"fileElementId":"file",
+				"dataType": 'text',
+				"success": function(data, status)
+				{
+					if(data.substring(0,7)=="success"){
+						str=data.substring(7,data.length);
+						$("#detail_logo_file").val(str.split('|~~|')[1]);
+						$("#detail_logo_img").attr("src","<{$rootpath}>/upload/product/"+str.split('|~~|')[1]);
+						
+					}else{
+						alert("上传失败");
+					}
+				},
+				"error": function(data, status, e)
+				{
+					//alert(e);
+				}
+			}
+		);
+}
 
 </script>
 <{include file="$smarty_root/Admin/footer.tpl" }>

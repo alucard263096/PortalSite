@@ -29,7 +29,7 @@
 		$category_id=parameter_filter($category_id);
 		
 		
-		$sql="select distinct n.id,nc.name category_name, n.name,n.summary,n.seq,n.status
+		$sql="select distinct n.id,nc.name category_name,n.logo, n.name,n.summary,n.seq,n.status
 		,n.created_user,c.user_name created_username,n.created_date
 		,n.updated_user,u.user_name updated_username,n.updated_date 
 		from tb_product n
@@ -64,11 +64,12 @@
 	}
  
 		
- public function save($id,$category_id,$name,$seq,$summary,$content,$status,$sysUser_id)
+ public function save($id,$category_id,$name,$logo,$seq,$summary,$content,$status,$sysUser_id)
 	{
 		$id=parameter_filter($id);
 		$category_id=parameter_filter($category_id);
 		$name=parameter_filter($name);
+		$logo=parameter_filter($logo);
 		$seq=parameter_filter($seq);
 		$summary=parameter_filter($summary);
 		$content=parameter_filter($content);
@@ -84,11 +85,11 @@
 			
 			$id=$result[0];
 			$sql="insert into `tb_product` 
-	(id,category_id, name, seq,summary,content, status, created_date, 
+	(id,category_id, name,logo, seq,summary,content, status, created_date, 
 	created_user, updated_date, 
 	updated_user)
 	values
-	($id,$category_id, '$name', '$seq', '$summary', '$content',  '$status', now(), 
+	($id,$category_id, '$name','$logo', '$seq', '$summary', '$content',  '$status', now(), 
 	$sysUser_id, now(), 
 	$sysUser_id)";
 			
@@ -98,6 +99,7 @@
 			$sql="update tb_product set 
 					category_id=$category_id,
 					name='$name',
+					logo='$logo',
 					seq='$seq',
 					summary='$summary',
 					content='$content',
