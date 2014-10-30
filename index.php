@@ -6,6 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
   require 'include/common.inc.php';
+  require ROOT.'/include/front.inc.php';
  require ROOT.'/classes/datamgr/news.cls.php';
 $hot=$newsMgr->getHotNewsList(3);
 	$smarty->assign('hotlist',$hot);

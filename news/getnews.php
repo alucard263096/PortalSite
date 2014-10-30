@@ -6,6 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
   require '../include/common.inc.php';
+  require ROOT.'/include/front.inc.php';
  require ROOT.'/classes/datamgr/news.cls.php';
  
   is_numeric( $_REQUEST["page"] ) or die('提供的参数不是数字');

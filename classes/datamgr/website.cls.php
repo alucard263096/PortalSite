@@ -30,6 +30,33 @@
 		return $result;
 	}
 	
+	public function  getProductMenu(){
+		$sql="select distinct a.* from tb_product_category a 
+		inner join tb_product b on a.id=b.category_id 
+		where a.status='A' and b.status='A' ";
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query);
+		
+		$sum=count($result);
+		for($i=0;$i<$sum;$i++)
+		{
+			$pr=$this->getProduct($result[$i]["id"]);
+			$result[$i]["productlist"]=$pr;
+			$result[$i]["count"]=count($pr);
+		}
+		//print_r($result);
+		return $result;
+	}
+ 
+	public function  getProduct($category_id){
+		$sql="select * from tb_product where category_id=$category_id and status='A' ";
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query);
+		//print_r($result);
+		return $result;
+	}
+	
+	
 	public function getIndexPageBannerList(){
 		$sql="select * from tb_website_banner where status='A' order by seq limit 0,7";
 		$query = $this->dbmgr->query($sql);

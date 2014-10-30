@@ -6,6 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
   require '../include/common.inc.php';
+  require ROOT.'/include/front.inc.php';
   require ROOT.'/classes/mgr/download.cls.php';
   
   $filename=$_REQUEST["filename"];
