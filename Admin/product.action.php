@@ -25,6 +25,7 @@
  	$rt=$productMgr->save($_REQUEST["id"]
 					 	,$_REQUEST["category_id"]
 					 	,$_REQUEST["name"]
+					 	,$_REQUEST["logo"]
 					 	,$_REQUEST["seq"]
 					 	,$_REQUEST["summary"]
 					 	,$_REQUEST["content"]
@@ -41,6 +42,14 @@
 					 	
 	echo "success";
  	
+ }
+ else if($action=="uploadlogo"){
+ require ROOT.'/classes/obj/upload.php';
+ $file=$_FILES["file"];
+ $filename=date('ymdHIs').$file["name"];
+ $file=new Upload($file,$filename,ROOT."/upload/product/",true);
+ echo $file->safetyUpload();
+ echo $file->getSize()."|~~|".$filename;
  }
  
 ?>

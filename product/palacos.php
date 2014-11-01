@@ -6,6 +6,7 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 require '../include/common.inc.php';
+  require ROOT.'/include/front.inc.php';
 
 
 $smarty->display(ROOT.'/templates/product/palacos.tpl');

@@ -18,16 +18,17 @@
 											<li><a href="<{$rootpath}>/aboutus/contactus.php">联系我们</a></li>	
 											<li><a href="<{$rootpath}>/aboutus/joinus.php">加入我们</a></li>										
 										</ul>						
-									</li>				
-									<li class="dropdown">
-									<a  href="#" class="dropdown-toggle <{if $module=='product'}>active<{/if}>" data-toggle="dropdown" >产品 <b class="caret"></b></a>		
+									</li>
+									<{foreach from=$productmenu item=rs}>
+									<li class="dropdown">		
+										<a  href="#" class="dropdown-toggle <{if $module=='product'&&$pcid==$rs.id}>active<{/if}>" data-toggle="dropdown" ><{$rs.name}><b class="caret"></b></a>	
 										<ul class="dropdown-menu">
-											<li><a href="#">Palacos 骨水泥</a></li>
-											<li><a href="#">Osteopal V 脊柱骨水泥</a></li>	
-											<li><a href="#">PALAMIX 骨水泥真空混合系统</a></li>		
-											<li><a href="<{$rootpath}>/product/mast.php">SurgiWrap聚乳酸手术保护膜</a></li>							
-										</ul>						
-									</li>				
+											<{foreach from=$rs.productlist item=rss}>
+											<li><a href="<{$rootpath}>/product/detail.php?id=<{$rss.id}>"><{$rss.name}></a></li>
+											<{/foreach}>								
+										</ul>			
+									</li>			
+									<{/foreach}>	
 									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	
 									<li><a href="<{$rootpath}>/news/index.php" <{if $module=='news'}>class='active'<{/if}>>新闻中心</a></li>	
 									<li><a href="<{$rootpath}>/partner/index.php" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
