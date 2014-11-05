@@ -230,6 +230,10 @@ Parallax
 	height: 654px;
 }
 
+.parallax-bgpala{
+	background:url(../img/palacos.png) 0 0 no-repeat fixed;
+	height: 330px;
+}
 .parallax-bg1{
 	background:url(../img/parallax-bg1.jpg) 0 0 no-repeat fixed;
 	height: 330px;

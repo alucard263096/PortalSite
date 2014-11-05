@@ -233,63 +233,7 @@
     <script src="http://www.gushuini.com/themes/lm/rinna/js/custom.js"></script>
 
 
-    <script src="http://www.gushuini.com/themes/lm/rinna/js/parallax/jquery.inview.js"></script>
-    <script src="http://www.gushuini.com/themes/lm/rinna/js/parallax/nbw-parallax.js"></script>
-
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            var chart = new Highcharts.Chart({
-                chart: {
-                    renderTo: 'container',
-                    type: 'column',
-                    marginRight: 130,
-                    marginBottom: 25
-                },
-                title: {
-                    text: 'Monthly Average Temperature',
-                    x: -20 //center
-                },
-                subtitle: {
-                    text: 'Source: WorldClimate.com',
-                    x: -20
-                },
-                xAxis: {
-                    categories: ['Jan', 'Feb', 'Mar', 'Apr']
-                },
-                yAxis: {
-                    title: {
-                        text: 'Temperature (°C)'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
-                    formatter: function () {
-                        return '<b>' + this.series.name + '</b><br/>' +
-                        this.x + ': ' + this.y + '°C';
-                    }
-                },
-                legend: {
-                    enabled: 0
-                },
-                series: [{
-                    data: [{ 'color': '#F6BD0F', 'y': 11 },
-                                { 'color': '#AFD8F8', 'y': 12 },
-                                { 'color': '#8BBA00', 'y': 13 },
-                                { 'color': '#FF8E46', 'y': 14 },
-                                { 'color': '#008E8E', 'y': 15 },
-                                { 'color': '#D64646', 'y': 16 },
-                                { 'color': '#8E468E', 'y': 17 }],
-                }]
-            });
-        });
-
-    </script>
+    
 
 </body>
 </html>

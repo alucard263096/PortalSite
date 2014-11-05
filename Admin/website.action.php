@@ -58,6 +58,10 @@
 	 {
 	 	$detail=$websiteMgr->getBanner($id);
 	 	//print_r( $detail);
+  		$detail["slogan"]=htmlspecialchars($detail["slogan"]);
+  		$detail["title"]=htmlspecialchars($detail["title"]);
+  		$detail["label"]=htmlspecialchars($detail["label"]);
+  		$detail["cont"]=htmlspecialchars($detail["cont"]);
 	  	$smarty->assign('detail',$detail);
 	  	$smarty->assign('data_status','edit');
 	 }

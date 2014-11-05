@@ -49,7 +49,7 @@ $errortype=array(1=>"Error",2=>"Warning",4=>"Parsing Error",8=>"Notice",
 		1024=>"User Notice",2048=>"Strict Notice");
 		if($errno==4||$errno==2)
 		{
-			logger_mgr::logInfo("[".$errortype[$errno]."]".$errmsg ."in file ".$file ." line ".$line);
+			//logger_mgr::logInfo("[".$errortype[$errno]."]".$errmsg ."in file ".$file ." line ".$line);
 		}
 }
 

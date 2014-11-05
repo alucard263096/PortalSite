@@ -33,7 +33,7 @@
 	public function  getProductMenu(){
 		$sql="select distinct a.* from tb_product_category a 
 		inner join tb_product b on a.id=b.category_id 
-		where a.status='A' and b.status='A' ";
+		where a.status='A' and b.status='A' order by a.seq,b.seq ";
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query);
 		

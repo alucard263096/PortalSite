@@ -15,4 +15,5 @@ is_numeric( $_REQUEST["id"] ) or die('提供的参数不是数字');
 $smarty->assign('module',"news");
 
 $smarty->display(ROOT.'/templates/news/detail.tpl');
+
 ?>

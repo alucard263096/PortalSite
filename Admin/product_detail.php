@@ -17,6 +17,8 @@
  if($id!='')
  {
  	$detail=$productMgr->getProduct($id);
+  	$detail["name"]=htmlspecialchars($detail["name"]);
+  	$detail["content"]=htmlspecialchars($detail["content"]);
   	$smarty->assign('detail',$detail);
   	$smarty->assign('data_status','edit');
  }

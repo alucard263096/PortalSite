@@ -210,7 +210,8 @@ $(document).ready(function(){
 				cssPath : '<{$rootpath}>/kindeditor/plugins/code/prettify.css',
 				uploadJson : '<{$rootpath}>/kindeditor/php/upload_json.php',
 				fileManagerJson : '<{$rootpath}>/kindeditor/php/file_manager_json.php',
-				allowFileManager : true
+				allowFileManager : true,
+				imageUploadJson : '<{$rootpath}>/upload' //服务端上传图片处理URI
 			});
 			prettyPrint();
 	</script>
