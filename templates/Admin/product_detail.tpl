@@ -211,6 +211,7 @@ $(document).ready(function(){
 				uploadJson : '<{$rootpath}>/kindeditor/php/upload_json.php',
 				fileManagerJson : '<{$rootpath}>/kindeditor/php/file_manager_json.php',
 				allowFileManager : true,
+				safeMode : false,
 				imageUploadJson : '<{$rootpath}>/upload' //服务端上传图片处理URI
 			});
 			prettyPrint();

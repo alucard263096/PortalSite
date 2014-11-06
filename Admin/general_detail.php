@@ -21,7 +21,7 @@
  }
  
  	$info=$generalMgr->getGeneral($id);
-  	$info["content"]=htmlspecialchars($info["content"]);
+  	//$info["content"]=htmlspecialchars($info["content"]);
   	$smarty->assign('info',$info);
   	$smarty->assign('data_status','edit');
  

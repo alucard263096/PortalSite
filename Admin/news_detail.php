@@ -16,7 +16,7 @@
  if($id!='')
  {
  	$detail=$newsMgr->getNews($id);
-  	$detail["content"]=htmlspecialchars($detail["content"]);
+  	//$detail["content"]=htmlspecialchars($detail["content"]);
   	$smarty->assign('detail',$detail);
   	$smarty->assign('data_status','edit');
  }

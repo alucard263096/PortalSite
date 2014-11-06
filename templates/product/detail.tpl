@@ -18,10 +18,7 @@
 			</div>			
 		</section>
 		<!-- End page head -->
-		<section class="page-contain">
-			<div class="container">
+		
 				<{$info.content}>
-			</div>
-		</section>
 
 <{include file="$smarty_root/footer.tpl" }>
