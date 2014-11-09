@@ -20,5 +20,14 @@
 		<!-- End page head -->
 		
 				<{$info.content}>
+				
+				
+<script src="<{$rootpath}>/themes/lm/rinna/js/parallax/jquery.inview.js"></script>
+<script src="<{$rootpath}>/themes/lm/rinna/js/parallax/nbw-parallax.js"></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="<{$rootpath}>/themes/lm/js/product_chart.js"></script>
+				
+				
 
 <{include file="$smarty_root/footer.tpl" }>

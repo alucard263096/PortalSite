@@ -49,7 +49,7 @@
 	}
  
 	public function  getProduct($category_id){
-		$sql="select * from tb_product where category_id=$category_id and status='A' ";
+		$sql="select * from tb_product where category_id=$category_id and status='A' order by seq ";
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query);
 		//print_r($result);
