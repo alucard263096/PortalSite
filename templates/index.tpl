@@ -74,16 +74,16 @@
 		<h3 class='showdesc'>Heraeus系列</h3>
 		<ul class="imageteaser clearfix">
 					<li>
-	<a href="#" class="link showdesc" target="" refl='p_pl'> <img src="<{$rootpath}>/themes/lm/images/palacos.png" alt="Professionals" title="Professionals" /> <p class="text">骨水泥</p> </a>	
+	<a href="<{$rootpath}>/product/detail.php?id=3" class="link showdesc" target="" refl='p_pl'> <img src="<{$rootpath}>/themes/lm/images/palacos.png" alt="Professionals" title="Professionals" /> <p class="text">骨水泥</p> </a>	
 </li>
 					<li>
-	<a href="#" class="link showdesc" target="" refl='p_plg'> <img src="<{$rootpath}>/themes/lm/images/qameisu.png" alt="Graduates" title="Graduates" /> <p class="text">抗生素骨水泥</p> </a>	
+	<a href="<{$rootpath}>/product/detail.php?id=3" class="link showdesc" target="" refl='p_plg'> <img src="<{$rootpath}>/themes/lm/images/qameisu.png" alt="Graduates" title="Graduates" /> <p class="text">抗生素骨水泥</p> </a>	
 </li>
 					<li>
-	<a href="#" class="link showdesc" target="" refl='p_ov'> <img src="<{$rootpath}>/themes/lm/images/ov.png" alt="Students" title="Students" /> <p class="text">脊柱专用骨水泥</p> </a>	
+	<a href="<{$rootpath}>/product/detail.php?id=4" class="link showdesc" target="" refl='p_ov'> <img src="<{$rootpath}>/themes/lm/images/ov.png" alt="Students" title="Students" /> <p class="text">脊柱专用骨水泥</p> </a>	
 </li>
 					<li>
-	<a href="#" class="link showdesc" target="" refl='p_pm'> <img src="<{$rootpath}>/themes/lm/images/palamix.png" alt="Students" title="Students" /> <p class="text">骨水泥真空混合系统</p> </a>	
+	<a href="<{$rootpath}>/product/detail.php?id=2" class="link showdesc" target="" refl='p_pm'> <img src="<{$rootpath}>/themes/lm/images/palamix.png" alt="Students" title="Students" /> <p class="text">骨水泥真空混合系统</p> </a>	
 </li>
 		</ul>
 			<span id='p_pl' class='descOfProduct hide'>用于初次关节置换术的PALACOS®骨水泥通过它的高品质和卓越的性能赢得了骨科医生和外科医生的支持。</span>
@@ -109,8 +109,8 @@
 			</div>
 		</div>
 		<div class="links">
-				<a href="product/mast.php" class="not-mobile " target=""> 产品特性 </a> <a href="product/mast.php" class="only-mobile " target=""> 产品特性 </a>
-				<a href="product/mast.php" class="not-mobile " target=""> 如何购买 </a> <a href="product/mast.php" class="only-mobile " target=""> 如何购买 </a>
+				<a href="product/mast.php" class="not-mobile " target=""> 产品特性 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 产品特性 </a>
+				<a href="product/mast.php" class="not-mobile " target=""> 如何购买 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 如何购买 </a>
 		</div>
 	</div>
 </div>
