@@ -440,6 +440,26 @@ $(document).ready(function() {
 					}
 				});
 
+			$('.infotitle').on('click', function () {
+				    var $infobox = $stage.find('.cycle-slide-active .infobox');
+
+				    if (!$infobox.length) {
+				        return;
+				    }
+
+				    if ($infobox.is(':visible')) {
+				        $infobox
+							.stop()
+							.fadeOut(300);
+				        $stage.cycle('resume');
+				    } else {
+				        $infobox
+							.stop()
+							.fadeIn(300);
+				        $stage.cycle('pause');
+				    }
+				});
+
 			$stage.on('cycle-after', function() {
 				$stage
 					.find('.cycle-slide-active .infobox')

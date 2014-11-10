@@ -9,6 +9,7 @@
  
  $checkpremmis_id=$CONFIG["function"]["website"];
  require ROOT.'/include/login.inc.php';
+ require ROOT.'/classes/datamgr/website.cls.php';
  
  $base=$websiteMgr->getWebsiteBase();
  $smarty->assign("base",$base);

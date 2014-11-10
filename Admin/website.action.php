@@ -8,6 +8,7 @@
  require '../include/common.inc.php';
  $getpremmis_id=$CONFIG["function"]["website"];
  require ROOT.'/include/login.inc.php';
+ require ROOT.'/classes/datamgr/website.cls.php';
  
  $action=$_REQUEST["action"];
  

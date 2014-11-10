@@ -2569,7 +2569,7 @@ textarea {
   background-position: 0 -235px;
 }
 #stage .slide.hen .link {
-  background-color: #f47920;
+  background-color: #CD9500;
 }
 #stage .slide.hen .link:before {
   background-position: 0 -95px;
@@ -2614,6 +2614,9 @@ textarea {
   position: absolute;
   width: 100%;
   z-index: 6;
+}
+#stage .slide .infotitle {
+  cursor:pointer;
 }
 @media only screen and (max-width: 960px) {
   #stage .slide .infobox {
@@ -2668,7 +2671,7 @@ textarea {
   color: #72b904;
 }
 #stage .slide.hen .infotext h4 {
-  color: #f47920;
+  color: #CD9500;
 }
 #stage .slide.hm .infotext h4 {
   color: #7fc241;
@@ -2850,7 +2853,7 @@ textarea {
   color: #ef8700;
 }
 #teaser .teaser.career > a.hover {
-  background-color: #f47920;
+  background-color: #CD9500;
   color: #FFFFFF;
 }
 #teaser .teaser .small {
@@ -2980,7 +2983,7 @@ textarea {
   color: #FFFFFF;
 }
 #teaser .teaser.career .layer {
-  background-color: #f47920;
+  background-color: #CD9500;
   color: #FFFFFF;
 }
 #teaser .teaser.news .layer {
