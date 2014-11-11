@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /appg/
+Disallow: /conf/
+Disallow: /extensions/
+Disallow: /js/
+Disallow: /languages/
+Disallow: /library/
+Disallow: /setup/
+Disallow: /themes/
+Disallow: /uploads/
+Disallow: /backup/

@@ -1,0 +1,22 @@
+<?php
+// Application Settings
+$Configuration['SETUP_TEST'] = '1';
+$Configuration['APPLICATION_PATH'] = '/data/home/hmu068200/htdocs/bbs/';
+$Configuration['DATABASE_PATH'] = '/data/home/hmu068200/htdocs/bbs/conf/database.php';
+$Configuration['LIBRARY_PATH'] = '/data/home/hmu068200/htdocs/bbs/library/';
+$Configuration['EXTENSIONS_PATH'] = '/data/home/hmu068200/htdocs/bbs/extensions/';
+$Configuration['LANGUAGES_PATH'] = '/data/home/hmu068200/htdocs/bbs/languages/';
+$Configuration['THEME_PATH'] = '/data/home/hmu068200/htdocs/bbs/themes/guagua/';
+$Configuration['DEFAULT_STYLE'] = '/bbs/themes/guagua/styles/default/';
+$Configuration['WEB_ROOT'] = '/bbs/';
+$Configuration['BASE_URL'] = 'http://www.gushuini.com/bbs/';
+$Configuration['HTTP_METHOD'] = 'http';
+$Configuration['FORWARD_VALIDATED_USER_URL'] = 'http://www.gushuini.com/bbs/';
+$Configuration['SUPPORT_EMAIL'] = 'admin@yourwebsite.com';
+$Configuration['SUPPORT_NAME'] = 'Admin';
+$Configuration['APPLICATION_TITLE'] = '雷德睦华医生讨论论坛';
+$Configuration['BANNER_TITLE'] = '雷德睦华医生讨论论坛';
+$Configuration['COOKIE_DOMAIN'] = 'www.gushuini.com';
+$Configuration['COOKIE_PATH'] = '/bbs/';
+$Configuration['SETUP_COMPLETE'] = '1';
+$Configuration['DATABASE_VERSION'] = '2';
