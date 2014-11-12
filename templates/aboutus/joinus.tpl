@@ -40,7 +40,7 @@
 						      <dl>
 						        <dt>姓名:</dt>
 						        <dd>
-							        <input name="name" id="name"  type="text">
+							        <input name="name" id="name" value='<{$name}>' type="text">
 							        <big>请输入您的真实姓名</big>
 						        </dd>
 						      </dl>
@@ -58,7 +58,7 @@
 						      <dl>
 						        <dt>手机:</dt>
 						        <dd>
-							        <input name="phone"  id="phone"   type="text">
+							        <input name="phone"  id="phone"  value='<{$phone}>'  type="text">
 							        <big>请输入您的联系方式</big>
 						        </dd>
 						      </dl>
@@ -76,13 +76,13 @@
 						      <dl>
 						        <dt>公司名称:</dt>
 						        <dd>
-							        <input name="companyName"  id="companyName"   type="text">
+							        <input name="companyName"  id="companyName"  value='<{$company_name}>'  type="text">
 							        <big>请输入你所在的企业名称</big>
 						        </dd>
 						      </dl>
 						      <dl>
 						        <dt>公司所在地:</dt>
-						        <dd><input name="companyLocation"    type="text"></dd>
+						        <dd><input name="companyLocation"   type="text"></dd>
 						      </dl>
 						      <dl>
 						        <dt>公司电话:</dt>
@@ -94,7 +94,7 @@
 						      </dl>
 						      <dl>
 						        <dt>公司地址:</dt>
-						        <dd><input name="companyAddress"    type="text"></dd>
+						        <dd><input name="companyAddress"    value='<{$company_address}>'  type="text"></dd>
 						      </dl>
 						      <dl>
 						        <dt class="str">您的加盟信息:</dt>
@@ -110,6 +110,10 @@
 						      <dl>
 						        <dt>您初步决定加盟的渠道合作伙伴<br>类型是</dt>
 						        <dd><input name="partnerType"    type="text"></dd>
+						      </dl>
+						      <dl>
+						        <dt>我的留言</dt>
+						        <dd><input name="wantKnow"   value='<{$remarks}>'   type="text"></dd>
 						      </dl>
 						      <dl>
 						        <dt>您希望进一步了解的信息是</dt>

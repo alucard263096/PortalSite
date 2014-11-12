@@ -141,32 +141,41 @@
 	<div class="layer">
 		<h3>填写基本加盟信息</h3>
 		<img src="<{$rootpath}>/themes/lm/images/gosuccess.jpg" alt="Students" title="Students" />
+		<form id='joinusform' action="<{$rootpath}>/aboutus/joinus.php" method="post">
 		<table class='inputtable'>
 			<tr>
 				<td>姓名：</td>
-				<td><input type='text' watermark="请输入真实姓名" /></td>
+				<td><input type='text' name='name' watermark="请输入真实姓名" /></td>
 			</tr>
 			<tr>
 				<td>联系电话：</td>
-				<td><input type='text'  watermark="请输入您的联系方式"  /></td>
+				<td><input type='text' name='phone' watermark="请输入您的联系方式"  /></td>
 			</tr>
 			<tr>
 				<td>公司名称：</td>
-				<td><input type='text'  watermark="请输入您的公司名称" /></td>
+				<td><input type='text' name='company_name'  watermark="请输入您的公司名称" /></td>
 			</tr>
 			<tr>
 				<td>公司地址：</td>
-				<td><input type='text'  watermark="请输入您的公司地址" /></td>
+				<td><input type='text'  name='company_address' watermark="请输入您的公司地址" /></td>
 			</tr>
 			<tr valign='top'>
 				<td>留言：</td>
-				<td><textarea cols='50' rows='3' ></textarea></td>
+				<td><textarea cols='50' name='remarks' rows='3' ></textarea></td>
 			</tr>
 		</table>
+		</form>
 		<div class="links">
-				<a href="#" class="not-mobile " target=""> 提交申请 </a> <a href="#" class="only-mobile " target=""> 提交申请 </a>
+				<a href="#" class="not-mobile btnJoinus" target=""> 提交申请 </a> <a href="#" class="only-mobile btnJoinus" target=""> 提交申请 </a>
 		</div>
 	</div>
+	<script>
+		$(document).ready(function(){
+			$(".btnJoinus").click(function(){
+				$("#joinusform").submit();
+			});
+		});
+	</script>
 </div>
 <div class="teaser career normal">
 	<a>
