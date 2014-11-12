@@ -38,6 +38,18 @@
     
     return count($result)>0;
   }
+  
+  public function getRequisition($id){
+  
+		$id=parameter_filter($id);
+		$sql="select *
+		from tb_requisition
+		where id=$id ";
+		
+		$query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array($query); 
+		return $result;
+  }
 	
 	//status P 申请中，A 完成，I 拒绝
 	
@@ -101,8 +113,6 @@
 		$status=parameter_filter($status);
 		$this->dbmgr->begin_trans();
 		
-		if($id=="")
-		{
 			
 			$sql="select ifnull(max(id),0)+1 from tb_download_category";
 			$query = $this->dbmgr->query($sql);
@@ -117,53 +127,30 @@
 	($id, '$name', $seq, '$status', $sysUser_id, 
 	now(), $sysUser_id, 
 	now())";
-			
-		}
-		else
-		{
-			$sql="update tb_download_category set 
-					name='$name',
-					seq=$seq  ,
-					status='$status',
-					updated_user=$sysUser_id,
-					updated_date=now()
-					where id=$id ";
-		}
-		$query = $this->dbmgr->query($sql);
-		
-		$sql="update tb_download_file set 
-					category_id=category_id*-1
-					where category_id=$id ";
-		$query = $this->dbmgr->query($sql);
-		
-		$sum=count($filelist);
-		for ($i = 0; $i < $sum; $i++) {
-			$a=$filelist[$i];
-			$fid=parameter_filter($a["id"]);
-			$fname=parameter_filter($a["name"]);
-			$fseq=parameter_filter($a["seq"]);
-			$ffilename=parameter_filter($a["filename"]);
-			$flength=parameter_filter($a["length"]);
-			$fstatus=parameter_filter($a["status"]);
-			if($fid=="0"){
-				continue;
-			}
-			$sql="update tb_download_file set 
-					category_id=$id,
-					name='$fname',
-					seq=$fseq  ,
-					filename='$ffilename',
-					length=$flength,
-					status='$fstatus',
-					updated_user=$sysUser_id,
-					updated_date=now()
-					where id=$fid ";
+  
 			$query = $this->dbmgr->query($sql);
-		}
+			
 		$this->dbmgr->commit_trans();
 		
 		return "right".$id;
 	}
+  
+  public function editStatus($id,$status,$description){
+    
+		$id=parameter_filter($id);
+		$status=parameter_filter($status);
+		$description=parameter_filter($description);
+    
+    $sql="update tb_requisition set status='$status',
+                                    description='$description',
+                                    $process_date=now()
+                                    where id=$id";
+                                    
+                                    
+			$query = $this->dbmgr->query($sql);
+      return "right";
+    
+  }
 	
  }
  
