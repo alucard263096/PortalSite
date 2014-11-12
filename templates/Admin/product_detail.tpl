@@ -212,6 +212,7 @@ $(document).ready(function(){
 				fileManagerJson : '<{$rootpath}>/kindeditor/php/file_manager_json.php',
 				allowFileManager : true,
 				safeMode : false,
+        filterMode:false,
 				imageUploadJson : '<{$rootpath}>/upload' //服务端上传图片处理URI
 			});
 			prettyPrint();
