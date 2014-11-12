@@ -169,13 +169,6 @@
 				<a href="#" class="not-mobile btnJoinus" target=""> 提交申请 </a> <a href="#" class="only-mobile btnJoinus" target=""> 提交申请 </a>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function(){
-			$(".btnJoinus").click(function(){
-				$("#joinusform").submit();
-			});
-		});
-	</script>
 </div>
 <div class="teaser career normal">
 	<a>
@@ -240,6 +233,10 @@
 			$("#"+refname).show();
 		},function(){
 			$(".descOfProduct").hide();
+		});
+		
+		$(".btnJoinus").click(function(){
+			$("#joinusform").submit();
 		});
 	});
 	</script>

@@ -1,6 +1,5 @@
 ﻿<{include file="$smarty_root/header.tpl" }>
-<link href="<{$rootpath}>/themes/lm/css/partner_application.css?3793055854" rel="stylesheet" type="text/css" media="screen">
-<link href="<{$rootpath}>/themes/lm/css/ks.css?3793055854" rel="stylesheet" type="text/css" media="screen">
+
 
 	<!-- Start page head -->
 		<section class="page-head contain-head">
@@ -32,6 +31,49 @@
 						  	<p class="tip">请您准确填写下列加盟信息，以便我们能及时与您联系，达成合作！</p>
 						  	<div class='span7'>
 						    <div class="form">
+						    <div class="contact-form-wrapper">
+								<div class="contact-form">
+									<h4>申请表格</h4>
+									<form id="contactform" action="joinus.action.php" method="post" class="validateform" name="leaveContact">	
+									<div id="sendmessage">你</div>
+										<ul class="listForm">
+											<li>
+												<label>姓名:<span>&#40; 必填 &#41;</span></label>
+												<input class="input-block-level contact-input" type="text" name="name" data-rule="maxlen:2" data-msg="至少输入两位字符" />									
+												<div class="validation"></div>
+											</li>
+											<li>
+												<label>职务<span>&#40; 必填 &#41;</span></label>
+												<input class="input-block-level contact-input" type="text" name="email" data-rule="maxlen:2" data-msg="至少输入两位字符" />										
+												<div class="validation"></div>
+											</li>
+											<li>
+												<label>E-mail<span>&#40; 必填 &#41;</span></label>
+												<input class="input-block-level contact-input" type="text" name="email" data-rule="email" data-msg="请输入有效的邮件地址" />										
+												<div class="validation"></div>
+											</li>
+											<li>
+												<label>手机<span>&#40; 必填 &#41;</span></label>
+												<input class="input-block-level contact-input" type="text" name="email" data-rule="maxlen:2" data-msg="请输入有效的邮件地址" />										
+												<div class="validation"></div>
+											</li>
+											<li>
+												<label>职务<span>&#40; 必填 &#41;</span></label>
+												<input class="input-block-level contact-input" type="text" name="email" data-rule="email" data-msg="请输入有效的邮件地址" />										
+												<div class="validation"></div>
+											</li>
+											<li>
+												<label>Your message<span>&#40; Required &#41;</span></label>
+												<textarea class="input-block-level contact-input" rows="9" name="message" data-rule="required" data-msg="Please write something for us"></textarea>												
+												<div class="validation"></div>
+											</li>
+											<li>
+												<input type="submit" value="Send message" class="btn btn-large btn-primary" name="Submit" />
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
 						  	<form id="applicationForm">
 						      <dl>
 						        <dt class="str">您的个人信息:</dt>
@@ -130,7 +172,7 @@
 							   <span>感谢您选择加盟雷德睦华！除在线申请外您还可以通过如下方式联系我们或了解相关信息：</span>
 							    <p><a href="<{$rootpath}>/aboutus/contactus.php" target="_blank">联系当地机构 &gt;</a></p>
 							    <p><a href="<{$rootpath}>/aboutus/contactus.php">微信关注我们 &gt;</a></p>
-							    <p><a href="<{$rootpath}>/product/index.php" target="_blank">在线了解产品 &gt;</a></p>
+							    <p><a href="<{$rootpath}>/index.php" target="_blank">在线了解产品 &gt;</a></p>
 							  </div>
 						   </div>
 						</div>
