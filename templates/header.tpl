@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 	<title><{$sitesetting.seo_title}></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="<{$sitesetting.seo_description}>" />
 	<meta name="keywords" content="<{$sitesetting.seo_keywords}>" />
 	<link rel="shortcut icon" href="<{$rootpath}>/upload/fav/<{$sitesetting.favfile}>">
@@ -19,11 +20,6 @@
 		
 		<!-- skin color -->
 		<link id="css-skin" href="<{$rootpath}>/themes/lm/rinna/color/steel-blue.css" rel="stylesheet">
-
-		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 
 		<!-- Fav and touch icons -->
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<{$rootpath}>/themes/lm/rinna/ico/apple-touch-icon-144-precomposed.png">

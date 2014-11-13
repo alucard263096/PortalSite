@@ -17,7 +17,8 @@ header ('Pragma: no-cache'); // HTTP/1.0
 header ('content-type: text/html; charset='.$Configuration['CHARSET']);
 
 // REPORT ALL ERRORS
-//error_reporting(E_ERROR);
+error_reporting(E_ERROR);
+
 
 // DO NOT ALLOW PHP_SESS_ID TO BE PASSED IN THE QUERYSTRING
 ini_set('session.use_only_cookies', 1);
