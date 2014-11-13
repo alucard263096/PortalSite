@@ -50,83 +50,85 @@
 		$result = $this->dbmgr->fetch_array($query); 
 		return $result;
   }
+  
+  public function getUnprocessCount(){
+    $sql="select count(1) from tb_requisition 
+    where status='P' ";
+    
+    $query = $this->dbmgr->query($sql);
+		$result = $this->dbmgr->fetch_array_all($query);
+    
+     return count($result);
+  }
 	
 	//status P 申请中，A 完成，I 拒绝
 	
-	public function searchDownloadCategory($name,$phone,$qq,$companyname,$com_phone,$com_address,$status)
+	public function search($name,$phone,$qq,$company_name,$company_phone,
+                                    $from,$to,$status)
 	{
 		$name=parameter_filter($name);
 		$phone=parameter_filter($phone);
 		$qq=parameter_filter($qq);
-		$companyname=parameter_filter($companyname);
-		$com_phone=parameter_filter($com_phone);
-		$com_address=parameter_filter($com_address);
+		$company_name=parameter_filter($company_name);
+		$company_phone=parameter_filter($company_phone);
 		$status=parameter_filter($status);
+		$from=parameter_filter($from);
+		$to=parameter_filter($to);
     
-		if($name==""){
-			$sql="select distinct dt.seq,dt.id,dt.name,dt.status
-		,dt.created_user,c.user_name created_username,dt.created_date
+	  $sql="select distinct dt.*
 		,dt.updated_user,u.user_name updated_username,dt.updated_date 
-		from tb_download_category dt
-		left join tb_user c on dt.created_user=c.user_id
+		from tb_requisition dt
 		left join tb_user u on dt.updated_user=u.user_id
-		where  dt.status like '%$status%'
-		and dt.status <>'D' 
-		order by dt.seq";
-		}else{
-		$sql="select distinct dt.seq,dt.id,dt.name,dt.status
-		,dt.created_user,c.user_name created_username,dt.created_date
-		,dt.updated_user,u.user_name updated_username,dt.updated_date 
-		from tb_download_category dt
-		inner join tb_download_file df on dt.id=df.category_id
-		left join tb_user c on dt.created_user=c.user_id
-		left join tb_user u on dt.updated_user=u.user_id
-		where df.name like '%$name%' 
-		and dt.status like '%$status%'
-		and dt.status <>'D' 
-		and df.status <>'D' 
-		order by dt.seq";
-		}
+		where  ('$status'='ALL' or dt.status like '%$status%')
+    and dt.phone like '%$phone%' 
+    and dt.qq like '%$qq%' 
+    and dt.company_name like '%$company_name%' 
+    and dt.company_phone like '%$company_phone%' 
+		and ('$from'='' or dt.applied_date >= '$from' )
+		and ('$to'='' or dt.applied_date <= '$to' )
+		order by dt.apply_date ";
+		
+    
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query); 
-		
-		$sum=count($result);
-		for($i=0;$i<$sum;$i++)
-		{
-			$result[$i]["filelist"]=$this->getFileListByCategory($result[$i]["id"]);
-		}
 		
 		return $result;
 	}
 	
-	
-	
-	
-	
-	
-		
- public function save($id,$name,$seq,$status,$filelist,$sysUser_id)
-	{
-		$id=parameter_filter($id);
+ public function submitRequisition($name,$position,$email,$phone,$qq,
+ $company_name,$company_city,$company_address,$company_phone,$company_website,
+ $knew,$message,$question)
+ {
 		$name=parameter_filter($name);
-		$seq=parameter_filter($seq);
-		$status=parameter_filter($status);
-		$this->dbmgr->begin_trans();
+		$position=parameter_filter($position);
+		$email=parameter_filter($email);
+		$phone=parameter_filter($phone);
+		$qq=parameter_filter($qq);
+		$company_name=parameter_filter($company_name);
+		$company_city=parameter_filter($company_city);
+		$company_address=parameter_filter($company_address);
+		$company_phone=parameter_filter($company_phone);
+		$company_website=parameter_filter($company_website);
+		$knew=parameter_filter($knew);
+		$message=parameter_filter($message);
+		$question=parameter_filter($question);
 		
 			
-			$sql="select ifnull(max(id),0)+1 from tb_download_category";
+			$sql="select ifnull(max(id),0)+1 from tb_requisition ";
 			$query = $this->dbmgr->query($sql);
 			$result = $this->dbmgr->fetch_array($query); 
 			
 			$id=$result[0];
-			$sql="insert into `tb_download_category` 
-	(id, name, seq, status, created_user, 
-	created_date, updated_user, 
-	updated_date)
+			$sql="insert into `tb_requisition` 
+	(id, name,position,email,phone,$qq,
+ company_name,company_city,company_address,company_phone,company_website,
+ knew,message,question,status, remarks, applied_date,
+	 updated_user, updated_date)
 	values
-	($id, '$name', $seq, '$status', $sysUser_id, 
-	now(), $sysUser_id, 
-	now())";
+	($id, '$name','$position','$email','$phone','$qq',
+ '$company_name','$company_city','$company_address','$company_phone','$company_website',
+ '$knew','$message','$question','P','',now(),
+ $sysUser_id, now())";
   
 			$query = $this->dbmgr->query($sql);
 			
@@ -135,15 +137,17 @@
 		return "right".$id;
 	}
   
-  public function editStatus($id,$status,$description){
+  public function editStatus($id,$status,$remarks
+					 	,$sysUser_id){
     
 		$id=parameter_filter($id);
 		$status=parameter_filter($status);
 		$description=parameter_filter($description);
     
     $sql="update tb_requisition set status='$status',
-                                    description='$description',
-                                    $process_date=now()
+                                    remarks='$remarks',
+                                    updated_user=$sysUser_id,
+                                    updated_date=now()
                                     where id=$id";
                                     
                                     

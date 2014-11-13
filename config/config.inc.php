@@ -68,6 +68,7 @@ $CONFIG["function"]["user"]="8";
 $CONFIG["function"]["website"]="9";
 $CONFIG["function"]["product_category"]="11";
 $CONFIG["function"]["product"]="12";
+$CONFIG["function"]["requisition"]="13";
 
 
 $CONFIG["access_right"]["sysA"]="2";

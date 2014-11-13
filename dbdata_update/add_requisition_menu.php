@@ -19,15 +19,10 @@
  
  $sql="
 insert into tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,`status`)
-values (11,'产品分类管理','product_category.php',1,9,1,16,'A');
-insert into tb_function (function_id,function_name,function_link,parent_id,function_type,function_group,seq,`status`)
-values (12,'产品管理','product.php',1,9,1,17,'A');
-insert into tb_function_right(function_id,right_id,id) values (11,2,13);
-insert into tb_function_right(function_id,right_id,id) values (11,3,14);
-insert into tb_function_right(function_id,right_id,id) values (12,2,15);
-insert into tb_function_right(function_id,right_id,id) values (12,3,16);
+values (13,'加盟申请','requisition.php',5,9,1,16,'A');
+insert into tb_function_right(function_id,right_id,id) values (13,3,18);
 ";
- 
+
  
  $sa=explode(";",$sql);
  $dbmgr->begin_trans();
