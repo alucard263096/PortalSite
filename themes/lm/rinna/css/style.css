@@ -1187,6 +1187,20 @@ ul.listForm li {
 #sendmessage.show,.show  {
 	display:block;
 }
+#errormessage{
+	font-size:12px;
+	margin:2px 0 15px;
+	padding:10px 10px 10px 50px;
+	background: no-repeat 15px center #effff4;
+	border:1px solid #cdf3d8;
+	border-left:5px solid #cdf3d8;
+	color:red;
+	display:none;
+}
+
+#errormessage.show,.show  {
+	display:block;
+}
 
 .map{
 	width:100%;

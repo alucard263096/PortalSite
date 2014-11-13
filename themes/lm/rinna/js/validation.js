@@ -5,9 +5,13 @@ jQuery(document).ready(function($) {
 	//Contact
 	$('form.validateform').submit(function(){
 
+		$("#errormessage").removeClass("show");
+		$("#sendmessage").removeClass("show");
+		
 		var f = $(this).find('.listForm li'), 
 		ferror = false, 
 		emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+		var digitsExp = new RegExp("^[0-9]*$");
 
 		f.children('input').each(function(){ // run all inputs
 
@@ -35,6 +39,10 @@ jQuery(document).ready(function($) {
 
 				case 'email':
 				if( !emailExp.test(i.val()) ){ ferror=ierror=true; }
+				break;
+
+				case 'digits':
+				if( !digitsExp.test(i.val()) ){ ferror=ierror=true; }
 				break;
 
 				case 'checked':
@@ -76,29 +84,41 @@ jQuery(document).ready(function($) {
 				i.next('.validation').html( ( ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
 			}
 		});
-		if( ferror ) return false; 
+		if( ferror ) {
+			$("#errormessage").text("请正确输入必填项");
+			$("#errormessage").addClass("show");
+			return false;
+			}
 			else var str = $(this).serialize();
 		
 			   $.ajax({
 			   type: "POST",
-			   url: "contact/contact.php",
+			   url: "joinus.action.php",
 			   data: str,
 			   success: function(msg){
-			$("#sendmessage").addClass("show");
-			$("#errormessage").ajaxComplete(function(event, request, settings){
-		
-			if(msg == 'OK')
-			{
-				$("#sendmessage").addClass("show");
-				
-			}
-			else
-			{
-				$("#sendmessage").removeClass("show");
-				result = msg;
-			}
-		
-			$(this).html(result);});}});
+				$("#errormessage").ajaxComplete(function(event, request, settings){
+			
+				if(msg.substring(0,5)=="right")
+				{
+					$("#sendmessage").addClass("show");
+					$("#formsubmit").attr("disabled",true); 
+					$("#errormessage").removeClass("show");
+					
+				}
+				else if(msg=="exists")
+				{
+					$("#errormessage").text("您已经提交了申请，请耐心等候。");
+					$("#errormessage").addClass("show");
+				}
+				else
+				{
+					$("#errormessage").text("未知错误");
+					$("#errormessage").addClass("show");
+				}
+			
+				});
+				}
+			});
 				return false;
 	});
 

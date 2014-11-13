@@ -47,7 +47,6 @@
 
 	<script src="<{$rootpath}>/themes/lm/rinna/js/theme-option/jquery.cookie.js"></script>
 	
-	<script src="<{$rootpath}>/themes/lm/rinna/js/validation.js"></script>
 	<script src="<{$rootpath}>/themes/lm/rinna/js/custom.js"></script>
 	</body>
 </html>

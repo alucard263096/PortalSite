@@ -26,12 +26,12 @@
   {
 		$qq=trim(parameter_filter($qq));
 		$phone=trim(parameter_filter($phone));
-		$$company_name=trim(parameter_filter($$company_name));
+		$company_name=trim(parameter_filter($company_name));
     
-    $sql="select count(1) from tb_requisition 
+    $sql="select 1 from tb_requisition 
     where ('$qq'<>'' and qq='$qq')
     or ('$qq'<>'' and phone='$phone' )
-    or ('$company_name'<>'' and $company_name )";
+    or ('$company_name'<>'' and company_name='$company_name' )";
     
     $query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query);
@@ -120,15 +120,13 @@
 			
 			$id=$result[0];
 			$sql="insert into `tb_requisition` 
-	(id, name,position,email,phone,$qq,
+	(id, name,position,email,phone,qq,
  company_name,company_city,company_address,company_phone,company_website,
- knew,message,question,status, remarks, applied_date,
-	 updated_user, updated_date)
+ knew,message,question,status, remarks, applied_date)
 	values
 	($id, '$name','$position','$email','$phone','$qq',
  '$company_name','$company_city','$company_address','$company_phone','$company_website',
- '$knew','$message','$question','P','',now(),
- $sysUser_id, now())";
+ '$knew','$message','$question','P','',now())";
   
 			$query = $this->dbmgr->query($sql);
 			
