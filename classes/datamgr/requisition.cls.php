@@ -84,8 +84,8 @@
     and dt.qq like '%$qq%' 
     and dt.company_name like '%$company_name%' 
     and dt.company_phone like '%$company_phone%' 
-		and ('$from'='' or dt.applied_date >= '$from' )
-		and ('$to'='' or dt.applied_date <= '$to' )
+		and ('$from'='' or dt.applied_date >= '$from 0:0:0' )
+		and ('$to'='' or dt.applied_date <= '$to 23:59:59' )
 		order by dt.apply_date ";
 		
     

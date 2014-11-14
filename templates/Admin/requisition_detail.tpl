@@ -12,24 +12,108 @@
 	</tr>
 	<tr>
 		<td></td>
-		<td>名称：</td>
+		<td>申请人姓名：</td>
 		<td>
-			<input id='detail_name' value='<{$detail.name}>' type='text' class='spText ' />
+			<input  value='<{$detail.name}>' type='text' class='spText' readonly="readonly" />
 		</td>
 		<td></td>
-		<td>序号：</td>
+		<td>申请人职位：</td>
 		<td>
-			<input id='detail_seq' value='<{$detail.seq}>' type='text' class='spText number ' />
+			<input  value='<{$detail.name}>' type='text' class='spText' readonly="readonly" />
 		</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>状态：</td>
+		<td>申请人邮箱：</td>
+		<td>
+			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+		</td>
+		<td></td>
+		<td>申请人联系电话：</td>
+		<td>
+			<input  value='<{$detail.phone}>' type='text' class='spText' readonly="readonly" />
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>申请人QQ：</td>
+		<td>
+			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>公司名称：</td>
+		<td>
+			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+		</td>
+		<td></td>
+		<td>公司所在地：</td>
+		<td>
+			<input  value='<{$detail.phone}>' type='text' class='spText' readonly="readonly" />
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>公司电话：</td>
+		<td>
+			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+		</td>
+		<td></td>
+		<td>公司网址：</td>
+		<td>
+			<input  value='<{$detail.phone}>' type='text' class='spText' readonly="readonly" />
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>公司地址：</td>
+		<td colspan='4'>
+			<textarea  id='detail_address' class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+		</td>
+	</tr>
+  <tr>
+    <td></td>
+    <td>是否已经了解合作方式</td>
+    <td colspan='4'>
+      <input  value='<{if $rs.knew='Y'}>是<{else}>否<{/if}>' type='text' class='spText' readonly="readonly" />
+        </td>
+  </tr>
+	<tr>
+		<td></td>
+		<td>客户留言：</td>
+		<td colspan='4'>
+			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>所需进一步资料：</td>
+		<td colspan='4'>
+			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>申请日期：</td>
+		<td>
+      <input  value='' type='text' class='spText' readonly="readonly" />
+		</td>
+		<td></td>
+		<td>处理方式：</td>
 		<td>
 			<select id='detail_status' class='spDdl_1'>
-				<option <{if 'A'==$detail.status}>selected<{/if}> value='A'>启用</option>
-				<option <{if 'I'==$detail.status}>selected<{/if}> value='I'>不启用</option>
+				<option <{if 'P'==$detail.status}>selected<{/if}> value='A'>未处理</option>
+				<option <{if 'A'==$detail.status}>selected<{/if}> value='I'>完成</option>
+				<option <{if 'I'==$detail.status}>selected<{/if}> value='I'>不通过</option>
 			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>处理意见：</td>
+		<td colspan='4'>
+			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
 		</td>
 	</tr>
 	<tr>
@@ -39,12 +123,7 @@
 		<td colspan='6' style="text-align:center;">
 			<input id='detail_id' value='<{$detail.id}>' type='hidden'  class='spText' />
 			<{if $sysU=="0"}>
-			<input id='save' value='保存' class='save detail_button submit' type='button' />
-			<input id='save_and_new' class='save detail_button submit' value='保存并新增' type='button' />
-			<input id='save_and_close' class='save detail_button submit' value='保存并关闭' type='button' />
-			<{/if}>
-			<{if $sysA=="0"}>
-			<input id='detail_new' class='detail_button submit' value='新增' type='button' />
+			<input id='save' value='处理' class='save detail_button submit' type='button' />
 			<{/if}>
 			<input class='close submit' value='关闭' type='button' />
 		</td>
@@ -64,87 +143,85 @@ $(document).ready(function(){
 	$(".c_psw").attr("disabled",false);
 	$(".lgn").attr("disabled",true);
 	<{/if}>
-	$("#detail_new").click(function(){
-				$("#new_title").show();
-				$("#edit_title").hide();
-				$(".spText").val("");
-				$(".spChk").prop("checked",false);
-				$(".spDdl_1").val('A'); 
-				$(".spDdl_2").val('0');
+    $("#detail_new").click(function(){
+    $("#new_title").show();
+    $("#edit_title").hide();
+    $(".spText").val("");
+    $(".spChk").prop("checked",false);
+    $(".spDdl_1").val('A');
+    $(".spDdl_2").val('0');
 
-				editor1.html("");
-	});
-	
-	$(".save").click(function(){
+    editor1.html("");
+    });
 
-		
-		$(".detail_button").attr("disabled",true);
-		var ac=$(this).attr("id");
-		var id=$("#detail_id").val();
-		var name=$("#detail_name").val();
-		var seq=$("#detail_seq").val();
-		var status=$("#detail_status").val();
+    $(".save").click(function(){
 
-		var valstr="";
-		if($.trim(name)==""){
-			valstr+="请输入名称\r\n";
-		}
-		
-		if($.trim(valstr)!="")
-		{
-			MsgError(valstr);
-			$(".detail_button").attr("disabled",false);
-			return;
-		}
-		
-		var json={"action":"save",
-				"id":id,
-				"name":name,
-				"seq":seq,
-				"status":status
-				};
 
-		$.post("product_category.action.php",json,function(data){
+    $(".detail_button").attr("disabled",true);
+    var ac=$(this).attr("id");
+    var id=$("#detail_id").val();
+    var remarks=$("#detail_remarks").val();
+    var status=$("#detail_status").val();
 
-								 	if(data.substring(0,5)=="right")
-								 	{
-								 		id=data.substring(5,data.length);
-								 		MsgInfo("保存成功！");
-										$("#search").click();
-										
-										$("#new_title").hide();
-										$("#edit_title").show();
-										$(".c_psw").attr("disabled",false);
-										$(".lgn").attr("disabled",true);
-											
-										$("#detail_id").val(id);
-										if(ac=="save_and_new")
-										{
-											$("#new_title").show();
-											$("#edit_title").hide();
-											$(".spText").val("");
-											$(".spChk").prop("checked",false);
-											$(".spDdl_1").val('A'); 
-											$(".spDdl_2").val('0'); 
-											$(".c_psw").attr("disabled",true);
-											$(".lgn").attr("disabled",false);
-											$("#detail_logo_img").attr("src","");
-										}
-										if(ac=="save_and_close")
-										{
-											$( "#details" ).dialog( "close" );
-										}
-								 	}
-								 	else
-								 	{
-								 		MsgError("保存失败！");
-								 	}
-									$(".detail_button").attr("disabled",false);
-								 });
-	});
-	$(".close").click(function(){
-		$( "#details" ).dialog( "close" );
-	});
-});
-</script>
+    var valstr="";
+    if($.trim(remarks)==""){
+    valstr+="请输入处理意见\r\n";
+    }
+
+    if($.trim(valstr)!="")
+    {
+    MsgError(valstr);
+    $(".detail_button").attr("disabled",false);
+    return;
+    }
+
+    var json={"action":"save",
+    "id":id,
+    "remarks":remarks,
+    "status":status
+    };
+
+    $.post("requisition.action.php",json,function(data){
+
+    if(data.substring(0,5)=="right")
+    {
+    id=data.substring(5,data.length);
+    MsgInfo("保存成功！");
+    $("#search").click();
+
+    $("#new_title").hide();
+    $("#edit_title").show();
+    $(".c_psw").attr("disabled",false);
+    $(".lgn").attr("disabled",true);
+
+    $("#detail_id").val(id);
+    if(ac=="save_and_new")
+    {
+    $("#new_title").show();
+    $("#edit_title").hide();
+    $(".spText").val("");
+    $(".spChk").prop("checked",false);
+    $(".spDdl_1").val('A');
+    $(".spDdl_2").val('0');
+    $(".c_psw").attr("disabled",true);
+    $(".lgn").attr("disabled",false);
+    $("#detail_logo_img").attr("src","");
+    }
+    if(ac=="save_and_close")
+    {
+    $( "#details" ).dialog( "close" );
+    }
+    }
+    else
+    {
+    MsgError("保存失败！");
+    }
+    $(".detail_button").attr("disabled",false);
+    });
+    });
+    $(".close").click(function(){
+    $( "#details" ).dialog( "close" );
+    });
+    });
+  </script>
 

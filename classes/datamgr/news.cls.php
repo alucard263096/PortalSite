@@ -70,8 +70,8 @@
 		where  n.status like '%$status%'
 		and ( n.title like '%$title%' )
 		and ( n.summary like '%$summary%' )
-		and ('$from'='' or n.published_date >= '$from' )
-		and ('$to'='' or n.published_date <= '$to' )
+		and ('$from'='' or n.published_date >= '$from 0:0:0' )
+		and ('$to'='' or n.published_date <= '$to 23:59:59' )
 		and n.status <>'D' 
 		order by published_date desc
 		limit 0, 100 ";
