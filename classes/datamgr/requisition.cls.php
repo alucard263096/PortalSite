@@ -56,9 +56,9 @@
     where status='P' ";
     
     $query = $this->dbmgr->query($sql);
-		$result = $this->dbmgr->fetch_array_all($query);
+		$result = $this->dbmgr->fetch_array($query);
     
-     return count($result);
+     return $result[0];
   }
 	
 	//status P 申请中，A 完成，I 拒绝
@@ -86,7 +86,7 @@
     and dt.company_phone like '%$company_phone%' 
 		and ('$from'='' or dt.applied_date >= '$from 0:0:0' )
 		and ('$to'='' or dt.applied_date <= '$to 23:59:59' )
-		order by dt.apply_date ";
+		order by dt.applied_date ";
 		
     
 		$query = $this->dbmgr->query($sql);

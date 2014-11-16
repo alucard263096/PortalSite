@@ -49,6 +49,23 @@ var url='<{$rootpath}>/Admin/home.php';
 
 initMenu(data,current,url);
 
+$(".submenu li ul li a").each(function(){
+
+	var vacc=null;
+    if($(this).text().indexOf("加盟申请")>=0){
+        vacc=$(this);
+    }
+    if(vacc!=null){
+	$.post("requisition.action.php",
+			  {
+			    action:"getprocesscount"
+			  },
+			  function(data,status){
+				  vacc.append("("+data+")");
+			  });
+    }
+});
+
 });
 </script>
 

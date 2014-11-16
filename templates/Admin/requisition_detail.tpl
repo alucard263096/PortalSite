@@ -19,7 +19,7 @@
 		<td></td>
 		<td>申请人职位：</td>
 		<td>
-			<input  value='<{$detail.name}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.position}>' type='text' class='spText' readonly="readonly" />
 		</td>
 	</tr>
 	<tr>
@@ -38,38 +38,38 @@
 		<td></td>
 		<td>申请人QQ：</td>
 		<td>
-			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.qq}>' type='text' class='spText' readonly="readonly" />
 		</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>公司名称：</td>
 		<td>
-			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.company_name}>' type='text' class='spText' readonly="readonly" />
 		</td>
 		<td></td>
 		<td>公司所在地：</td>
 		<td>
-			<input  value='<{$detail.phone}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.company_city}>' type='text' class='spText' readonly="readonly" />
 		</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>公司电话：</td>
 		<td>
-			<input  value='<{$detail.email}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.company_phone}>' type='text' class='spText' readonly="readonly" />
 		</td>
 		<td></td>
 		<td>公司网址：</td>
 		<td>
-			<input  value='<{$detail.phone}>' type='text' class='spText' readonly="readonly" />
+			<input  value='<{$detail.company_website}>' type='text' class='spText' readonly="readonly" />
 		</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>公司地址：</td>
 		<td colspan='4'>
-			<textarea  id='detail_address' class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+			<textarea   readonly="readonly" class='spText ' rows="1" cols="50"><{$detail.company_address}></textarea>
 		</td>
 	</tr>
   <tr>
@@ -83,37 +83,37 @@
 		<td></td>
 		<td>客户留言：</td>
 		<td colspan='4'>
-			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+			<textarea   class='spText ' rows="1" cols="50"><{$detail.message}></textarea>
 		</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>所需进一步资料：</td>
 		<td colspan='4'>
-			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+			<textarea   class='spText ' rows="1" cols="50"><{$detail.question}></textarea>
 		</td>
 	</tr>
 	<tr>
 		<td></td>
 		<td>申请日期：</td>
 		<td>
-      <input  value='' type='text' class='spText' readonly="readonly" />
+      <input  value='<{$detail.applied_date}>' type='text' class='spText' readonly="readonly"  />
 		</td>
 		<td></td>
-		<td>处理方式：</td>
+		<td style="color:red;">处理方式：</td>
 		<td>
 			<select id='detail_status' class='spDdl_1'>
-				<option <{if 'P'==$detail.status}>selected<{/if}> value='A'>未处理</option>
-				<option <{if 'A'==$detail.status}>selected<{/if}> value='I'>完成</option>
+				<option <{if 'P'==$detail.status}>selected<{/if}> value='P'>未处理</option>
+				<option <{if 'A'==$detail.status}>selected<{/if}> value='A'>完成</option>
 				<option <{if 'I'==$detail.status}>selected<{/if}> value='I'>不通过</option>
 			</select>
 		</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>处理意见：</td>
+		<td style="color:red;">处理意见：</td>
 		<td colspan='4'>
-			<textarea   class='spText ' rows="1" cols="50"><{$detail.address}></textarea>
+			<textarea  id='detail_remarks' class='spText ' rows="1" cols="50"><{$detail.remarks}></textarea>
 		</td>
 	</tr>
 	<tr>

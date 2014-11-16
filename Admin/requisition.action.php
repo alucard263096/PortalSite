@@ -21,12 +21,12 @@
  	$smarty->display(ROOT.'/templates/Admin/requisition_result.tpl');
  	
  }
- else if($action=="edit")
+ else if($action=="save")
  {
  	$rt=$requisitionMgr->editStatus($_REQUEST["id"],$_REQUEST["status"],$_REQUEST["remarks"]
 					 	,$_SESSION["sysUser"]["user_id"]);
 					 	
-	echo "success";
+	echo $rt;
  	
  }else if($action=="getprocesscount")
  {

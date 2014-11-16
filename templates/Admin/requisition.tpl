@@ -51,7 +51,7 @@
 		<td>
 			<select id='c_status'>
 				<option value='ALL'>--请选中--</option>
-				<option value='P'>未处理</option>
+				<option value='P' selected="selected">未处理</option>
 				<option value='A'>已处理</option>
 				<option value='I'>不通过</option>
 			</select>
@@ -124,8 +124,8 @@ $(document).ready(function() {
 	$('#details').dialog({
 		autoOpen: false,
 		modal: true,
-		width:500,
-		height:300
+		width:900,
+		height:600
 	});
 
 
@@ -144,7 +144,7 @@ $(document).ready(function() {
 		
 		
 		
-		$("#ListDiv").load("requiistion.action.php",
+		$("#ListDiv").load("requisition.action.php",
 							{
 							"action":"search",
 							"name":name,
@@ -157,9 +157,7 @@ $(document).ready(function() {
 							"status":status
 							},
 							function(data){
-							
 								oTable = $('#result').dataTable({"oLanguage":oLanguage} );
-								
 							});
 		
 	});
@@ -171,6 +169,8 @@ $(document).ready(function() {
 		});
 		
 	});
+
+	$("#search").click();
 	
 	$("#delete").click(function(){
 
