@@ -50,9 +50,30 @@
 							</p>
 						</div>
 			</div>
+			<hr />
+			<div class="row">
+						<div class="span7">
+						
+							<h4>上海基曼商贸有限公司</h4>
+							<p>
+							<strong><i class="icon-home"></i>地址 :</strong><br>
+							北上海市长宁区天山路600弄1号2306室<br>
+							邮编：200051
+							</p>
+							<p>
+							<strong><i class="icon-envelope-alt"></i>联系人 :</strong><br>
+							尹楚明 Vincent
+							</p>
+							<p>
+							<strong><i class="icon-phone"></i>联系电话 :</strong><br>
+							021-60908582
+							传真：021-60908583
+							</p>				
+						</div>
+			</div>
 			</div>
 		</section>
-		
+		<hr />
 <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/lm/css/contact.css?1856470724" media="screen" />
 <link rel="stylesheet" type="text/css" href="<{$rootpath}>/themes/lm/css/map.css?958646445" media="screen" />
 	<section class="page">
