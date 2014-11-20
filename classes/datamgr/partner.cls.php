@@ -160,7 +160,7 @@
 			$result = $this->dbmgr->fetch_array($query); 
 			
 			$id=$result[0];
-			$sql="insert into `portalsite_lm`.`tb_partner` 
+			$sql="insert into `tb_partner` 
 	(id, type, name, logo_file, tel, 
 	fax, mobile, contacter, address, 
 	city_id, coordinate, website, 

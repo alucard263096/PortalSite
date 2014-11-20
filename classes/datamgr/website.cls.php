@@ -68,12 +68,18 @@
 		for($i=0;$i<$sum;$i++)
 		{
 			$style="hd";
-			if($i==0){
+      if(strpos($result["slogan"],"PALACOS")){
+				$style="hm";
+      }else if(strpos($result["slogan"],"OSTEOPAL")){
+				$style="hen";
+      }else if(strpos($result["slogan"],"SurgiWrap")){
+				$style="hq";
+      }else if($i==0){
 				$style="hd";
 			}else if($i==1){
 				$style="hen";
 			}else if($i==2){
-				$style="hm";
+				$style="hq";
 			}else if($i==3){
 				$style="hmt";
 			}else if($i==4){

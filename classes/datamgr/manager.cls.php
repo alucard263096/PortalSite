@@ -135,7 +135,7 @@
 			$result = $this->dbmgr->fetch_array($query); 
 			
 			$id=$result[0];
-			$sql="insert into `portalsite_lm`.`tb_manager` 
+			$sql="insert into `tb_manager` 
 	(id, chname, engname, position, tel, qq, 
 	email, address, provinces, description, 
 	remark, status, created_user, created_date, 
