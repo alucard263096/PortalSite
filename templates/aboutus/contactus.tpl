@@ -24,32 +24,7 @@
 		<section class="page-contain">
 			<div class="container">
 			<div class="row">
-						<div class="span7">
-							<h4>雷德睦华医药科技（北京）有限公司北京总部</h4>
-							<p>
-							<strong><i class="icon-home"></i>地址 :</strong><br>
-							北京市丰台区马家堡东路106号自然新天地写字楼606室<br>
-							邮编：100068
-							</p>
-							<p>
-							<strong><i class="icon-phone"></i>北京 联系电话 :</strong><br>
-							010-58031636<br>
-							010-58032661<br>
-							传真：010-58031636 转 804
-							</p>	
-							<p>
-							<strong><i class="icon-phone"></i>上海 联系电话 :</strong><br>
-							021-60908582<br>
-							传真：021-60908583
-							</p>							
-						</div>
-						<div class="span5">
-							<h4>&nbsp;</h4>
-							<p>
-							<strong><h6><i class="icon-globe"></i>微信关注</h6></strong>
-							<img alt="微信" style="height:185px" src="<{$rootpath}>/themes/lm/images/qrcode.png" />
-							</p>
-						</div>
+						<{$companyinfo}>
 			</div>
 			</div>
 		</section>

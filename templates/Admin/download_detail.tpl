@@ -109,7 +109,7 @@ $(document).ready(function(){
 			 if(data.substring(0,5)=="right")
 			 	{
 			 		var file_id=data.substring(5,data.length);
-			 		str="<tr  valign="middle" class='filerow filerow_"+file_id+"' value='"+file_id+"'>";
+			 		str="<tr  valign='middle' class='filerow filerow_"+file_id+"' value='"+file_id+"'>";
 			 		str=str+"<input  value='0' type='hidden'  id='ffilename_"+file_id+"' />";
 			 		str=str+"<input value='0' type='hidden'  id='flength_"+file_id+"' />";
 			 		str=str+"<td  rowspan='2'><input class='fileseq number' value='0' id='fseq_"+file_id+"' style='width:20px;' />.</td>";
@@ -124,7 +124,7 @@ $(document).ready(function(){
 					str=str+"</td>";
 					str=str+"<td  rowspan='2'><input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow("+file_id+")' /></td>";
 					str=str+"</tr>"; 
-					str=str+"<tr class='filerow filerow_<{$rs.id}>'>"; 
+					str=str+"<tr class='filerow_"+file_id+"'>"; 
 					str=str+"<td>外部链接：</td>"; 
 					str=str+"<td colspan='3'><input class='extlink'   id='fextlink_"+file_id+"'/></td>"; 
 					str=str+"</tr>"; 

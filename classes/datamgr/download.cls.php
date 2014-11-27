@@ -168,7 +168,7 @@
 	created_date, updated_user, 
 	updated_date)
 	values
-	($id, '$name', $seq, '$status', $sysUser_id, 
+	($id, '$name', '$seq', '$status', $sysUser_id, 
 	now(), $sysUser_id, 
 	now())";
 			
@@ -177,7 +177,7 @@
 		{
 			$sql="update tb_download_category set 
 					name='$name',
-					seq=$seq  ,
+					seq='$seq'  ,
 					status='$status',
 					updated_user=$sysUser_id,
 					updated_date=now()
@@ -206,7 +206,7 @@
 			$sql="update tb_download_file set 
 					category_id=$id,
 					name='$fname',
-					seq=$fseq  ,
+					seq='$fseq'  ,
 					extlink='$extlink',
 					filename='$ffilename',
 					length=$flength,

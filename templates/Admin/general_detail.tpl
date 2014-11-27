@@ -111,6 +111,8 @@ $(document).ready(function(){
 				cssPath : '<{$rootpath}>/kindeditor/plugins/code/prettify.css',
 				uploadJson : '<{$rootpath}>/kindeditor/php/upload_json.php',
 				fileManagerJson : '<{$rootpath}>/kindeditor/php/file_manager_json.php',
+				safeMode : false,
+        filterMode:false,
 				allowFileManager : true
 			});
 			prettyPrint();

@@ -29,7 +29,7 @@ $CONFIG['language']['default']='zh-sc';
 
 #[Database]
 $CONFIG['database']['provider']	= 'mysql';  //mssql,sqlsrv
-$CONFIG['database']['host']		= 'localhost';  
+$CONFIG['database']['host']		= '192.168.1.123';  
 $CONFIG['database']['database']	= 'PortalSite_LM';  
 $CONFIG['database']['user']		= 'root';  
 $CONFIG['database']['psw']		= 'root'; 
