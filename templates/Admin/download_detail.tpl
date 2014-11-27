@@ -37,10 +37,10 @@
 		<td colspan='4'>
 			<table id="filelist">
 				<{foreach from=$detail.filelist item=rs}>
-				<tr class='filerow' id='filerow_<{$rs.id}>' value="<{$rs.id}>">
+				<tr valign="middle" class='filerow filerow_<{$rs.id}>' value="<{$rs.id}>">
 					<input  value="<{$rs.filename}>" type='hidden'  id='ffilename_<{$rs.id}>' />
 					<input value="<{$rs.length}>" type='hidden'  id='flength_<{$rs.id}>' />
-					<td><input class='fileseq number' value="<{$rs.seq}>" id='fseq_<{$rs.id}>' style='width:20px;' />.</td>
+					<td rowspan="2"><input class='fileseq number' value="<{$rs.seq}>" id='fseq_<{$rs.id}>' style='width:20px;' />.</td>
 					<td>文件名：</td>
 					<td><input class='filename' value="<{$rs.name}>"  id='fname_<{$rs.id}>'/></td>
 					<td><input type="file" name='ffile_<{$rs.id}>'  id='ffile_<{$rs.id}>' onchange='upload(<{$rs.id}>)'  style='width:70px;'  /></td>
@@ -51,18 +51,23 @@
 					<a id='dc_<{$rs.id}>' href='<{$rootpath}>/dc.php?filename=<{$rs.filename}>'><{$rs.filename}></a>
 					<{/if}>
 					</td>
-					<td><select  class='spDdl_1'  id='fstatus_<{$rs.id}>'>
+					<td rowspan="2"><select  class='spDdl_1'  id='fstatus_<{$rs.id}>'>
 							<option <{if 'A'==$rs.status}>selected<{/if}> value='A'>启用</option>
 							<option <{if 'I'==$rs.status}>selected<{/if}> value='I'>不启用</option>
 						</select>
 					</td>
-					<td>
+					<td rowspan="2">
 						<input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow(<{$rs.id}>)'  />
 					</td>
 				</tr>
+        <tr class='filerow_<{$rs.id}>'>
+            <td>外部链接：</td>
+            <td colspan='3'><input class='extlink' value="<{$rs.extlink}>"  id='fextlink_<{$rs.id}>'/></td>
+        </tr>
 				<{/foreach}>
 			</table>
 			<input id='addFile' value='上传文件' type='button' class='detail_button' />
+      *当外部链接不为空时，前台网页优先使用外部链接。
 		</td>
 	</tr>
 	<tr>
@@ -83,7 +88,7 @@
 <script>
 function deleteFileRow(filerow_id){
 	filerow_id=filerow_id.toString();
-	$("#filerow_"+filerow_id).remove();
+	$(".filerow_"+filerow_id).remove();
 }
 $(document).ready(function(){
 	<{if $data_status == 'new'}>
@@ -104,20 +109,24 @@ $(document).ready(function(){
 			 if(data.substring(0,5)=="right")
 			 	{
 			 		var file_id=data.substring(5,data.length);
-			 		str="<tr class='filerow' id='filerow_"+file_id+"' value='"+file_id+"'>";
+			 		str="<tr  valign="middle" class='filerow filerow_"+file_id+"' value='"+file_id+"'>";
 			 		str=str+"<input  value='0' type='hidden'  id='ffilename_"+file_id+"' />";
 			 		str=str+"<input value='0' type='hidden'  id='flength_"+file_id+"' />";
-			 		str=str+"<td><input class='fileseq number' value='0' id='fseq_"+file_id+"' style='width:20px;' />.</td>";
+			 		str=str+"<td  rowspan='2'><input class='fileseq number' value='0' id='fseq_"+file_id+"' style='width:20px;' />.</td>";
 					str=str+"<td>文件名：</td>";
 					str=str+"<td><input class='filename' value='' id='fname_"+file_id+"' /></td>";
 					str=str+"<td><input type='file' name='ffile_"+file_id+"' id='ffile_"+file_id+"' onchange='upload("+file_id+")'   style='width:70px;' /></td>";
 					str=str+"<td><a id='dc_"+file_id+"' >未上传</a></td>";
-					str=str+"<td><select class='status spDdl_1' id='fstatus_"+file_id+"'>";
+					str=str+"<td  rowspan='2'><select class='status spDdl_1' id='fstatus_"+file_id+"'>";
 					str=str+"		<option <{if selected value='A'>启用</option>";
 					str=str+"		<option   value='I'>不启用</option>";
 					str=str+"	</select>";
 					str=str+"</td>";
-					str=str+"<td><input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow("+file_id+")' /></td>";
+					str=str+"<td  rowspan='2'><input type='button' value='删除' class='deleteFileRow submit' onclick='deleteFileRow("+file_id+")' /></td>";
+					str=str+"</tr>"; 
+					str=str+"<tr class='filerow filerow_<{$rs.id}>'>"; 
+					str=str+"<td>外部链接：</td>"; 
+					str=str+"<td colspan='3'><input class='extlink'   id='fextlink_"+file_id+"'/></td>"; 
 					str=str+"</tr>"; 
 
 					$("#filelist").append(str);
@@ -182,6 +191,7 @@ $(document).ready(function(){
 			json["fstatus_"+fid]=$("#fstatus_"+fid).val();
 			json["ffilename_"+fid]=$("#ffilename_"+fid).val();
 			json["flength_"+fid]=$("#flength_"+fid).val();
+			json["fextlink_"+fid]=$("#fextlink_"+fid).val();
 		});
 		json["fileidlist"]=savefileids;
 

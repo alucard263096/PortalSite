@@ -24,7 +24,7 @@
 		<section class="page-contain">
 			<div class="container">
 			<div class="row">
-						<div class="span6">
+						<div class="span12">
 							<h4>我们是雷德睦华</h4>
 							<{foreach from=$content item=rs}>
 							<p>
@@ -33,7 +33,7 @@
 							<{/foreach}>					
 							<a class="btn btn-primary" href="<{$rootpath}>/aboutus/contactus.php">如何联系我们</a>
 						</div>
-						
+						<!--
 						<div class="span6">
 							<div class="team-wrapper">
 								<div class="team-desc pull-left tooltips">
@@ -72,6 +72,7 @@
 								</div>
 							</div>						
 						</div>					
+            -->
 					</div>
 			</div>
 		</section>

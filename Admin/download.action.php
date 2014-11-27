@@ -36,6 +36,7 @@
  		$a["status"]=$_REQUEST["fstatus_".$fid];
  		$a["filename"]=$_REQUEST["ffilename_".$fid];
  		$a["length"]=$_REQUEST["flength_".$fid];
+ 		$a["extlink"]=$_REQUEST["fextlink_".$fid];
  		
  		$filelist[]=$a;
  	}

@@ -43,7 +43,11 @@
 									
 									<div class="folio-title">
 										<h6><{$info.name}></h6>
+										<{if $info.extlink==""}>
 										<a class="detaillink" href="download.php?filename=<{$info.filename}>">下载</a>
+										<{else}>
+										<a class="detaillink" href="<{$info.extlink}>" target="_blank">下载</a>
+										<{/if}>
 									</div>
 								</div>
 							</li>

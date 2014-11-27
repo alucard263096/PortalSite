@@ -44,7 +44,7 @@
 	
 	
 	public function getActivedFileListByCategory($category_id){
-		$sql="select seq,name,`status`,id,length,filename
+		$sql="select seq,name,`status`,id,length,filename,extlink
 		from tb_download_file
 		where category_id=$category_id 
 		and status ='A' 
@@ -106,7 +106,7 @@
 	}
 	
 	public function getFileListByCategory($category_id){
-		$sql="select seq,name,`status`,id,length,filename
+		$sql="select seq,name,`status`,id,length,filename,extlink
 		from tb_download_file
 		where category_id=$category_id 
 		and status <>'D' 
@@ -129,12 +129,12 @@
 		
 		$id=$result[0];
 			$sql="insert into `tb_download_file` 
-	(id, category_id, name,filename, length, 
+	(id, category_id, name,filename, length, extlink,
 	seq, status, created_user, 
 	created_date, updated_user, 
 	updated_date)
 	values
-	($id, -1, '','', 0, 
+	($id, -1, '','', 0, '',
 	0, 'A', $user_id, 
 	now(), $user_id, 
 	now())";
@@ -197,6 +197,7 @@
 			$fname=parameter_filter($a["name"]);
 			$fseq=parameter_filter($a["seq"]);
 			$ffilename=parameter_filter($a["filename"]);
+			$extlink=parameter_filter($a["extlink"]);
 			$flength=parameter_filter($a["length"]);
 			$fstatus=parameter_filter($a["status"]);
 			if($fid=="0"){
@@ -206,6 +207,7 @@
 					category_id=$id,
 					name='$fname',
 					seq=$fseq  ,
+					extlink='$extlink',
 					filename='$ffilename',
 					length=$flength,
 					status='$fstatus',
