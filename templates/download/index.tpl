@@ -40,8 +40,7 @@
 							<{foreach from=$rs.filelist item=info}>
 							<li class="portfolio-item" data-type="cl<{$rs.id}>" data-id="id-0">	
 								<div class="span3">
-									
-									<div class="folio-title">
+									<div class="folio-title" style="min-height:80px;">
 										<h6><{$info.name}></h6>
 										<{if $info.extlink==""}>
 										<a class="detaillink" href="download.php?filename=<{$info.filename}>">下载</a>
