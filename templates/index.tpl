@@ -106,12 +106,12 @@
 			<div class="teasertext">
 				<p class="headline">SurgiWrap聚乳酸手术保护膜（简称“MAST膜”）是由美国MAST Biosurgery Inc.研制生产。</p>
 				<p>组织粘连的产生是人体自然愈合过程中的一部分，也是外科手术后软组织修复的一个严重并发症。这种不良的无法控制的现象会导致手术失败和愈后不良，例如肠梗阻、盆腹腔痛、不孕症、心包粘连、肌腱灵活性降低、瘢痕组织引起的神经束膜疼痛、压迫神经疼痛以及脑膜搏动引起植入物碎裂等症状发生。</p>
-				<a href="product/mast.php" class="not-mobile " target=""> 更多关于MAST </a> <a href="product/mast.php" class="only-mobile " target=""> 更多关于聚乳酸手术保护膜 </a>
+				<a href="product/detail.php?id=1" class="not-mobile " target=""> 更多关于MAST </a> <a href="product/detail.php?id=1" class="only-mobile " target=""> 更多关于聚乳酸手术保护膜 </a>
 			</div>
 		</div>
 		<div class="links">
-				<a href="product/mast.php" class="not-mobile " target=""> 产品特性 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 产品特性 </a>
-				<a href="product/mast.php" class="not-mobile " target=""> 如何购买 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 如何购买 </a>
+				<a href="product/detail.php?id=1" class="not-mobile " target=""> 产品特性 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 产品特性 </a>
+				<a href="product/detail.php?id=1" class="not-mobile " target=""> 如何购买 </a> <a href="<{$rootpath}>/product/detail.php?id=1" class="only-mobile " target=""> 如何购买 </a>
 		</div>
 	</div>
 </div>
