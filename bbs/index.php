@@ -1,87 +1,156 @@
 <?php
 
-// +---------------------------------------------+
-// |     Copyright 2010 - 2018 GuaGua BBS        |
-// |     http://www.weentech.com                 |
-// |     This file may not be redistributed.     |
-// +---------------------------------------------+
+/**
+ *      [Discuz!] (C)2001-2099 Comsenz Inc.
+ *      This is NOT a freeware, use is subject to license terms
+ *
+ *      $Id: index.php 34524 2014-05-15 04:42:23Z nemohou $
+ */
 
+if(!empty($_SERVER['QUERY_STRING']) && is_numeric($_SERVER['QUERY_STRING'])) {
+	$_ENV['curapp'] = 'home';
+	$_GET = array('mod'=>'space', 'uid'=>$_SERVER['QUERY_STRING']);
+} else {
 
-include("appg/settings.php");
-$Configuration['SELF_URL'] = 'index.php';
-include("appg/init_guagua.php");
-
-// 1. DEFINE VARIABLES AND PROPERTIES SPECIFIC TO THIS PAGE
-
-	// Ensure the user is allowed to view this page
-	$Context->Session->Check($Context);
-
-	// Define properties of the page controls that are specific to this page
-	$Head->BodyId = 'DiscussionsPage';
-	$Menu->CurrentTab = 'discussions';
-	$Panel->CssClass = 'DiscussionPanel';
-	$Panel->BodyCssClass = 'Discussions';
-
-// 2. BUILD PAGE CONTROLS
-	$DiscussionGrid = $Context->ObjectFactory->CreateControl($Context, 'DiscussionGrid');
-	// Add an update reminder if necessary
-	if ($Configuration['UPDATE_REMINDER'] != '') {
-		if ($Context->Session->User && $Context->Session->User->Permission('PERMISSION_CHECK_FOR_UPDATES')) {
-			$ShowUpdateMessage = 0;
-			$LastUpdate = $Configuration['LAST_UPDATE'];
-			if ($LastUpdate == '') $LastUpdate = time();
-			$Difference = time() - $LastUpdate;
-			$Days = floor($Difference/60/60/24);
-			if ($Configuration['LAST_UPDATE'] == '') {
-				$ShowUpdateMessage = 1;
-			} elseif ($Configuration['UPDATE_REMINDER'] == 'Weekly') {
-				if ($Days > 7) $ShowUpdateMessage = 1;
-			} elseif ($Configuration['UPDATE_REMINDER'] == 'Monthly') {
-				if ($Days > 30) $ShowUpdateMessage = 1;
-			} elseif ($Configuration['UPDATE_REMINDER'] == 'Quarterly') {
-				if ($Days > 90) $ShowUpdateMessage = 1;
-			}
-
-			if ($ShowUpdateMessage) {
-				$Message = '';
-				if ($Days == 0) {
-					$Message = $Context->GetDefinition('NeverCheckedForUpdates');
-				} else {
-					$Message = str_replace('//1', $Days, $Context->GetDefinition('XDaysSinceUpdateCheck'));
+	$url = '';
+	$domain = $_ENV = array();
+	$jump = false;
+	@include_once './data/sysdata/cache_domain.php';
+	$_ENV['domain'] = $domain;
+	if(empty($_ENV['domain'])) {
+		$_ENV['curapp'] = 'forum';
+	} else {
+		$_ENV['defaultapp'] = array('portal.php' => 'portal', 'forum.php' => 'forum', 'group.php' => 'group', 'home.php' => 'home');
+		$_ENV['hostarr'] = explode('.', $_SERVER['HTTP_HOST']);
+		$_ENV['domainroot'] = substr($_SERVER['HTTP_HOST'], strpos($_SERVER['HTTP_HOST'], '.')+1);
+		if(!empty($_ENV['domain']['app']) && is_array($_ENV['domain']['app']) && in_array($_SERVER['HTTP_HOST'], $_ENV['domain']['app'])) {
+			$_ENV['curapp'] = array_search($_SERVER['HTTP_HOST'], $_ENV['domain']['app']);
+			if($_ENV['curapp'] == 'mobile') {
+				$_ENV['curapp'] = 'forum';
+				if(!isset($_GET['mobile'])) {
+					@$_GET['mobile'] = '2';
 				}
-				$NoticeCollector->AddNotice($Message.' <a href="'.GetUrl($Configuration, 'settings.php', '', '', '', '', 'PostBackAction=UpdateCheck').'">'.$Context->GetDefinition('CheckForUpdatesNow').'</a>');
 			}
-		}
-	}
+			if($_ENV['curapp'] == 'default' || !isset($_ENV['defaultapp'][$_ENV['curapp'].'.php'])) {
+				$_ENV['curapp'] = '';
+			}
+		} elseif(!empty($_ENV['domain']['root']) && is_array($_ENV['domain']['root']) && in_array($_ENV['domainroot'], $_ENV['domain']['root'])) {
 
-	// Remind them to get addons if this is a new install
-	if ($Configuration['ADDON_NOTICE']) {
-		if ($Context->Session->User && $Context->Session->User->Permission('PERMISSION_MANAGE_EXTENSIONS')) {
-			$HideNotice = ForceIncomingBool('TurnOffAddonNotice', 0);
-			if ($HideNotice) {
-				$SettingsFile = $Configuration['APPLICATION_PATH'].'conf/settings.php';
-				$SettingsManager = $Context->ObjectFactory->NewContextObject($Context, 'ConfigurationManager');
-				$SettingsManager->DefineSetting("ADDON_NOTICE", '0', 1);
-				$SettingsManager->SaveSettingsToFile($SettingsFile);
+			$_G['setting']['holddomain'] = $_ENV['domain']['holddomain'] ? $_ENV['domain']['holddomain'] : array('www');
+			$list = $_ENV['domain']['list'];
+			if(isset($list[$_SERVER['HTTP_HOST']])) {
+				$domain = $list[$_SERVER['HTTP_HOST']];
+				switch($domain['idtype']) {
+					case 'subarea':
+						$_ENV['curapp'] = 'forum';
+						$_GET['gid'] = intval($domain['id']);
+						break;
+					case 'forum':
+						$_ENV['curapp'] = 'forum';
+						$_GET['mod'] = 'forumdisplay';
+						$_GET['fid'] = intval($domain['id']);
+						break;
+					case 'topic':
+						$_ENV['curapp'] = 'portal';
+						$_GET['mod'] = 'topic';
+						$_GET['topicid'] = intval($domain['id']);
+						break;
+					case 'channel':
+						$_ENV['curapp'] = 'portal';
+						$_GET['mod'] = 'list';
+						$_GET['catid'] = intval($domain['id']);
+						break;
+					case 'plugin':
+						$_ENV['curapp'] = 'plugin';
+						$_GET['id'] = $domain['id'];
+						$_GET['fromapp'] = 'index';
+						break;
+				}
+			} elseif(count($_ENV['hostarr']) > 2 && $_ENV['hostarr'][0] != 'www' && !checkholddomain($_ENV['hostarr'][0])) {
+				$_ENV['prefixdomain'] = addslashes($_ENV['hostarr'][0]);
+				$_ENV['domainroot'] = addslashes($_ENV['domainroot']);
+				require_once './source/class/class_core.php';
+				C::app()->init_setting = true;
+				C::app()->init_user = false;
+				C::app()->init_session = false;
+				C::app()->init_cron = false;
+				C::app()->init_misc = false;
+				C::app()->init();
+				$jump = true;
+				$domain = C::t('common_domain')->fetch_by_domain_domainroot($_ENV['prefixdomain'], $_ENV['domainroot']);
+				$apphost = $_ENV['domain']['app'][$domain['idtype']] ? $_ENV['domain']['app'][$domain['idtype']] : $_ENV['domain']['app']['default'];
+				$apphost = $apphost ? 'http://'.$apphost.'/' : '';
+				switch($domain['idtype']) {
+					case 'home':
+						if($_G['setting']['rewritestatus'] && in_array('home_space', $_G['setting']['rewritestatus'])) {
+							$url = rewriteoutput('home_space', 1, $apphost, $domain['id']);
+						} else {
+							$url = $apphost.'home.php?mod=space&uid='.$domain['id'];
+						}
+						break;
+					case 'group':
+						if($_G['setting']['rewritestatus'] && in_array('group_group', $_G['setting']['rewritestatus'])) {
+							$url = rewriteoutput('group_group', 1, $apphost, $domain['id']);
+						} else {
+							$url = $apphost.'forum.php?mod=group&fid='.$domain['id'].'&page=1';
+						}
+						break;
+				}
+			}
+		} else {
+			$jump = true;
+		}
+		if(empty($url) && empty($_ENV['curapp'])) {
+			if(!empty($_ENV['domain']['defaultindex']) && !$jump) {
+				if($_ENV['defaultapp'][$_ENV['domain']['defaultindex']]) {
+					$_ENV['curapp'] = $_ENV['defaultapp'][$_ENV['domain']['defaultindex']];
+				} else {
+					$url = $_ENV['domain']['defaultindex'];
+				}
 			} else {
-				$NoticeCollector->AddNotice('<span><a href="'.GetUrl($Configuration, 'index.php', '', '', '', '', 'TurnOffAddonNotice=1').'">'.$Context->GetDefinition('RemoveThisNotice').'</a></span>
-					'.$Context->GetDefinition('WelcomeToGuaguaGetSomeAddons'));
+				if($jump) {
+					$url = empty($_ENV['domain']['app']['default']) ? (!empty($_ENV['domain']['defaultindex']) ? $_ENV['domain']['defaultindex'] : 'forum.php') : 'http://'.$_ENV['domain']['app']['default'];
+				} else {
+					$_ENV['curapp'] = 'forum';
+				}
 			}
 		}
 	}
+}
+if(!empty($url)) {
+	$delimiter = strrpos($url, '?') ? '&' : '?';
+	if(isset($_GET['fromuid']) && $_GET['fromuid']) {
+		$url .= sprintf('%sfromuid=%d', $delimiter, $_GET['fromuid']);
+	} elseif(isset($_GET['fromuser']) && $_GET['fromuser']) {
+		$url .= sprintf('%sfromuser=%s', $delimiter, rawurlencode($_GET['fromuser']));
+	}
+	header("HTTP/1.1 301 Moved Permanently");
+	header("location: $url");
+} else {
+	require './'.$_ENV['curapp'].'.php';
+}
 
-// 3. ADD CONTROLS TO THE PAGE
+function checkholddomain($domain) {
+	global $_G;
 
-	$Page->AddRenderControl($Head, $Configuration['CONTROL_POSITION_HEAD']);
-	$Page->AddRenderControl($Menu, $Configuration['CONTROL_POSITION_MENU']);
-	$Page->AddRenderControl($Panel, $Configuration['CONTROL_POSITION_PANEL']);
-	$Page->AddRenderControl($NoticeCollector, $Configuration['CONTROL_POSITION_NOTICES']);
-	$Page->AddRenderControl($DiscussionGrid, $Configuration['CONTROL_POSITION_BODY_ITEM']);
-	$Page->AddRenderControl($Foot, $Configuration['CONTROL_POSITION_FOOT']);
-	$Page->AddRenderControl($PageEnd, $Configuration['CONTROL_POSITION_PAGE_END']);
-
-// 4. FIRE PAGE EVENTS
-
-	$Page->FireEvents();
-
+	$domain = strtolower($domain);
+	if(preg_match("/^[^a-z]/i", $domain)) return true;
+	$holdmainarr = empty($_G['setting']['holddomain']) ? array('www') : explode('|', $_G['setting']['holddomain']);
+	$ishold = false;
+	foreach ($holdmainarr as $value) {
+		if(strpos($value, '*') === false) {
+			if(strtolower($value) == $domain) {
+				$ishold = true;
+				break;
+			}
+		} else {
+			$value = str_replace('*', '.*?', $value);
+			if(@preg_match("/$value/i", $domain)) {
+				$ishold = true;
+				break;
+			}
+		}
+	}
+	return $ishold;
+}
 ?>

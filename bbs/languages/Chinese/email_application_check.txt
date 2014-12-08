@@ -1,8 +1,0 @@
-{user_name} 您好:
-
-感谢您注册 {forum_name} 会员.
-
-请用浏览器打开以下链接完成会员资格的验证:
-
-   {application_check_url}
-

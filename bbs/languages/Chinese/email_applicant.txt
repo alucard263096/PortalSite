@@ -1,4 +1,0 @@
-{applicant_name} ({applicant_email}) 提交了会员注册申请.
-
-您可以点击以下链接批准或驳回其申请:
-{application_url}

@@ -30,7 +30,7 @@
 						<a href="#"><img class="median" alt="" src="<{$rootpath}>/themes/lm/images/news.jpg"></a>
 					</p>
 					<div id='newslist'>
-					<{foreach from=$hotlist item=rs}>
+					<{foreach from=$newslist item=rs}>
 						<article>
 							<div class="row-fluid">
 								<div class="span2">
@@ -110,7 +110,7 @@ $(document).ready(function(){
 			$.post("getnews.php",{"page":++newspage},function(data){
 				newsLoading=false;
 				if($.trim(data)==""){
-					$("#showwaiting").html("已经没有了").show();
+					$("#showwaiting").html("").show();
 					isEnd=true;
 				}else{
 					$("#showwaiting").hide();

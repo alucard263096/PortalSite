@@ -1,49 +1,55 @@
 <?php
-/*
 
-// +---------------------------------------------+
-// |     Copyright 2010 - 2018 GuaGua BBS        |
-// |     http://www.weentech.com                 |
-// |     This file may not be redistributed.     |
-// +---------------------------------------------+
+/**
+ *      [Discuz!] (C)2001-2099 Comsenz Inc.
+ *      This is NOT a freeware, use is subject to license terms
+ *
+ *      $Id: search.php 34131 2013-10-17 03:54:09Z andyzheng $
+ */
 
-/*
-* Description: Web forms that handle running, saving, and removing searches
-*/
+define('APPTYPEID', 0);
+define('CURSCRIPT', 'search');
 
-include("appg/settings.php");
-$Configuration['SELF_URL'] = 'search.php';
-include("appg/init_guagua.php");
+require './source/class/class_core.php';
 
-// 1. DEFINE VARIABLES AND PROPERTIES SPECIFIC TO THIS PAGE
+$discuz = C::app();
 
-	// Ensure the user is allowed to view this page
-	$Context->Session->Check($Context);
+$modarray = array('my', 'user', 'curforum', 'newthread');
 
-	// Define properties of the page controls that are specific to this page
-	$Context->PageTitle = $Context->GetDefinition("Search");
-	$Head->BodyId = 'SearchPage';
-	$Menu->CurrentTab = "search";
-	$Panel->CssClass = "SearchPanel";
-	$Panel->BodyCssClass = "Search";
+$cachelist = $slist = array();
+$mod = '';
+$discuz->cachelist = $cachelist;
+$discuz->init();
 
-// 2. BUILD PAGE CONTROLS
+if(in_array($discuz->var['mod'], $modarray) || !empty($_G['setting']['search'][$discuz->var['mod']]['status'])) {
+	$mod = $discuz->var['mod'];
+} else {
+	foreach($_G['setting']['search'] as $mod => $value) {
+		if(!empty($value['status'])) {
+			break;
+		}
+	}
+}
+if(empty($mod)) {
+	showmessage('search_closed');
+}
+define('CURMODULE', $mod);
 
-	// Search form
-	$SearchForm = $Context->ObjectFactory->CreateControl($Context, "SearchForm");
 
-// 3. ADD CONTROLS TO THE PAGE
+runhooks();
 
-	$Page->AddRenderControl($Head, $Configuration["CONTROL_POSITION_HEAD"]);
-	$Page->AddRenderControl($Menu, $Configuration["CONTROL_POSITION_MENU"]);
-	$Page->AddRenderControl($Panel, $Configuration["CONTROL_POSITION_PANEL"]);
-	$Page->AddRenderControl($NoticeCollector, $Configuration['CONTROL_POSITION_NOTICES']);
-	$Page->AddRenderControl($SearchForm, $Configuration["CONTROL_POSITION_BODY_ITEM"]);
-	$Page->AddRenderControl($Foot, $Configuration["CONTROL_POSITION_FOOT"]);
-	$Page->AddRenderControl($PageEnd, $Configuration["CONTROL_POSITION_PAGE_END"]);
+require_once libfile('function/search');
 
-// 4. FIRE PAGE EVENTS
 
-	$Page->FireEvents();
+$navtitle = lang('core', 'title_search');
+
+if($mod == 'curforum') {
+	$mod = 'forum';
+	$_GET['srchfid'] = array($_GET['srhfid']);
+} elseif($mod == 'forum') {
+	$_GET['srhfid'] = 0;
+}
+
+require DISCUZ_ROOT.'./source/module/search/search_'.$mod.'.php';
 
 ?>

@@ -45,6 +45,8 @@
 		
 		$query = $this->dbmgr->query($sql);
 		$result = $this->dbmgr->fetch_array_all($query); 
+
+		
 		
 		
 		return $result;
