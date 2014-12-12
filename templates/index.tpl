@@ -38,7 +38,7 @@
 			<!-- Stage Container-->
 			<{foreach from=$bannerlist item=rs}>
 			<div class="slide <{$rs.style}>">
-				<img src="<{$rootpath}>/upload/index/<{$rs.pic}>" >
+				<img src="<{$rootpath}>/upload/banner/<{$rs.pic}>" >
 				<div class="text">
 					<h3><a style='color:white;' class='infotitle' href="#" ><{$rs.slogan}></a></h3>
 						<a href="<{if $rs.link == ''}>#<{else}><{$rs.link}><{/if}>" class="link" target=""> <{$rs.label}> </a>

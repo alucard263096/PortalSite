@@ -32,7 +32,7 @@
 									<li><a href="<{$rootpath}>/download/index.php" <{if $module=='download'}>class='active'<{/if}>>下载</a></li>	
 									<li><a href="<{$rootpath}>/news/index.php" <{if $module=='news'}>class='active'<{/if}>>新闻中心</a></li>	
 									<li><a href="<{$rootpath}>/partner/index.php" <{if $module=='partner'}>class='active'<{/if}>>合作伙伴</a></li>	
-									<li><a href="<{$rootpath}>/bbs" >进入论坛</a></li>		
+									<!--<li><a href="<{$rootpath}>/bbs" >进入论坛</a></li>		-->
 								</ul>
 							</nav>
 						</div>
